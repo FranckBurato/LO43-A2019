@@ -1,7 +1,3 @@
-//
-// Created by benjamin on 25/09/2019.
-//
-
 #ifndef LO43_A2019_SERVER_H
 #define LO43_A2019_SERVER_H
 

@@ -1,7 +1,20 @@
 class Server
 {
-	privates:
-	
+	private:
+		float* cHum;
+		float* cLum;
+		float* cTemp;
+		float* cSon;
 	public:
-
+		Server();
+		Server(const Server&);
+		~Server();
+		Server& operator=(const Server&);
+		{
+			this->cHum;
+			this->cLum;
+			this->cTemp;
+			this->cSon;
+		}
+		Server& operator<<(
 }

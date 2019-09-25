@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Server::Server(int capteur1,int capteur2,in capteur3)
+Server::Server(int capteur1,int capteur2,int capteur3)
 {
 this->capteur1=capteur1;
 this->capteur2=capteur2;
@@ -22,20 +22,23 @@ Server& Server::operator=(const Server& serv){
     return *this;
 }
 Server::~Server(){
-    delete this->capteur1;
-    delete this->capteur2;
-    delete this->capteur3;
 }
 void Server::consoleWrite(){
     cout<<"capteur 1: "<<this->capteur1<<endl<<"capteur 2: "<<this->capteur2<<endl<<"capteur 3: "<<this->capteur3<<endl;
 }
 void Server::fileWrite(){
-    std::ofstream log_file("log_file_capteur1.txt", std::ios_base::out | std::ios_base::app );
-        log_file << this->capteur1 << std::end;
-    std::ofstream log_file("log_file_capteur2.txt", std::ios_base::out | std::ios_base::app );
-        log_file << this->capteur2 << std::end;
-    std::ofstream log_file("log_file_capteur3.txt", std::ios_base::out | std::ios_base::app );
-        log_file << this->capteur3 << std::end;
+
+    ofstream mylog;
+    mylog.open("log/log_file_capteur1.txt", ios::out | ios::app );
+    mylog << this->capteur1 <<"\n";
+    mylog.close();
+    mylog.open("log/log_file_capteur2.txt", ios::out | ios::app );
+    mylog << this->capteur2 <<"\n";
+    mylog.close();
+    mylog.open("log/log_file_capteur3.txt", ios::out | ios::app );
+    mylog << this->capteur3 <<"\n";
+    mylog.close();
+
 }
 
 int main(int argc, char *argv[])

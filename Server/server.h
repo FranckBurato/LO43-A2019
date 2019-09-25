@@ -5,7 +5,7 @@
 class Server
 {
 public:
-    Server(int capteur1,int capteur2,in capteur3);
+    Server(int capteur1,int capteur2,int capteur3);
     Server(const Server & serv);
     Server& operator=(const Server& serv);
     ~Server();

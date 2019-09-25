@@ -1,9 +1,9 @@
 class Server {
 	public:
-		Server();
+		Server(int);
 		~Server();
-		Server(Server const &server);
-		Server &operator=(Server const &server);
+		Server(const Server& server);
+		Server & operator=(const Server& server);
 
 		void consoleWrite();
 		void fileWrite();

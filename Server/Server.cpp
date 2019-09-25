@@ -1,21 +1,24 @@
 #include <iostream>
 #include "Server.h"
 
-Server::Server() {
-	this->capteur = 0;
+Server::Server(int capteur) {
+	this->capteur = capteur;
 }
 Server::~Server() {}
 
-Server::Server(Server const &server) {
+Server::Server(const Server& server) {
 	this->capteur = server.capteur;
 }
-Server &operator=(Server const &server) {
-	
+Server& Server::operator=(const Server& server) {
+	this->capteur = server.capteur;
+	return *this;	
 }
 
 void Server::consoleWrite() {
-	std::cout << this->capteur;
+	std::cout << this->capteur << std::endl;
 }
 void Server::fileWrite() {
 	//Un jour il y aura quelque chose
+	std::cout << "Hey c'est fileWrite ici" << std::endl
+;
 }

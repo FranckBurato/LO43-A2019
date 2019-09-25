@@ -1,7 +1,11 @@
-#include "HelloWorld.h"
+#include "Server.h"
+#include <iostream>
 
-int main()
+using namespace std;
+
+int main () 
 {
-	HelloWorld h;
-	h.afficher();
+	Server h;
+	cout << h;
 }
+

@@ -1,0 +1,7 @@
+aide pour compiler :
+
+g++ -c FICHIERS.CPP (avec un espace entre les fichiers)
+g++ -o CIBLE OBJET.O (liste d'objet générée à l'étape précédente) (cible = nom de l'executable)
+
+et apres on tappe ./CIBLE
+

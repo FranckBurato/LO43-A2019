@@ -1,13 +1,12 @@
-#include <iostream>
-
-
-class Helloworld {
-	public:
-		static void print() { std::cout << "Hello, World!" << std::endl; }
-};
-
+#include "Server/Server.h"
 
 int main() {
-    Helloworld::print();
+    Server server(1234);
+    server.consoleWrite();
+    server.fileWrite();
+
+    Server copy = server;
+    copy.consoleWrite();
+    copy.fileWrite();
     return 0;
 }

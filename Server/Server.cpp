@@ -4,29 +4,34 @@
 
 Server::Server(){}
 
-Server::Server(const Server&){}
+Server::Server(std::string path){
+	this->path = path;
+}
+
+Server::Server(const Server& autre){
+	this->path = autre.path;
+}
 
 Server::~Server(){}
 
-Server& Server::operator=(const Server& autre){
+const Server& Server::operator=(const Server& autre){
 	this->path = autre.path;
 	return autre;
 }
 
 void Server::consoleWrite(std::string input){
-	std::cout << input;
+	std::cout << input << std::endl;
 }
 
 void Server::fileWrite(std::string input){
-	ofstream log(path.c_str());
+	std::ofstream log(path.c_str());
 	if(log){
-		log << input;
+		log << input << std::endl;
 	}
 	else{
-		std::cout << "ERREUR: Impossible d'ouvrir le fichier";
+		std::cout << "ERREUR: Impossible d'ouvrir le fichier" << std::endl;
 	}	
 }
 
-void Server::setPath(std::string path){
-	this->path = path;
-}
+
+

@@ -4,6 +4,7 @@ class Server {
 		~Server();
 		Server(const Server& server);
 		Server & operator=(const Server& server);
+		void operator>>(const Server & server);
 
 		void consoleWrite();
 		void fileWrite();

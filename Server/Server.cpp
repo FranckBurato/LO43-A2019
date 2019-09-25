@@ -13,12 +13,16 @@ Server& Server::operator=(const Server& server) {
 	this->capteur = server.capteur;
 	return *this;	
 }
+void Server::operator>>() {
+
+}
+
+
 
 void Server::consoleWrite() {
 	std::cout << this->capteur << std::endl;
 }
 void Server::fileWrite() {
 	//Un jour il y aura quelque chose
-	std::cout << "Hey c'est fileWrite ici" << std::endl
-;
+	std::cout << "Hey c'est fileWrite ici" << std::endl;
 }

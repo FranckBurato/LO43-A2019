@@ -1,15 +1,13 @@
 #include "server.hpp"
 #include <iostream>
-#include <stream>
+#include <fstream>
+#include <string>
 
-using namespace std;
 
-Server::Server(){
-	this->data = "Empty data";
+Server::Server(): data(){
 }
 
-Server::Server(string data){
-	this->data = data;
+Server::Server(std::string str):data(str){
 }
 
 Server::Server(const Server& server){
@@ -23,22 +21,23 @@ Server& Server::operator=(const Server& server){
 	return *this;
 }
 
-ostream& operator<<(ostream& os, const Server& server){
-	os<<server.data<<endl;
+std::ostream& operator<<(std::ostream& os, const Server& server) {
+	os << server.data << std::endl;
 	return os;
 }
 
-void Server::consoleWrite(const Server& server){
-	cout<<server;
+void Server::consoleWrite() {
+	std::cout<<this->data << std::endl;
 }
 
-void Server::fileWrite(const Server& server){
-	ofstream file("server.log");
-	file<<server;
+void Server::fileWrite() {
+	std::ofstream file;
+	file.open("./server.log");
 	if(file){
-		file<<server;
+		file<<this->data << std::endl;
+		file.close();
 	}
 	else{
-		cout << "ERREUR: Impossible d'ouvrir le fichier" << endl;
+		std::cout << "ERREUR: Impossible d'ouvrir le fichier" << std::endl;
 	}
 }

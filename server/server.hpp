@@ -1,16 +1,16 @@
 #include <string>
+#include <iostream>
 
-using namespace std;
 class Server{
 	private:
-		string data;
+		std::string data;
 	public:
 		Server();
-		Server(string);
-		Server(const Server&);
+		Server(std::string str);
+		Server(const Server& server);
 		~Server();
-		const Server& operator=(const Server&);
-		ostream& operator<<(ostream&, const Server&);
-		void consoleWrite(string);
-		void fileWrite(string);
-}
+		Server& operator=(const Server& server);
+		friend std::ostream& operator<<(std::ostream& os, const Server& server);
+		void consoleWrite();
+		void fileWrite();
+};

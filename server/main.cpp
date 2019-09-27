@@ -3,5 +3,11 @@
 #include <string>
 
 int main(){
-		//dummy file for now
+	Server server2("Hello world !");
+	server2.consoleWrite();
+	Server srv;
+	srv.consoleWrite();
+	server2.fileWrite();
+	std::cout<<server2;
+	return 0;
 }

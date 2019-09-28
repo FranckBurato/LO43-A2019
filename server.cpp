@@ -20,9 +20,10 @@ server& server::operator=(const server& other)
 
 }
 
-server& server::operator<<(const server& other)
+void server::operator<<(const server& other,float donnée)
 {
-
+	consoleWrite(d);
+	fileWrite(d);
 }
 
 void consoleWrite (float d)

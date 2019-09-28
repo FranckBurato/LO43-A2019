@@ -12,5 +12,5 @@ class Server{
 		Server& operator=(const Server& server);
 		friend std::ostream& operator<<(std::ostream& os, const Server& server);
 		void consoleWrite();
-		void fileWrite();
+		void fileWrite(const std::string &name);
 };

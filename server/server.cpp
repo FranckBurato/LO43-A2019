@@ -11,33 +11,33 @@ Server::Server(std::string str):data(str){
 }
 
 Server::Server(const Server& server){
-	this->data = server.data;
+    this->data = server.data;
 }
 
 Server::~Server(){}
 
 Server& Server::operator=(const Server& server){
-	this->data=server.data;
-	return *this;
+    this->data=server.data;
+    return *this;
 }
 
 std::ostream& operator<<(std::ostream& os, const Server& server) {
-	os << server.data << std::endl;
-	return os;
+    os << server.data << std::endl;
+    return os;
 }
 
 void Server::consoleWrite() {
-	std::cout<<this->data << std::endl;
+    std::cout<<this->data << std::endl;
 }
 
-void Server::fileWrite() {
-	std::ofstream file;
-	file.open("./server.log");
-	if(file){
-		file<<this->data << std::endl;
-		file.close();
-	}
-	else{
-		std::cout << "ERREUR: Impossible d'ouvrir le fichier" << std::endl;
-	}
+void Server::fileWrite(const std::string &name) {
+    std::ofstream file;
+    file.open(name);
+    if(file){
+	file<<this->data << std::endl;
+	file.close();
+    }
+    else{
+	std::cout << "ERREUR: Impossible d'ouvrir le fichier" << std::endl;
+    }
 }

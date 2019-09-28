@@ -1,5 +1,7 @@
 #include <string>
 #include <iostream>
+#ifndef SERVER_H
+#define SERVER_H
 
 class Server{
 	private:
@@ -14,3 +16,4 @@ class Server{
 		void consoleWrite();
 		void fileWrite(const std::string &name);
 };
+#endif /* ifndef SERVER_H */

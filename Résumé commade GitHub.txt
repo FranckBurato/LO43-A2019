@@ -1,0 +1,47 @@
+• Git config
+
+Commande de configuration de l'utilisateur. Permet de configurer les préférences de l'utilisateur : email, le nom d'utilisateur, format de fichier, ...
+(git config --global user.name "benjaminkieffer-01")
+ou user.email ou core.editor ou merge.tool
+
+• Git init
+
+commande utilisée pour créer un nouveau dépôt GIT
+("git init")
+
+• Git status
+
+cette commande affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être éjoutés ou validés.
+("git status")
+
+• Git merge
+Permet de fusionner un commit d'une branche annexe avec le commit principal
+se placer sur le commit a fusionner avec "git checkout maBrancheAFusionner" et faire "git merge maBranchePrincipale"
+
+• Git diff
+
+Cette commande afficher la différence entre le contenu du dernier commit et celui du répertoire de travail.
+("git diff HEAD")
+Affiche la différence entre le contenu pointé par 1 et celui pointé par B
+("git diff A B")
+Affiche la différence entre un dossier présent sur deux branches
+("git diff master..MA_BRANCHE chemin/vers/mon_dossier")
+
+
+• Git blame
+
+cette commande est utilisé pour trouver l'auteur du commit en question
+
+
+
+
+Autres commandes utilisées lors de la manipulation (aide personnel) :
+
+git branch -f maBranche C5 : bouge le marqueur maBranche sur la case commit C5 de force
+git checkout HEAD~1 : bouge sur le marqueur HEAD en le reculant de un commit
+git branch -f bugFix HEAD~1 : bouge le marqueur bugFix 1 rang derrière celui de HEAD
+git reset HEAD~1 : fait remonter notre marqueur d'un commit en annulant le dernier
+git revert HEAD : crée un commit image comme si le commit voulant etre effacé n'avait pas eu lieu, sauf qu'il n'est pas effacé
+git cherry-pick C2 C4 : la commande copie C2 C4 en dessous de notre pointeur HEAD (la meme que rebase sauf que garde la branche originel de C2 C4, crée deux copies dans la branche voulu)
+git rebase -i overHere : rebase les commit selectionné de ieme au dessus de l'emplacement ciblé a partir de la branche overHere
+git log -n X : afficher les X derniers commits

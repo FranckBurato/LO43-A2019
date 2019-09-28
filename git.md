@@ -3,12 +3,12 @@
 ## `git status`
 Affiche les informations sur :
 - la différence avec le remote
-- les modifications qui seront validées apres un commit
+- les modifications qui seront validées après un commit
 - les modifications qui ne seront pas validées après un commit
- -les fichiers non suivis
+- les fichiers non suivis
 
 ## `git diff`
-Affiche les différence entre la copie de travail et le dernier comit local par fichier
+Affiche les différences par fichiers entre la copie de travail et le dernier commit local
 
 ## `git blame`
 Affiche pour un fichier, les commits associés à chaque ligne ainsi que son auteur

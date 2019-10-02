@@ -1,6 +1,5 @@
 #include "server.h"
-#include <fstream>
-#include <iostream>
+
 
 using namespace std;
 
@@ -23,29 +22,35 @@ Server& Server::operator=(const Server& serv){
 }
 Server::~Server(){
 }
-void Server::consoleWrite(){
+void Server::consoleWrite()const{
     cout<<"capteur 1: "<<this->capteur1<<endl<<"capteur 2: "<<this->capteur2<<endl<<"capteur 3: "<<this->capteur3<<endl;
 }
-void Server::fileWrite(){
+void Server::fileWrite()const{
 
     ofstream mylog;
     mylog.open("log/log_file_capteur1.txt", ios::out | ios::app );
-    mylog << this->capteur1 <<"\n";
+    mylog << this->capteur1 <<"\n\n";
     mylog.close();
     mylog.open("log/log_file_capteur2.txt", ios::out | ios::app );
-    mylog << this->capteur2 <<"\n";
+    mylog << this->capteur2 <<"\n\n";
     mylog.close();
     mylog.open("log/log_file_capteur3.txt", ios::out | ios::app );
-    mylog << this->capteur3 <<"\n";
+    mylog << this->capteur3 <<"\n\n";
     mylog.close();
 
 }
-
+ostream& operator << (ostream& sortie, const Server & n){
+    n.fileWrite();
+    n.consoleWrite();
+    return sortie;
+}
 int main(int argc, char *argv[])
 {
     Server serv1(10,5,6);
     serv1.consoleWrite();
     serv1.fileWrite();
+    Server serv2 = serv1;
+    cout<<serv2<<endl<<serv1<<endl;
     return 0;
 }
 

@@ -4,7 +4,7 @@
 
 Server::Server(){}
 
-Server::Server(std::string path){
+Server::Server(std::string& path){
 	this->path = path;
 }
 
@@ -14,16 +14,16 @@ Server::Server(const Server& autre){
 
 Server::~Server(){}
 
-const Server& Server::operator=(const Server& autre){
+Server& Server::operator=(const Server& autre) {
 	this->path = autre.path;
-	return autre;
+	return *this;
 }
 
-void Server::consoleWrite(std::string input){
+void Server::consoleWrite(const std::string& input){
 	std::cout << input << std::endl;
 }
 
-void Server::fileWrite(std::string input){
+void Server::fileWrite(const std::string& input){
 	std::ofstream log(path.c_str());
 	if(log){
 		log << input << std::endl;

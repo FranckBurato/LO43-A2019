@@ -6,10 +6,10 @@ class Server{
 
 	public:
 		Server();
-		Server(std::string);
+		Server(std::string&);
 		Server(const Server&);
 		~Server();
-		const Server& operator=(const Server&);
-		void consoleWrite(std::string);
-		void fileWrite(std::string);
+		Server& operator=(const Server&);
+		void consoleWrite(const std::string&);
+		void fileWrite(const std::string&);
 };

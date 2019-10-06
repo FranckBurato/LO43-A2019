@@ -7,4 +7,4 @@ include_directories(.)
 
 add_executable(Server
         Server.cpp
-        Server.hpp)
+        Server.hpp main.cpp)

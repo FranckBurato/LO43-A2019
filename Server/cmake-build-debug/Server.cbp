@@ -88,6 +88,9 @@
 		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Server.hpp">
 			<Option target="Server"/>
 		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/main.cpp">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

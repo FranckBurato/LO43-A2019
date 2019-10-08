@@ -2,6 +2,9 @@
 #include "Server.hpp"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    Server server;
+    server.fileWrite("coucou");
+    server.consoleWrite("coucou");
+    std::cin >> server;
     return 0;
 }

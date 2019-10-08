@@ -13,3 +13,5 @@ class Server{
 		void consoleWrite(const std::string&);
 		void fileWrite(const std::string&);
 };
+
+std::istream& operator>>(std::istream&, Server&);

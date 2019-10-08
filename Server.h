@@ -7,7 +7,12 @@ class Server
 	public :
 		Server();
 		Server (const Server&);
+		Server(string);
 		~Server ();
-		void helloWorld();
-		friend ostream& operator << (ostream& ,const Server& s);
+		void consoleWrite();
+		void fileWrite();
+		friend ostream& operator << (ostream&, const Server& s);
+		Server& operator=(const Server&);
+	private :
+		string filePath;
 };

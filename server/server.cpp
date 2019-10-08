@@ -36,3 +36,13 @@ void Server::fileWrite(const Server& F){
 		cout << "Erreur" << endl;
 	}
 }
+
+Server& Server::operator=(const Server& server){
+    this->data=server.data;
+    return *this;
+}
+
+ostream& operator<<(ostream& os, const Server& server){
+    os<<server.data<<endl;
+    return os;
+}

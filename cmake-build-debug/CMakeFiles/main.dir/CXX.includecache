@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h
+Sensor.h
+C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-TP/src/Server/Server.cpp
+iostream
+-
+cstdio
+-
+Server.h
+C:/Coding/C C++/LO43-TP/src/Server/Server.h
+../Sensor/Humidity.h
+C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h
+
+C:/Coding/C C++/LO43-TP/src/Server/Server.h
+iostream
+-
+../Sensor/Humidity.h
+C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h
+

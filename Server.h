@@ -6,6 +6,8 @@ class Server
 {
 	public :
 		Server();
+		Server (const Server&);
+		~Server ();
 		void helloWorld();
-		ostream& operator << (ostream&);
+		friend ostream& operator << (ostream& ,const Server& s);
 };

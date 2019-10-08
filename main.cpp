@@ -6,6 +6,7 @@ using namespace std;
 int main () 
 {
 	Server h;
-	cout << h;
+	Server j(h);
+	cout << j;
 }
 

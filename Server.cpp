@@ -5,13 +5,14 @@ using namespace std;
 
 Server::Server(){}
 
-void Server::helloWorld()
-{
-	cout << "Hello world" << endl;
-}
+Server::Server(const Server& autre){}
 
-ostream& Server::operator<<(ostream& os)
+Server::~Server(){}
+
+ostream& operator<<(ostream& os, const Server& s)
 {
-	os << "Hello World" << endl;
+	os << "test" << endl;
 	return os;
 }
+
+	

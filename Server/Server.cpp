@@ -14,7 +14,7 @@ Server::Server(const Server& autre){
 	this->path = autre.path;
 }
 
-Server::~Server(){}
+Server::~Server()= default;
 
 Server& Server::operator=(const Server& autre) {
 	this->path = autre.path;

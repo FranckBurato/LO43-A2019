@@ -21,7 +21,7 @@ void Scheduler::transInfo(){
     this->serv.dataRcv(this->h.sendData());
     this->serv.dataRcv(this->l.sendData());
     this->serv.dataRcv(this->s.sendData());
-    cout<<"test redifinition opérateur <<"<<endl;
-    cout<<this->serv<<14<<endl;
-    cout<<this->serv<<"14"<<endl;
+    cout<<"test redifinition operateur <<"<<endl;
+    this->serv<<14;
+    this->serv<<"14";
 }

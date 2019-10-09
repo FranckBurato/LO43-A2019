@@ -6,21 +6,25 @@ using namespace std;
 
 class Server{
     private :
-    string message;
+    int nbrOfSensors;
+    bool consolActivation;
+    bool logActivation;
     public:
         Server(); // Constructeur par défaut
-        Server(string message); // Constructeur avec argument
+        Server(int nbrOfSensors, bool consolActivation,bool logActivation); // Constructeur avec argument
         Server(const Server&); // Constructeur par recopie
 
         //Surcharge operator
 
         Server& operator = (const Server&);
-        Server& operator << (const Server&);
+        void operator << (int dataSens);
+        friend void operator<<(string, int);
+      
 
         ~Server(); // Destructeur
 
-        void consoleWrite(string message); // attribut message a rajouter
-        void fileWrite(string message);  // attribut message a rajouter
-        void setMessage(string message);
-        string getMessage();
+        void dataRcv(int dataSens);
+        void consoleWrite(int dataSens_p); // attribut message a rajouter
+        void fileWrite(int dataSens_p);  // attribut message a rajouter
+
 };

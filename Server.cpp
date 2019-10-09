@@ -1,30 +1,48 @@
 #include "Server.h"
 //Constructeur par défaut
-Server::Server(){
-    message = "";
-}
+Server::Server():nbrOfSensors(), consolActivation(),
+            logActivation(){}
+ 
 
 //Constructeur avec argument
-Server::Server(string message){
-    this->message = message;
+Server::Server(int nbrOfSensors,bool consolActivation,bool logActivation){
+    this->nbrOfSensors = nbrOfSensors;
+    this->consolActivation = consolActivation;
+    this->logActivation = logActivation;
 }
 
 //Constructeur par recopie
 Server::Server(const Server& server){
-        this -> message= server.message;
+        this -> nbrOfSensors= server.nbrOfSensors;
+        this->consolActivation = server.consolActivation;
+        this->logActivation = server.logActivation;
 }
 
 Server& Server:: operator=(const Server& server){
-    this->message = server.message;
+     if(this != &server){
+        this->nbrOfSensors = server.nbrOfSensors;
+        this->consolActivation = server.consolActivation;
+        this->logActivation = server.logActivation;
+    }
     return *this;
 }
 
-Server& Server:: operator <<(const Server& server){
-    consoleWrite(server.message);
-    return *this;
+void Server::operator<<(int dataSens){
+    this->consoleWrite(dataSens);
+   
 }
+
+void operator<<(string dataSens_toString, int dataSens){
+    ofstream mylog;
+    mylog.open("log/log_file_capteur.txt", ios::out | ios::app );
+    mylog << dataSens <<"\n\n";
+    mylog.close();
+}
+
+
+
 /* Server& Server:: operator <<(const Server& server){
-    fileWrite(Server.message);
+    fileWrite(Server.nbrOfSensors);
     return *this;
 }*/
 
@@ -34,32 +52,22 @@ Server::~Server(){
 }
 
 
-
-void Server::consoleWrite(string message){
-    cout << this->message;
-};
-
-void Server::fileWrite(string message){
-    ofstream files;
-    files.open("file.txt");
-    files << message << endl;
-    files.close();
-
-};
-
-void Server::setMessage(string messages){
-     this->message = messages;
+void Server::consoleWrite(int dataSens_p){
+    cout << dataSens_p << "\n";
+}
+void Server::fileWrite(int dataSens_p){
+    ofstream logs;
+    logs.open("log_capteur.txt", ios::out | ios::app );
+    logs << dataSens_p <<"\n\n";
+    logs.close();
+}
+ 
+void Server::dataRcv(int dataSens){
+    if(this->consolActivation==true){
+        this->consoleWrite(dataSens);
+    }
+    if(this->logActivation==true){
+        this->fileWrite(dataSens);
+    }
 }
 
-string Server::getMessage(){
-     return this->message;
-}
-
-int main() 
-{
-    Server server("consoleWrite\n");
-    server.consoleWrite(server.getMessage());
-    server.setMessage("fileWrite");
-    server.fileWrite(server.getMessage());
-    return 0;
-}

@@ -176,6 +176,33 @@ src/Sensor/Humidity.cpp.s:
 	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Humidity.cpp.s
 .PHONY : src/Sensor/Humidity.cpp.s
 
+src/Sensor/Light.obj: src/Sensor/Light.cpp.obj
+
+.PHONY : src/Sensor/Light.obj
+
+# target to build an object file
+src/Sensor/Light.cpp.obj:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Light.cpp.obj
+.PHONY : src/Sensor/Light.cpp.obj
+
+src/Sensor/Light.i: src/Sensor/Light.cpp.i
+
+.PHONY : src/Sensor/Light.i
+
+# target to preprocess a source file
+src/Sensor/Light.cpp.i:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Light.cpp.i
+.PHONY : src/Sensor/Light.cpp.i
+
+src/Sensor/Light.s: src/Sensor/Light.cpp.s
+
+.PHONY : src/Sensor/Light.s
+
+# target to generate assembly for a file
+src/Sensor/Light.cpp.s:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Light.cpp.s
+.PHONY : src/Sensor/Light.cpp.s
+
 src/Sensor/Sound.obj: src/Sensor/Sound.cpp.obj
 
 .PHONY : src/Sensor/Sound.obj
@@ -202,6 +229,33 @@ src/Sensor/Sound.s: src/Sensor/Sound.cpp.s
 src/Sensor/Sound.cpp.s:
 	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Sound.cpp.s
 .PHONY : src/Sensor/Sound.cpp.s
+
+src/Sensor/Temperature.obj: src/Sensor/Temperature.cpp.obj
+
+.PHONY : src/Sensor/Temperature.obj
+
+# target to build an object file
+src/Sensor/Temperature.cpp.obj:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Temperature.cpp.obj
+.PHONY : src/Sensor/Temperature.cpp.obj
+
+src/Sensor/Temperature.i: src/Sensor/Temperature.cpp.i
+
+.PHONY : src/Sensor/Temperature.i
+
+# target to preprocess a source file
+src/Sensor/Temperature.cpp.i:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Temperature.cpp.i
+.PHONY : src/Sensor/Temperature.cpp.i
+
+src/Sensor/Temperature.s: src/Sensor/Temperature.cpp.s
+
+.PHONY : src/Sensor/Temperature.s
+
+# target to generate assembly for a file
+src/Sensor/Temperature.cpp.s:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Temperature.cpp.s
+.PHONY : src/Sensor/Temperature.cpp.s
 
 src/Server/Server.obj: src/Server/Server.cpp.obj
 
@@ -272,9 +326,15 @@ help:
 	@echo ... src/Sensor/Humidity.obj
 	@echo ... src/Sensor/Humidity.i
 	@echo ... src/Sensor/Humidity.s
+	@echo ... src/Sensor/Light.obj
+	@echo ... src/Sensor/Light.i
+	@echo ... src/Sensor/Light.s
 	@echo ... src/Sensor/Sound.obj
 	@echo ... src/Sensor/Sound.i
 	@echo ... src/Sensor/Sound.s
+	@echo ... src/Sensor/Temperature.obj
+	@echo ... src/Sensor/Temperature.i
+	@echo ... src/Sensor/Temperature.s
 	@echo ... src/Server/Server.obj
 	@echo ... src/Server/Server.i
 	@echo ... src/Server/Server.s

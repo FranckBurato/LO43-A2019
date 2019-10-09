@@ -3,7 +3,7 @@
 #include "Scheduler.h"
 
 Scheduler::Scheduler() :
-           server(), humidity(), sound()
+           server(), humidity(), sound(), temperature(), light()
 {}
 
 void Scheduler::run() {
@@ -24,6 +24,23 @@ void Scheduler::run() {
             Server::fileWrite(ss.str(), 1);
         } this->sound.aleaGenVal();
 
+        if (this->server.consoleActivation) {
+            Server::consoleWrite(this->temperature.sendData());
+        } if (this->server.logActivation) {
+            std::stringstream ss;
+            ss << this->temperature.sendData();
+            Server::fileWrite(ss.str(), 1);
+        } this->temperature.aleaGenVal();
+
+        if (this->server.consoleActivation) {
+            Server::consoleWrite(this->light.sendData());
+        } if (this->server.logActivation) {
+            std::stringstream ss;
+            ss << this->light.sendData();
+            Server::fileWrite(ss.str(), 1);
+        } this->light.aleaGenVal();
+
         Sleep(1000);
+        system("cls");
     }
 }

@@ -92,6 +92,12 @@
 		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h">
 			<Option target="main"/>
 		</Unit>
+		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Light.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Light.h">
+			<Option target="main"/>
+		</Unit>
 		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h">
 			<Option target="main"/>
 		</Unit>
@@ -99,6 +105,12 @@
 			<Option target="main"/>
 		</Unit>
 		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Sound.h">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Temperature.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Temperature.h">
 			<Option target="main"/>
 		</Unit>
 		<Unit filename="C:/Coding/C C++/LO43-TP/src/Server/Server.cpp">

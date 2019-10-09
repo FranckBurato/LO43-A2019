@@ -6,7 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Coding/C C++/LO43-TP/src/Scheduler/Scheduler.cpp" "C:/Coding/C C++/LO43-TP/cmake-build-debug/CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj"
   "C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.cpp" "C:/Coding/C C++/LO43-TP/cmake-build-debug/CMakeFiles/main.dir/src/Sensor/Humidity.cpp.obj"
+  "C:/Coding/C C++/LO43-TP/src/Sensor/Light.cpp" "C:/Coding/C C++/LO43-TP/cmake-build-debug/CMakeFiles/main.dir/src/Sensor/Light.cpp.obj"
   "C:/Coding/C C++/LO43-TP/src/Sensor/Sound.cpp" "C:/Coding/C C++/LO43-TP/cmake-build-debug/CMakeFiles/main.dir/src/Sensor/Sound.cpp.obj"
+  "C:/Coding/C C++/LO43-TP/src/Sensor/Temperature.cpp" "C:/Coding/C C++/LO43-TP/cmake-build-debug/CMakeFiles/main.dir/src/Sensor/Temperature.cpp.obj"
   "C:/Coding/C C++/LO43-TP/src/Server/Server.cpp" "C:/Coding/C C++/LO43-TP/cmake-build-debug/CMakeFiles/main.dir/src/Server/Server.cpp.obj"
   "C:/Coding/C C++/LO43-TP/src/main.cpp" "C:/Coding/C C++/LO43-TP/cmake-build-debug/CMakeFiles/main.dir/src/main.cpp.obj"
   )

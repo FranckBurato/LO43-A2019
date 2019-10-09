@@ -4,25 +4,37 @@
 CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj: ../src/Scheduler/Scheduler.cpp
 CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj: ../src/Scheduler/Scheduler.h
 CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj: ../src/Sensor/Humidity.h
+CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj: ../src/Sensor/Light.h
 CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj: ../src/Sensor/Sensor.h
 CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj: ../src/Sensor/Sound.h
+CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj: ../src/Sensor/Temperature.h
 CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj: ../src/Server/Server.h
 
 CMakeFiles/main.dir/src/Sensor/Humidity.cpp.obj: ../src/Sensor/Humidity.cpp
 CMakeFiles/main.dir/src/Sensor/Humidity.cpp.obj: ../src/Sensor/Humidity.h
 CMakeFiles/main.dir/src/Sensor/Humidity.cpp.obj: ../src/Sensor/Sensor.h
 
+CMakeFiles/main.dir/src/Sensor/Light.cpp.obj: ../src/Sensor/Light.cpp
+CMakeFiles/main.dir/src/Sensor/Light.cpp.obj: ../src/Sensor/Light.h
+CMakeFiles/main.dir/src/Sensor/Light.cpp.obj: ../src/Sensor/Sensor.h
+
 CMakeFiles/main.dir/src/Sensor/Sound.cpp.obj: ../src/Sensor/Sensor.h
 CMakeFiles/main.dir/src/Sensor/Sound.cpp.obj: ../src/Sensor/Sound.cpp
 CMakeFiles/main.dir/src/Sensor/Sound.cpp.obj: ../src/Sensor/Sound.h
+
+CMakeFiles/main.dir/src/Sensor/Temperature.cpp.obj: ../src/Sensor/Sensor.h
+CMakeFiles/main.dir/src/Sensor/Temperature.cpp.obj: ../src/Sensor/Temperature.cpp
+CMakeFiles/main.dir/src/Sensor/Temperature.cpp.obj: ../src/Sensor/Temperature.h
 
 CMakeFiles/main.dir/src/Server/Server.cpp.obj: ../src/Server/Server.cpp
 CMakeFiles/main.dir/src/Server/Server.cpp.obj: ../src/Server/Server.h
 
 CMakeFiles/main.dir/src/main.cpp.obj: ../src/Scheduler/Scheduler.h
 CMakeFiles/main.dir/src/main.cpp.obj: ../src/Sensor/Humidity.h
+CMakeFiles/main.dir/src/main.cpp.obj: ../src/Sensor/Light.h
 CMakeFiles/main.dir/src/main.cpp.obj: ../src/Sensor/Sensor.h
 CMakeFiles/main.dir/src/main.cpp.obj: ../src/Sensor/Sound.h
+CMakeFiles/main.dir/src/main.cpp.obj: ../src/Sensor/Temperature.h
 CMakeFiles/main.dir/src/main.cpp.obj: ../src/Server/Server.h
 CMakeFiles/main.dir/src/main.cpp.obj: ../src/main.cpp
 

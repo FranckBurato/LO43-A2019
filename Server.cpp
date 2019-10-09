@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Server::Server(){}
+Server::Server():filePath("null.txt"){}
 
 Server::Server(const Server& autre):filePath(autre.filePath){}
 
@@ -14,14 +14,16 @@ Server::~Server(){}
 
 ostream& operator<<(ostream& os, const Server& s)
 {
-	const char* test = "un test";
-	ofstream file(s.filePath);
-	file<<test<<endl;
-	file.close();
-
-	os <<test<< endl;
+	os <<"un test"<< endl;
 	return os;
 }
+
+ofstream& operator<<(ofstream& of, const Server& s)
+{	
+	of<<"le test"<<endl;
+	return of;
+}
+
 
 Server& Server::operator=(const Server& autre)
 {
@@ -32,8 +34,11 @@ Server& Server::operator=(const Server& autre)
 void Server::fileWrite ()
 {
 	ofstream file(this->filePath);
-	file<<"test"<<endl;
-	file.close();
+	if (file)
+	{
+		file<<*this;
+		file.close();
+	}
 }
 
 void Server::consoleWrite ()

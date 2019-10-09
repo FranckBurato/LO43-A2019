@@ -1,20 +1,30 @@
 class Server
 {
 	private:
-		float* cHum;
-		float* cLum;
-		float* cTemp;
-		float* cSon;
+		int nbrOfSensors;
+		bool consolActivation;
+		bool logActivation;
 	public:
-		Server();
-		Server(const Server&);
-		~Server();
+		Server()
+		{
+			nbrOfSensors();
+			consolActivation();
+			logActivation();
+		};
+		Server(const Server&autre)
+		{
+			this->autre.nbrOfSensors=autre.nbrOfSensors;
+			this->consolActivation=autre.consolActivation;
+			this->logActivation=autre.logActivation;
+			return *this;
+		};
+		~Server(){};
 		Server& operator=(const Server&);
 		{
-			this->cHum;
-			this->cLum;
-			this->cTemp;
-			this->cSon;
-		}
-		Server& operator<<(
+			this->autre.nbrOfSensors=autre.nbrOfSensors;
+			this->consolActivation=autre.consolActivation;
+			this->logActivation=autre.logActivation;
+			return *this;
+		};
+		operator<<(
 }

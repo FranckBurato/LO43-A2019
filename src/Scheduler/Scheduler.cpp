@@ -29,7 +29,7 @@ void Scheduler::run() {
         } if (this->server.logActivation) {
             std::stringstream ss;
             ss << this->temperature.sendData();
-            Server::fileWrite(ss.str(), 1);
+            Server::fileWrite(ss.str(), 2);
         } this->temperature.aleaGenVal();
 
         if (this->server.consoleActivation) {
@@ -37,7 +37,7 @@ void Scheduler::run() {
         } if (this->server.logActivation) {
             std::stringstream ss;
             ss << this->light.sendData();
-            Server::fileWrite(ss.str(), 1);
+            Server::fileWrite(ss.str(), 3);
         } this->light.aleaGenVal();
 
         Sleep(1000);

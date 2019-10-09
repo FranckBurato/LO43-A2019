@@ -122,6 +122,87 @@ Server/fast:
 	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/build
 .PHONY : Server/fast
 
+Humidity.obj: Humidity.cpp.obj
+
+.PHONY : Humidity.obj
+
+# target to build an object file
+Humidity.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Humidity.cpp.obj
+.PHONY : Humidity.cpp.obj
+
+Humidity.i: Humidity.cpp.i
+
+.PHONY : Humidity.i
+
+# target to preprocess a source file
+Humidity.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Humidity.cpp.i
+.PHONY : Humidity.cpp.i
+
+Humidity.s: Humidity.cpp.s
+
+.PHONY : Humidity.s
+
+# target to generate assembly for a file
+Humidity.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Humidity.cpp.s
+.PHONY : Humidity.cpp.s
+
+Light.obj: Light.cpp.obj
+
+.PHONY : Light.obj
+
+# target to build an object file
+Light.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Light.cpp.obj
+.PHONY : Light.cpp.obj
+
+Light.i: Light.cpp.i
+
+.PHONY : Light.i
+
+# target to preprocess a source file
+Light.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Light.cpp.i
+.PHONY : Light.cpp.i
+
+Light.s: Light.cpp.s
+
+.PHONY : Light.s
+
+# target to generate assembly for a file
+Light.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Light.cpp.s
+.PHONY : Light.cpp.s
+
+Sensor.obj: Sensor.cpp.obj
+
+.PHONY : Sensor.obj
+
+# target to build an object file
+Sensor.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sensor.cpp.obj
+.PHONY : Sensor.cpp.obj
+
+Sensor.i: Sensor.cpp.i
+
+.PHONY : Sensor.i
+
+# target to preprocess a source file
+Sensor.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sensor.cpp.i
+.PHONY : Sensor.cpp.i
+
+Sensor.s: Sensor.cpp.s
+
+.PHONY : Sensor.s
+
+# target to generate assembly for a file
+Sensor.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sensor.cpp.s
+.PHONY : Sensor.cpp.s
+
 Server.obj: Server.cpp.obj
 
 .PHONY : Server.obj
@@ -148,6 +229,60 @@ Server.s: Server.cpp.s
 Server.cpp.s:
 	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Server.cpp.s
 .PHONY : Server.cpp.s
+
+Sound.obj: Sound.cpp.obj
+
+.PHONY : Sound.obj
+
+# target to build an object file
+Sound.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sound.cpp.obj
+.PHONY : Sound.cpp.obj
+
+Sound.i: Sound.cpp.i
+
+.PHONY : Sound.i
+
+# target to preprocess a source file
+Sound.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sound.cpp.i
+.PHONY : Sound.cpp.i
+
+Sound.s: Sound.cpp.s
+
+.PHONY : Sound.s
+
+# target to generate assembly for a file
+Sound.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sound.cpp.s
+.PHONY : Sound.cpp.s
+
+Temperature.obj: Temperature.cpp.obj
+
+.PHONY : Temperature.obj
+
+# target to build an object file
+Temperature.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Temperature.cpp.obj
+.PHONY : Temperature.cpp.obj
+
+Temperature.i: Temperature.cpp.i
+
+.PHONY : Temperature.i
+
+# target to preprocess a source file
+Temperature.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Temperature.cpp.i
+.PHONY : Temperature.cpp.i
+
+Temperature.s: Temperature.cpp.s
+
+.PHONY : Temperature.s
+
+# target to generate assembly for a file
+Temperature.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Temperature.cpp.s
+.PHONY : Temperature.cpp.s
 
 main.obj: main.cpp.obj
 
@@ -185,9 +320,24 @@ help:
 	@echo ... Server
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Humidity.obj
+	@echo ... Humidity.i
+	@echo ... Humidity.s
+	@echo ... Light.obj
+	@echo ... Light.i
+	@echo ... Light.s
+	@echo ... Sensor.obj
+	@echo ... Sensor.i
+	@echo ... Sensor.s
 	@echo ... Server.obj
 	@echo ... Server.i
 	@echo ... Server.s
+	@echo ... Sound.obj
+	@echo ... Sound.i
+	@echo ... Sound.s
+	@echo ... Temperature.obj
+	@echo ... Temperature.i
+	@echo ... Temperature.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

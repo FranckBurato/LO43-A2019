@@ -41,7 +41,6 @@ std::istream& operator>>(std::istream& in, Server& server){
     server.fileWrite(input);
     server.consoleWrite(input);
     return in;
-
 }
 
 

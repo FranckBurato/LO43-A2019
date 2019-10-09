@@ -82,10 +82,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Humidity.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Humidity.h">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Light.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Light.h">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sensor.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sensor.h">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Server.cpp">
 			<Option target="Server"/>
 		</Unit>
 		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Server.hpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sound.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sound.h">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Temperature.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Temperature.h">
 			<Option target="Server"/>
 		</Unit>
 		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/main.cpp">

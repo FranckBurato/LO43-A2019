@@ -28,6 +28,7 @@ int Sensor::sendData(){
 };
 
 int Sensor::aleaGenVal(){
-    srand(time(0));
-    return rand() %100;
+    srand(time(NULL));
+    valSense= rand()%100;
+    return valSense;
 };

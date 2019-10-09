@@ -19,7 +19,7 @@ public:
 		return *this;
 	};
 	~Server(){};
-	Server& operator=(const Server&);
+	Server& operator=(const Server& autre);
 	{
 		this->nbrOfSensors=autre.nbrOfSensors;
 		this->consolActivation=autre.consolActivation;

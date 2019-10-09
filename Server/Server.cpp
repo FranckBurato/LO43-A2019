@@ -1,28 +1,40 @@
 #include <iostream>
 #include "Server.h"
 
-Server::Server(int capteur) {
-	this->capteur = capteur;
-}
-Server::~Server() {}
+Server::Server() {
 
-Server::Server(const Server& server) {
-	this->capteur = server.capteur;
+	return;
 }
+Server::Server(int nbrOfSensors_p, bool consolActivation, bool logActivation) {
+	return;
+}
+Server::Server(const Server& server) {
+	return;
+}
+Server::~Server() {
+	return;
+}
+
+
 Server& Server::operator=(const Server& server) {
-	this->capteur = server.capteur;
 	return *this;	
 }
-void Server::operator>>() {
-
+void Server::operator>>(int dataSens) {
+	return;
+}
+void Server::operator>>(const Server & server) {
+	return;
+}
+void Server::operator>>(std::string dataSens_toString) {
+	return;
 }
 
 
 
-void Server::consoleWrite() {
-	std::cout << this->capteur << std::endl;
+void Server::consoleWrite(int dataSens_p) {
+	return;
 }
-void Server::fileWrite() {
+void Server::fileWrite(int dataSens_p) {
 	//Un jour il y aura quelque chose
 	std::cout << "Hey c'est fileWrite ici" << std::endl;
 }

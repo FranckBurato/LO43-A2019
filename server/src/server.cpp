@@ -7,15 +7,11 @@
 Server::Server(): temperature(), humidity(), brightness(), loudness(){
 }
 
-//Server::Server(std::string str):data(str){
-//}
-
 Server::Server(const Server& server):temperature(server.temperature), humidity(server.humidity), brightness(server.brightness), loudness(server.loudness){}
 
 Server::~Server(){}
 
 Server& Server::operator=(const Server& server){
-    //this->data=server.data;
     this->temperature = server.temperature;
     this->humidity = server.humidity;
     this->brightness = server.brightness;

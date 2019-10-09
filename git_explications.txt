@@ -1,0 +1,28 @@
+-Git config :
+Commande de configuration de l'utilisateur. Permet de configurer les préférences de l'utilisateur : email, le nom d'utilisateur, format de fichier, ...
+(git config --global user.name "GillianBA")
+ou user.email ou core.editor ou merge.tool
+
+-Git init :
+commande utilisée pour créer un nouveau dépôt GIT
+("git init")
+
+-Git status :
+cette commande affiche la liste des fichiers modifiés ainsi que les fichiers qui doivent encore être éjoutés ou validés.
+("git status")
+
+-Git merge :
+Permet de fusionner un commit d'une branche annexe avec le commit principal
+se placer sur le commit a fusionner avec "git checkout maBrancheAFusionner" et faire "git merge maBranchePrincipale"
+
+-Git diff :
+Cette commande afficher la différence entre le contenu du dernier commit et celui du répertoire de travail.
+("git diff HEAD")
+Affiche la différence entre le contenu pointé par 1 et celui pointé par B
+("git diff A B")
+Affiche la différence entre un dossier présent sur deux branches
+("git diff master..MA_BRANCHE chemin/vers/mon_dossier")
+
+
+-Git blame :
+Cette commande est utilisé pour trouver l'auteur du commit en question

@@ -36,10 +36,10 @@ void Server::operator<<(Data data){
 	cout << "Donnée de capteurs : " + data.getSensorData();
 }
 
-void Server::operator<<(string dataToString, string sensorName){
+void Server::operator<<(Data data){
 	ofstream log;
-	log.open("logs/" + sensorName + ".txt");
-	log << dataToString + "\n\n";
+	log.open("logs/" + data.getSensorName() + ".txt");
+	log << data.getSensorData() + "\n\n";
 }
 
 void Server::dataReceive(Data data){

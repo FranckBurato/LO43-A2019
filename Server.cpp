@@ -17,13 +17,17 @@ ostream& operator<<(ostream& os, const Server& s)
 	os <<"un test"<< endl;
 	return os;
 }
-
+/*
+	operator<<(int)
+*/
 ofstream& operator<<(ofstream& of, const Server& s)
 {	
 	of<<"le test"<<endl;
 	return of;
 }
-
+/*
+	operator<<(string,int)
+*/
 
 Server& Server::operator=(const Server& autre)
 {

@@ -4,17 +4,16 @@
 #include "Sensor.h"
 
 class Temperature: public Sensor<float> {
+protected:
+    float aleaGenVal() override;
+    friend class Scheduler;
+
 public:
     Temperature();
     Temperature(Temperature&) = default;
 
     Temperature& operator=(const Temperature&) = default;
     ~Temperature() = default;
-
-private:
-    float aleaGenVal() override;
-
-    friend class Scheduler;
 };
 
 #endif //LO43_A2019_TEMPERATURE_H

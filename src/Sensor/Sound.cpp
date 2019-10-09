@@ -4,8 +4,10 @@ using namespace std;
 
 #include "Sound.h"
 
-Sound::Sound() {
+Sound::Sound() : Sensor()
+{
     this->valSense = this->aleaGenVal();
+    this->delay = 4;
 }
 
 int Sound::aleaGenVal() {

@@ -5,29 +5,40 @@ template<typename T>
 class Sensor {
 protected:
     T valSense;
+    int delay;
+    int lastUpdate = 0;
+
+    virtual T aleaGenVal() = 0;
+    friend class Scheduler;
+
 public:
     Sensor();
-    Sensor(Sensor& other);
-    explicit Sensor(T value);
+    Sensor(Sensor&);
+    Sensor(T, int, int);
     ~Sensor();
 
     T sendData();
-
-private:
-    virtual T aleaGenVal()=0;
 };
 
 template<typename T>
-Sensor<T>::Sensor() = default;
+Sensor<T>::Sensor() {
+    this->valSense = 0;
+    this->delay = 1;
+    this->lastUpdate = 0;
+};
 
 template<typename T>
 Sensor<T>::Sensor(Sensor<T> &other) {
     this->valSense = other.valSense;
+    this->delay = other.delay;
+    this->lastUpdate = other.lastUpdate;
 }
 
 template<typename T>
-Sensor<T>::Sensor(T val) {
+Sensor<T>::Sensor(T val, int delay, int lastUpdate) {
     this->valSense = val;
+    this->delay = delay;
+    this->lastUpdate = lastUpdate;
 }
 
 template<typename T>

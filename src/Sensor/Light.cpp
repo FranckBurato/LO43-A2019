@@ -4,8 +4,10 @@ using namespace std;
 
 #include "Light.h"
 
-Light::Light() {
+Light::Light() : Sensor()
+{
     this->valSense = this->aleaGenVal();
+    this->delay = 3;
 }
 
 bool Light::aleaGenVal() {

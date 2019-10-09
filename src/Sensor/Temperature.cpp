@@ -4,8 +4,10 @@ using namespace std;
 
 #include "Temperature.h"
 
-Temperature::Temperature() {
+Temperature::Temperature() : Sensor()
+{
     this->valSense = this->aleaGenVal();
+    this->delay = 5;
 }
 
 float Temperature::aleaGenVal() {

@@ -1,5 +1,5 @@
 #include <sstream>
-#include <winbase.h>
+#include <ctime>
 #include "Scheduler.h"
 
 Scheduler::Scheduler() :
@@ -7,40 +7,31 @@ Scheduler::Scheduler() :
 {}
 
 void Scheduler::run() {
-    for (int i=0; i<100; ++i) {
-        if (this->server.consoleActivation) {
-            Server::consoleWrite(this->humidity.sendData());
-        } if (this->server.logActivation) {
-            std::stringstream ss;
-            ss << this->humidity.sendData();
-            Server::fileWrite(ss.str(), 0);
-        } this->humidity.aleaGenVal();
+    while (true) {
+        int now = std::time(nullptr);
 
-        if (this->server.consoleActivation) {
-            Server::consoleWrite(this->sound.sendData());
-        } if (this->server.logActivation) {
-            std::stringstream ss;
-            ss << this->sound.sendData();
-            Server::fileWrite(ss.str(), 1);
-        } this->sound.aleaGenVal();
+        if (now - this->humidity.lastUpdate >= this->humidity.delay) {
+            this->server.dataReceive(this->humidity.sendData(), 0);
+            this->humidity.aleaGenVal();
+            this->humidity.lastUpdate = now;
+        }
 
-        if (this->server.consoleActivation) {
-            Server::consoleWrite(this->temperature.sendData());
-        } if (this->server.logActivation) {
-            std::stringstream ss;
-            ss << this->temperature.sendData();
-            Server::fileWrite(ss.str(), 2);
-        } this->temperature.aleaGenVal();
+        if (now - this->sound.lastUpdate >= this->sound.delay) {
+            this->server.dataReceive(this->sound.sendData(), 1);
+            this->sound.aleaGenVal();
+            this->sound.lastUpdate = now;
+        }
 
-        if (this->server.consoleActivation) {
-            Server::consoleWrite(this->light.sendData());
-        } if (this->server.logActivation) {
-            std::stringstream ss;
-            ss << this->light.sendData();
-            Server::fileWrite(ss.str(), 3);
-        } this->light.aleaGenVal();
+        if (now - this->temperature.lastUpdate >= this->temperature.delay) {
+            this->server.dataReceive(this->temperature.sendData(), 2);
+            this->temperature.aleaGenVal();
+            this->temperature.lastUpdate = now;
+        }
 
-        Sleep(1000);
-        system("cls");
+        if (now - this->light.lastUpdate >= this->light.delay) {
+            this->server.dataReceive(this->light.sendData(), 3);
+            this->light.aleaGenVal();
+            this->light.lastUpdate = now;
+        }
     }
 }

@@ -4,8 +4,10 @@ using namespace std;
 
 #include "Humidity.h"
 
-Humidity::Humidity() {
+Humidity::Humidity() : Sensor()
+{
     this->valSense = this->aleaGenVal();
+    this->delay = 2;
 }
 
 float Humidity::aleaGenVal() {

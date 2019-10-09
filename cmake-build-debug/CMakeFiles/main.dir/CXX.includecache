@@ -9,7 +9,7 @@
 C:/Coding/C C++/LO43-TP/src/Scheduler/Scheduler.cpp
 sstream
 -
-winbase.h
+ctime
 -
 Scheduler.h
 C:/Coding/C C++/LO43-TP/src/Scheduler/Scheduler.h
@@ -48,5 +48,7 @@ C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
 
 C:/Coding/C C++/LO43-TP/src/Server/Server.h
 iostream
+-
+sstream
 -
 

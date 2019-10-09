@@ -11,6 +11,7 @@
 class Scheduler {
 private:
     Server server;
+
     Humidity humidity;
     Sound sound;
     Temperature temperature;

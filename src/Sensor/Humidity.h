@@ -6,7 +6,8 @@
 class Humidity: public Sensor<float> {
 public:
     Humidity();
-    Humidity(Humidity& other) = default;
+    Humidity(Humidity&) = default;
+
     Humidity& operator=(const Humidity&) = default;
     ~Humidity() = default;
 };

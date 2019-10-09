@@ -1,3 +1,6 @@
 #include "Humidity.h"
 
-Humidity::Humidity() { this->value = 155.0; }
+Humidity::Humidity() {
+    this->value = 89.4;
+    this->name = "Humidity";
+}

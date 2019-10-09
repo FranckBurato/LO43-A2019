@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/main.dir/src/Sensor/Humidity.cpp.obj"
+  "CMakeFiles/main.dir/src/Sensor/Sound.cpp.obj"
   "CMakeFiles/main.dir/src/Server/Server.cpp.obj"
   "CMakeFiles/main.dir/src/main.cpp.obj"
   "libmain.dll.a"

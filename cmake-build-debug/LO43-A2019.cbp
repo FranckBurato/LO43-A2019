@@ -89,6 +89,12 @@
 		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h">
 			<Option target="main"/>
 		</Unit>
+		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Sound.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Sound.h">
+			<Option target="main"/>
+		</Unit>
 		<Unit filename="C:/Coding/C C++/LO43-TP/src/Server/Server.cpp">
 			<Option target="main"/>
 		</Unit>

@@ -149,6 +149,33 @@ src/Sensor/Humidity.cpp.s:
 	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Humidity.cpp.s
 .PHONY : src/Sensor/Humidity.cpp.s
 
+src/Sensor/Sound.obj: src/Sensor/Sound.cpp.obj
+
+.PHONY : src/Sensor/Sound.obj
+
+# target to build an object file
+src/Sensor/Sound.cpp.obj:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Sound.cpp.obj
+.PHONY : src/Sensor/Sound.cpp.obj
+
+src/Sensor/Sound.i: src/Sensor/Sound.cpp.i
+
+.PHONY : src/Sensor/Sound.i
+
+# target to preprocess a source file
+src/Sensor/Sound.cpp.i:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Sound.cpp.i
+.PHONY : src/Sensor/Sound.cpp.i
+
+src/Sensor/Sound.s: src/Sensor/Sound.cpp.s
+
+.PHONY : src/Sensor/Sound.s
+
+# target to generate assembly for a file
+src/Sensor/Sound.cpp.s:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Sensor/Sound.cpp.s
+.PHONY : src/Sensor/Sound.cpp.s
+
 src/Server/Server.obj: src/Server/Server.cpp.obj
 
 .PHONY : src/Server/Server.obj
@@ -215,6 +242,9 @@ help:
 	@echo ... src/Sensor/Humidity.obj
 	@echo ... src/Sensor/Humidity.i
 	@echo ... src/Sensor/Humidity.s
+	@echo ... src/Sensor/Sound.obj
+	@echo ... src/Sensor/Sound.i
+	@echo ... src/Sensor/Sound.s
 	@echo ... src/Server/Server.obj
 	@echo ... src/Server/Server.i
 	@echo ... src/Server/Server.s

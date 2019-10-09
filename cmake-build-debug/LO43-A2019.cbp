@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Coding/C C++/LO43-TP/src/Scheduler/Scheduler.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="C:/Coding/C C++/LO43-TP/src/Scheduler/Scheduler.h">
+			<Option target="main"/>
+		</Unit>
 		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.cpp">
 			<Option target="main"/>
 		</Unit>

@@ -10,6 +10,11 @@ public:
 
     Humidity& operator=(const Humidity&) = default;
     ~Humidity() = default;
+
+private:
+    float aleaGenVal() override;
+
+    friend class Scheduler;
 };
 
 #endif //LO43_A2019_HUMIDITY_H

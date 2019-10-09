@@ -10,6 +10,11 @@ public:
 
     Sound& operator=(const Sound&) = default;
     ~Sound() = default;
+
+private:
+    int aleaGenVal() override;
+
+    friend class Scheduler;
 };
 
 #endif //LO43_A2019_SOUND_H

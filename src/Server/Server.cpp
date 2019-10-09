@@ -1,45 +1,56 @@
 #include <iostream>
 using namespace std;
-#include <cstdio>
 
 #include "Server.h"
 
-Server::Server() :
-        humidity(),
-        sound()
-{}
-Server::Server(Server &other) {
-    this->humidity = other.humidity;
-    this->sound = other.sound;
+Server::Server() {
+    this->consoleActivation = true;
+    this->logActivation = true;
 }
+
+Server::Server(Server &other) {
+    this->consoleActivation = other.consoleActivation;
+    this->logActivation = other.logActivation;
+}
+
+Server::Server(bool console, bool log) {
+    this->consoleActivation = console;
+    this->logActivation = log;
+}
+
 Server::~Server() = default;
 
 Server& Server::operator=(const Server &other) {
-    this->humidity = other.humidity;
-    this->sound = other.sound;
+    this->consoleActivation = other.consoleActivation;
+    this->logActivation = other.logActivation;
     return *this;
 }
 
-istream& operator>>(istream& in, Server& server){
-    server.fileWrite();
-    server.consoleWrite();
-    return in;
+void Server::operator<<(const int& dataSens) {
+    consoleWrite(dataSens);
 }
 
-void Server::consoleWrite() {
-    cout << this->humidity.toString() << endl <<
-            this->sound.toString() << endl;
+void operator<<(const string& dataSens_toString, int flag) {
+    Server::fileWrite(dataSens_toString, flag);
 }
 
-void Server::fileWrite() {
+void Server::consoleWrite(const int& dataSens) {
+    cout << dataSens << endl;
+}
+
+void Server::fileWrite(const string& dataSens, int flag) {
+    string path = "../log_";
+    switch (flag) {
+        case 0: path += "humidity"; break;
+        case 1: path += "sound"; break;
+        case 2: path += "temperature"; break;
+        case 3: path += "light"; break;
+        default: break;
+    } path += ".txt";
+
     FILE *file;
-    file = fopen("../log_humidity.txt", "a");
+    file = fopen(path.c_str(), "a");
     if (file) {
-        fprintf(file, "%s\n", this->humidity.toString().c_str());
-    } fclose(file);
-
-    file = fopen("../log_sound.txt", "a");
-    if (file) {
-        fprintf(file, "%s\n", this->sound.toString().c_str());
+        fprintf(file, "%s\n", dataSens.c_str());
     } fclose(file);
 }

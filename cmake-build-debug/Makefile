@@ -122,6 +122,33 @@ main/fast:
 	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+src/Scheduler/Scheduler.obj: src/Scheduler/Scheduler.cpp.obj
+
+.PHONY : src/Scheduler/Scheduler.obj
+
+# target to build an object file
+src/Scheduler/Scheduler.cpp.obj:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj
+.PHONY : src/Scheduler/Scheduler.cpp.obj
+
+src/Scheduler/Scheduler.i: src/Scheduler/Scheduler.cpp.i
+
+.PHONY : src/Scheduler/Scheduler.i
+
+# target to preprocess a source file
+src/Scheduler/Scheduler.cpp.i:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.i
+.PHONY : src/Scheduler/Scheduler.cpp.i
+
+src/Scheduler/Scheduler.s: src/Scheduler/Scheduler.cpp.s
+
+.PHONY : src/Scheduler/Scheduler.s
+
+# target to generate assembly for a file
+src/Scheduler/Scheduler.cpp.s:
+	$(MAKE) -f CMakeFiles\main.dir\build.make CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.s
+.PHONY : src/Scheduler/Scheduler.cpp.s
+
 src/Sensor/Humidity.obj: src/Sensor/Humidity.cpp.obj
 
 .PHONY : src/Sensor/Humidity.obj
@@ -239,6 +266,9 @@ help:
 	@echo ... edit_cache
 	@echo ... main
 	@echo ... rebuild_cache
+	@echo ... src/Scheduler/Scheduler.obj
+	@echo ... src/Scheduler/Scheduler.i
+	@echo ... src/Scheduler/Scheduler.s
 	@echo ... src/Sensor/Humidity.obj
 	@echo ... src/Sensor/Humidity.i
 	@echo ... src/Sensor/Humidity.s

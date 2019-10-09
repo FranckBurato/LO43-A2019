@@ -1,9 +1,7 @@
-#include <iostream>
-using namespace std;
-#include "Server/Server.h"
+#include "Scheduler/Scheduler.h"
 
 int main() {
-    Server server;
-    cin >> server;
+    Scheduler sdlr;
+    sdlr.run();
     return 0;
 }

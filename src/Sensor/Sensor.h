@@ -1,21 +1,20 @@
 #ifndef LO43_A2019_SENSOR_H
 #define LO43_A2019_SENSOR_H
 
-#include <sstream>
-#include <string>
-
 template<typename T>
 class Sensor {
 protected:
-    T value;
-    std::string name;
+    T valSense;
 public:
     Sensor();
     Sensor(Sensor& other);
+    explicit Sensor(T value);
     ~Sensor();
-    Sensor& operator=(const Sensor&);
 
-    std::string toString();
+    T sendData();
+
+private:
+    virtual T aleaGenVal()=0;
 };
 
 template<typename T>
@@ -23,23 +22,20 @@ Sensor<T>::Sensor() = default;
 
 template<typename T>
 Sensor<T>::Sensor(Sensor<T> &other) {
-    this->value = other.value;
+    this->valSense = other.valSense;
+}
+
+template<typename T>
+Sensor<T>::Sensor(T val) {
+    this->valSense = val;
 }
 
 template<typename T>
 Sensor<T>::~Sensor() = default;
 
 template<typename T>
-Sensor<T> &Sensor<T>::operator=(const Sensor<T>& other) {
-    this->value = other.value;
-    return *this;
-}
-
-template<typename T>
-std::string Sensor<T>::toString() {
-    std::stringstream ss;
-    ss << this->name << " : " << this->value;
-    return ss.str();
+T Sensor<T>::sendData() {
+    return this->valSense;
 }
 
 #endif //LO43_A2019_SENSOR_H

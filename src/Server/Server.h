@@ -3,23 +3,26 @@
 
 #include <iostream>
 using namespace std;
-#include "../Sensor/Humidity.h"
-#include "../Sensor/Sound.h"
 
 class Server {
 private:
-    Humidity humidity;
-    Sound sound;
+    bool consoleActivation;
+    bool logActivation;
+
+    friend class Scheduler;
+
 public:
     Server();
     Server(Server& other);
+    Server(bool, bool);
     ~Server();
 
     Server& operator=(const Server&);
-    friend istream& operator>>(istream&, Server&);
+    void operator<<(const int&);
+    friend void operator<<(const string&, int);
 
-    void consoleWrite();
-    void fileWrite();
+    static void consoleWrite(const int&);
+    static void fileWrite(const string&, int);
 };
 
 #endif //LO43_A2019_SERVER_H

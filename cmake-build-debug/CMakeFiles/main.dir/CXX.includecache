@@ -6,47 +6,35 @@
 
 #IncludeRegexTransform: 
 
-C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.cpp
-Humidity.h
-C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h
-
-C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h
-Sensor.h
-C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
-
-C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
+C:/Coding/C C++/LO43-TP/src/Scheduler/Scheduler.cpp
 sstream
 -
-string
+winbase.h
 -
+Scheduler.h
+C:/Coding/C C++/LO43-TP/src/Scheduler/Scheduler.h
 
-C:/Coding/C C++/LO43-TP/src/Sensor/Sound.cpp
-Sound.h
-C:/Coding/C C++/LO43-TP/src/Sensor/Sound.h
-
-C:/Coding/C C++/LO43-TP/src/Sensor/Sound.h
-Sensor.h
-C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
-
-C:/Coding/C C++/LO43-TP/src/Server/Server.cpp
-iostream
+C:/Coding/C C++/LO43-TP/src/Scheduler/Scheduler.h
+vector
 -
-cstdio
--
-Server.h
+../Server/Server.h
 C:/Coding/C C++/LO43-TP/src/Server/Server.h
-
-C:/Coding/C C++/LO43-TP/src/Server/Server.h
-iostream
--
 ../Sensor/Humidity.h
 C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h
 ../Sensor/Sound.h
 C:/Coding/C C++/LO43-TP/src/Sensor/Sound.h
 
-C:/Coding/C C++/LO43-TP/src/main.cpp
+C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h
+Sensor.h
+C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-TP/src/Sensor/Sound.h
+Sensor.h
+C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-TP/src/Server/Server.h
 iostream
 -
-Server/Server.h
-C:/Coding/C C++/LO43-TP/src/Server/Server.h
 

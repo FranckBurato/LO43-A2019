@@ -1,0 +1,21 @@
+#ifndef LO43_A2019_SCHEDULER_H
+#define LO43_A2019_SCHEDULER_H
+
+#include <vector>
+#include "../Server/Server.h"
+#include "../Sensor/Humidity.h"
+#include "../Sensor/Sound.h"
+
+class Scheduler {
+private:
+    Server server;
+    Humidity humidity;
+    Sound sound;
+public:
+    Scheduler();
+    ~Scheduler() = default;
+
+    void run();
+};
+
+#endif //LO43_A2019_SCHEDULER_H

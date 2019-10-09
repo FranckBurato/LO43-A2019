@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <fstream>
 #include "Server.h"
 
 using namespace std;
@@ -30,25 +31,55 @@ void Server::operator=(const Server& server){
 	this->logActivation = server.getLogActivation();	
 }
 
-void Server::operator<<(int data){
-
+void Server::operator<<(Data data){
+	cout << "Donnée de capteurs : " + data.getSensorData();
 }
 
-void Server::operator<<(string dataToString){
-
+void Server::operator<<(string dataToString, string sensorName){
+	ofstream log;
+	log.open("logs/" + sensorName + ".txt");
+	log << dataToString + "\n\n";
 }
 
-void Server::dataReceive(int data){
-
+void Server::dataReceive(Data data){
+	if(this->getConsoleActivation() == true){
+		this->consoleWrite(data);
+	}else if(this->getLogActivation() == true){
+		this->fileWrite(data);
+	}else{
+		cout << "Impossible de récupérer les données, le server n'a pas de méthode d'enregistrement paramétrée !" << endl;		
 }
 
-void Server::consoleWrite(int data){
-
+void Server::consoleWrite(Data data){
+	cout<<"Donnée de capteur : " + data.getSensorData();
 }
 
-void Server::fileWrite(int data){
-
+void Server::fileWrite(Data data){
+	ofstream log;
+	log.open("logs/" + data.getSensorName() + ".txt");
+	log << data.getSensorData() + "\n\n";
 }
 
+int getNbrOfSensors(){
+	return this->nbrOfSensors;
+}
 
+void setNbrOfSensors(int nbrOfSensors){
+	this->nbrOfSensors = nbrOfSensors
+}
 
+bool getConsoleActivation(){
+	return this->consoleActivation;
+}
+
+void setConsoleActivation(bool consoleActivation){
+	this->consoleActivation = consoleActivation;
+}
+
+bool getLogActivation(){
+	return this->logActivation;
+}
+
+void setLogActivation(bool logActivation){
+	this->logActivation = logActivation;
+}

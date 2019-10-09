@@ -14,11 +14,11 @@ class Server{
 		Server(const Server& server);
 		~Server();
 		void operator=(const Server& server);
-		void operator<<(int data);
-		void operator<<(std::string dataToString);
-		void dataReceive(int data);
-		void consoleWrite(int data);
-		void fileWrite(int data);
+		void operator<<(Data data);
+		void operator<<(std::string dataToString, std::string sensorName);
+		void dataReceive(Data data);
+		void consoleWrite(Data data);
+		void fileWrite(Data data);
 		int getNbrOfSensors();
 		void setNbrOfSensors(int nbrOfSensors);
 		bool getConsoleActivation();

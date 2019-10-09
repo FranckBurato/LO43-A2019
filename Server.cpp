@@ -61,26 +61,26 @@ void Server::fileWrite(Data data){
 	log << data.getSensorData() + "\n\n";
 }
 
-int getNbrOfSensors(){
+int Server:: getNbrOfSensors(){
 	return this->nbrOfSensors;
 }
 
-void setNbrOfSensors(int nbrOfSensors){
+void Server::setNbrOfSensors(int nbrOfSensors){
 	this->nbrOfSensors = nbrOfSensors
 }
 
-bool getConsoleActivation(){
+bool Server::getConsoleActivation(){
 	return this->consoleActivation;
 }
 
-void setConsoleActivation(bool consoleActivation){
+void Server::setConsoleActivation(bool consoleActivation){
 	this->consoleActivation = consoleActivation;
 }
 
-bool getLogActivation(){
+bool Server::getLogActivation(){
 	return this->logActivation;
 }
 
-void setLogActivation(bool logActivation){
+void Server::setLogActivation(bool logActivation){
 	this->logActivation = logActivation;
 }

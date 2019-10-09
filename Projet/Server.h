@@ -1,19 +1,21 @@
 #ifndef SERVER_INCLUDED
 #define SERVER_INCLUDED
-
 #include <iostream>
+#include <string>
+#include <fstream>
 
 class Server
 {
 	public:
 	//Methodes
-	void consoleWrite(Server objet);
-	void fileWright(Server objet);
+	void consoleWrite(double, double, double, double);
+	void fileWright();
 
-	Server();     //Constructeur
-	Server(Server const& autre);   //Constructeur par recopie
-	~Server();     //Destructeur
-	Server&operator=(const Server& autre);    //Operateur d'affectation
+	Server();    				  //Constructeur
+	Server(Server const&);  	          //Constructeur de recopie
+	virtual ~Server();     		          //Destructeur
+	Server&operator=(const Server&);          //Operateurs d'affectation
+	Server&operator<<(Server&)
 
 	private:
 	//Attributs
@@ -23,3 +25,5 @@ class Server
 	double capteurSono;
 
 }
+
+#endif // SERVER_INCLUDED

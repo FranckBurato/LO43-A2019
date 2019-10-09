@@ -25,10 +25,11 @@ Server::Server(const Server& server){
 
 Server::~Server(){}
 
-void Server::operator=(const Server& server){
+Server& Server::operator=(const Server& server){
 	this->nbrOfSensors = server.getNbrOfSensors();
 	this->consoleActivation = server.getConsoleActivation();
-	this->logActivation = server.getLogActivation();	
+	this->logActivation = server.getLogActivation();
+	return *this;	
 }
 
 void Server::operator<<(Data data){

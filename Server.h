@@ -13,7 +13,7 @@ class Server{
 		Server(int nbrOfSensors, bool consoleActivation, bool logActivation);
 		Server(const Server& server);
 		~Server();
-		void operator=(const Server& server);
+		Server& operator=(const Server& server);
 		void operator<<(Data data);
 		void operator<<(std::string dataToString, std::string sensorName);
 		void dataReceive(Data data);

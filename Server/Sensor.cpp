@@ -1,26 +1,30 @@
 #include "Sensor.h"
 
-Sensor::Sensor(): temperature(), humidity(),
-                    sound(), light(){}
+Sensor::Sensor(): valSense(){}
 
-Sensor::Sensor(float temperature, float humidity, 
-int sound, bool light){
-    this->temperature = temperature;
-    this->humidity = humidity;
-    this->sound = sound;
-    this->light = light;
+Sensor::Sensor(int v){
+    this->valSense = v;
 }
 
 Sensor::Sensor(const Sensor& s){
-    this->temperature = s.temperature;
-    this->humidity = s.humidity;
-    this->sound = s.sound;
-    this->light = s.light;
+    this->valSense = s.valSense;
 }
 Sensor::~Sensor(){}
 
-Sensor& Sensor::operator=(const Sensor& s){
+int Sensor::aleaGenVal(){
+    srand((unsigned)time(0));
+    return -30 + (-30 - 100) * ((double)rand()/(double)RAND_MAX);
+}
 
+int Sensor::sendData(){
+    return this->valSense;
+}
+
+Sensor& Sensor::operator=(const Sensor& s){
+    this->valSense = s.valSense;
+
+
+    s.~Sensor();
 
     return *this;
 }

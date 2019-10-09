@@ -2,15 +2,20 @@
 
 
 //Constructeur par defaut
-Server::Server(){
-    this->message = "";
-}
-Server::Server(string message){
-    this->message = message;
+Server::Server():nbrOfSensors(), consolActivation(), 
+            logActivation(){}
+
+Server::Server(int nb, bool consolAc, bool logAc){
+    this->nbrOfSensors = nb;
+    this->consolActivation = consolAc;
+    this->logActivation = logAc;
+
 }
 //contructeur de recopie
 Server::Server(const Server& server){
-    this->message = server.message;
+    this->nbrOfSensors = server.nbrOfSensors;
+    this->consolActivation = server.consolActivation;
+    this->logActivation = server.logActivation;
 }
 //destructeur
 Server::~Server(){
@@ -19,33 +24,48 @@ Server::~Server(){
 //Operateur d'affectation
 Server& Server:: operator=(const Server& server){
     if(this != &server){
-        this->message = server.message;
+        this->nbrOfSensors = server.nbrOfSensors;
+        this->consolActivation = server.consolActivation;
+        this->logActivation = server.logActivation;
     }
     return *this;
 }
-
-void Server::consoleWrite(string message){
-    cout << message << "\n";
+//operateur de sortie
+void Server::operator<<(int dataSens){
+    this->consoleWrite(dataSens);
+    
 }
-void Server::fileWrite(string message){
-    ofstream myfile;
-    myfile.open ("log.txt");
-    myfile << message << "\n";
-    myfile.close();
+void operator<<(string dataSens_toString, int dataSens){
+    ofstream mylog;
+    mylog.open("log/log_file_capteur.txt", ios::out | ios::app );
+    mylog << dataSens <<"\n\n";
+    mylog.close();
 }
 
 
-ostream& operator<<(ostream& os, const Server& v){
-    os << "Affichage et Archivage du server \n" ;
-    //consoleWrite("message");
-    //filewrite("message");
 
-    return os;
+void Server::consoleWrite(int dataSens_p){
+    cout << dataSens_p << "\n";
+}
+void Server::fileWrite(int dataSens_p){
+    ofstream mylog;
+    mylog.open("log/log_file_capteur.txt", ios::out | ios::app );
+    mylog << dataSens_p <<"\n\n";
+    mylog.close();
+}
+
+void Server::dataRcv(int dataSens){
+    if(this->consolActivation==true){
+        this->consoleWrite(dataSens);
+    }
+    if(this->logActivation==true){
+        this->fileWrite(dataSens);
+    }
 }
 
 
 int main(){
     Server s1;
     //cout << s1;
-    s1.fileWrite("Salut");
+    //s1.fileWrite("Salut");
 }

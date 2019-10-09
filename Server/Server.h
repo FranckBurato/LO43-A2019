@@ -6,13 +6,18 @@ using namespace std;
 
 class Server{
     private:
-        string message;
+        int nbrOfSensors;
+        bool consolActivation;
+        bool logActivation;
+
+        void consoleWrite(int);
+        void fileWrite(int); 
 
     public:
         /*** FORME CANONIQUE DE COPLIEN ***/
         //constructeur par défaut
         Server();
-        Server(string message);
+        Server(int, bool, bool);
         //constructeur de recopie
         Server(const Server& server);
         //destructeur
@@ -20,10 +25,12 @@ class Server{
         //Operateur d'affectation
         Server& operator=(const Server& server);
 
+        void operator<<(int);
+        friend void operator<<(string, int);
 
-        void consoleWrite(string message);
-        void fileWrite(string message);  
+        void dataRcv(int);
 
-        //output
-        friend ostream& operator<<(ostream& os, const Server& v);      
+        
+
+        
 };

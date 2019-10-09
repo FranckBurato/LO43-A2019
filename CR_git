@@ -1,0 +1,11 @@
+git config = paramètre le profil de l'utilisateur, typiquement pour rentrer son adresse email.
+
+git init = Créer un nouveau dépôt où commencer un nouvel embranchement.
+
+git status = liste les fichiers en cours de modification.
+
+git merge = regroupe la branche "branche" sur le checkout actuel. Utile pour regrouper 2 branches différentes (ex: lorsqu'un bug a fini d'être corrigé).
+
+git diff = Liste les problème de correspondance entre les fichiers du dépôt (peut être spécifiée à quelques fichiers/branches en particulier).
+
+git blame = liste les auteurs d'un fichier et les parties du fichier auxquelles ils ont contribué.

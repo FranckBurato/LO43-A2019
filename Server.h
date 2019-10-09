@@ -1,16 +1,20 @@
 #ifndef SERVER_INCLUDED
 #define SERVER_INCLUDED
 #include <string>
+#include <fstream>
+#include <iostream>
 
-class server
+class SERVER
 {
     //Method:
     public:
-	server(); //constructor
-	~server(); //destructor
+	SERVER(); //constructor
+	SERVER(double temperature, double humidite, bool lumiere, double son);
+	~SERVER(); //destructor
 
-	void consoleWrite();
-	void fileWrite();
+	void consoleWrite(std::ostream& flux) const;
+	void fileWrite(std::ostream& flux) const;
+	SERVER& operator=(SERVER const& b);
 
     //Attribut:
     private:
@@ -20,4 +24,5 @@ class server
 	double m_son;
 };
 
+std::ostream& operator<<(std::ostream& flux, SERVER const& server);
 #endif

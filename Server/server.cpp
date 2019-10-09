@@ -9,33 +9,41 @@ this->capteur1=capteur1;
 this->capteur2=capteur2;
 this->capteur3=capteur3;
 }
+Server::Server(int nbrOfSensors,bool consolActivation,bool logActivation){
+    this->nbrOfSensors=nbrOfSensors;
+    this->consolActivation=consolActivation;
+    this->nbrOfSensors=nbrOfSensors;
+}
 Server::Server(const Server & serv){
-    this->capteur1=serv.capteur1;
-    this->capteur2=serv.capteur2;
-    this->capteur3=serv.capteur3;
+    this->nbrOfSensors=serv.nbrOfSensors;
+    this->consolActivation=serv.consolActivation;
+    this->logActivation=serv.logActivation;
 }
 Server& Server::operator=(const Server& serv){
-    this->capteur1=serv.capteur1;
-    this->capteur2=serv.capteur2;
-    this->capteur3=serv.capteur3;
+    this->nbrOfSensors=serv.nbrOfSensors;
+    this->consolActivation=serv.consolActivation;
+    this->logActivation=serv.logActivation;
     return *this;
 }
 Server::~Server(){
 }
-void Server::consoleWrite()const{
-    cout<<"capteur 1: "<<this->capteur1<<endl<<"capteur 2: "<<this->capteur2<<endl<<"capteur 3: "<<this->capteur3<<endl;
+void Server::dataRcv(int dataSens){
+    if(this->consolActivation==true){
+        this->consoleWrite(dataSens);
+    }
+    if(this->logActivation==true){
+        this->fileWrite(dataSens);
+    }
+
 }
-void Server::fileWrite()const{
+void Server::consoleWrite(int dataSens_p){
+    cout<<"capteur : "<<dataSens_p<<endl;
+}
+void Server::fileWrite(int dataSens_p){
 
     ofstream mylog;
-    mylog.open("log/log_file_capteur1.txt", ios::out | ios::app );
-    mylog << this->capteur1 <<"\n\n";
-    mylog.close();
-    mylog.open("log/log_file_capteur2.txt", ios::out | ios::app );
-    mylog << this->capteur2 <<"\n\n";
-    mylog.close();
-    mylog.open("log/log_file_capteur3.txt", ios::out | ios::app );
-    mylog << this->capteur3 <<"\n\n";
+    mylog.open("log/log_file_capteur.txt", ios::out | ios::app );
+    mylog << dataSens_p <<"\n\n";
     mylog.close();
 
 }

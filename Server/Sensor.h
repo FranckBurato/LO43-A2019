@@ -12,10 +12,6 @@ protected:
 public:
     Sensor(): valSense(){}
     Sensor(Sensor& autre): valSense(autre.valSense){}
-    Sensor& operator=(const Sensor<T> autre){
-        this->valSense = autre.valSense;
-        return *this;
-    }
     virtual ~Sensor()= default;
     Sensor(T valRcv): valSense(valRcv){}
 

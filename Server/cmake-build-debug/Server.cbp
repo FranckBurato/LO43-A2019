@@ -94,6 +94,12 @@
 		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Light.h">
 			<Option target="Server"/>
 		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Scheduler.cpp">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Scheduler.h">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sensor.cpp">
 			<Option target="Server"/>
 		</Unit>

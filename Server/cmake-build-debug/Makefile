@@ -176,6 +176,33 @@ Light.cpp.s:
 	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Light.cpp.s
 .PHONY : Light.cpp.s
 
+Scheduler.obj: Scheduler.cpp.obj
+
+.PHONY : Scheduler.obj
+
+# target to build an object file
+Scheduler.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Scheduler.cpp.obj
+.PHONY : Scheduler.cpp.obj
+
+Scheduler.i: Scheduler.cpp.i
+
+.PHONY : Scheduler.i
+
+# target to preprocess a source file
+Scheduler.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Scheduler.cpp.i
+.PHONY : Scheduler.cpp.i
+
+Scheduler.s: Scheduler.cpp.s
+
+.PHONY : Scheduler.s
+
+# target to generate assembly for a file
+Scheduler.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Scheduler.cpp.s
+.PHONY : Scheduler.cpp.s
+
 Sensor.obj: Sensor.cpp.obj
 
 .PHONY : Sensor.obj
@@ -326,6 +353,9 @@ help:
 	@echo ... Light.obj
 	@echo ... Light.i
 	@echo ... Light.s
+	@echo ... Scheduler.obj
+	@echo ... Scheduler.i
+	@echo ... Scheduler.s
 	@echo ... Sensor.obj
 	@echo ... Sensor.i
 	@echo ... Sensor.s

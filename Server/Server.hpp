@@ -1,18 +1,23 @@
 #include <string>
+#include "Scheduler.h"
 
 class Server{
 	private:
-		std::string path;
+		bool consolActivation;
+		bool logActivation;
+		std::string currentLog;
 
 	public:
 		Server();
-		Server(std::string&);
 		Server(const Server&);
 		~Server();
 		Server& operator=(const Server&);
 		void consoleWrite(const std::string&);
 		void fileWrite(const std::string&);
+		void setCurrentLog(const std::string&);
 
+    friend std::istream& operator>>(std::istream&, Server&);
+    friend void Scheduler::run();
 };
 
 std::istream& operator>>(std::istream&, Server&);

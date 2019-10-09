@@ -26,7 +26,7 @@ void Server::consoleWrite(const std::string& input){
 }
 
 void Server::fileWrite(const std::string& input){
-	std::ofstream log(path.c_str(), std::ios::app);
+	std::ofstream log(currentLog.c_str(), std::ios::app);
 	if(log){
 		log << input << std::endl;
 	}
@@ -38,10 +38,16 @@ void Server::fileWrite(const std::string& input){
 std::istream& operator>>(std::istream& in, Server& server){
     std::string input;
     in >> input;
-    server.fileWrite(input);
-    server.consoleWrite(input);
+    if (server.logActivation){
+        server.fileWrite(input);
+    }
+    if (server.consolActivation){
+        server.consoleWrite(input);
+    }
+
     return in;
 }
+
 
 
 

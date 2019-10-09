@@ -1,31 +1,52 @@
 #include <iostream>
 #include <string>
-#include <fstream>
 #include "Server.h"
 
-using namespace std
+using namespace std;
 
 Server::Server(){
-	
+	this->nbrOfCaptors = 0;
+	this->consoleActivation = false;
+	this->logActivation = true;
 }
 
-Server::Server(const Server&){
+Server::Server(int nbrOfSensors, bool consoleActivation, bool logActivation){
+	this->nbrOfSensors = nbrOfSensors;
+	this->consoleActivation = consoleActivation;
+	this->logActivation = logActivation;
+}
+
+Server::Server(const Server& server){
+	this->nbrOfSensors = server.getNbrOfSensors();
+	this->consoleActivation = server.getConsoleActivation();
+	this->logActivation = server.getLogActivation();
+}
+
+Server::~Server(){}
+
+void Server::operator=(const Server& server){
+	this->nbrOfSensors = server.getNbrOfSensors();
+	this->consoleActivation = server.getConsoleActivation();
+	this->logActivation = server.getLogActivation();	
+}
+
+void Server::operator<<(int data){
 
 }
 
-Server::~Server(){
+void Server::operator<<(string dataToString){
 
 }
 
-Server Server::&operator=(const Server&){
+void Server::dataReceive(int data){
 
 }
 
-string Server::&operator<<(const Server&){
+void Server::consoleWrite(int data){
 
 }
 
-string Server::&operator<<(const Server&, string logName){
+void Server::fileWrite(int data){
 
 }
 

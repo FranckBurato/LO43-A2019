@@ -5,16 +5,26 @@
 
 class Server{
 	private:
-
+		int nbrOfSensors;
+		bool consoleActivation;
+		bool logActivation;	       
 	public:
 		Server();
-		Server(const Server&);
+		Server(int nbrOfSensors, bool consoleActivation, bool logActivation);
+		Server(const Server& server);
 		~Server();
-		Server &operator=(const Server&);
-		string &operator<<(const Server&);
-		string &operator<<(const Server&,std::string logName);
-		void consoleWrite(std::string text);
-		void fileWrite(std::string text);
+		void operator=(const Server& server);
+		void operator<<(int data);
+		void operator<<(std::string dataToString);
+		void dataReceive(int data);
+		void consoleWrite(int data);
+		void fileWrite(int data);
+		int getNbrOfSensors();
+		void setNbrOfSensors(int nbrOfSensors);
+		bool getConsoleActivation();
+		void setConsoleActivation(bool consoleActivation);
+		bool getLogActivation();
+		void setLogActivation(bool logActivation);
 };
 
 #endif

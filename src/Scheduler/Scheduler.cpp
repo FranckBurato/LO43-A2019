@@ -1,4 +1,6 @@
 #include <ctime>
+#include <winbase.h>
+
 #include "Scheduler.h"
 
 Scheduler::Scheduler() :
@@ -33,5 +35,7 @@ void Scheduler::run() {
             this->light.aleaGenVal();
             this->light.lastUpdate = now;
         }
+
+        Sleep(100);
     }
 }

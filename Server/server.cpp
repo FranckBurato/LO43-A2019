@@ -12,7 +12,7 @@ this->capteur3=capteur3;
 Server::Server(int nbrOfSensors,bool consolActivation,bool logActivation){
     this->nbrOfSensors=nbrOfSensors;
     this->consolActivation=consolActivation;
-    this->nbrOfSensors=nbrOfSensors;
+    this->logActivation=logActivation;
 }
 Server::Server(const Server & serv){
     this->nbrOfSensors=serv.nbrOfSensors;
@@ -47,18 +47,29 @@ void Server::fileWrite(int dataSens_p){
     mylog.close();
 
 }
+void Server::operator<<(int data){
+    this->consoleWrite(data);
+}
+void Server::operator<<(std::string dataString){
+    ofstream mylog;
+    mylog.open("log/log_file_capteur.txt", ios::out | ios::app );
+    mylog << dataString <<"\n\n";
+    mylog.close();
+}
+
 ostream& operator << (ostream& sortie, const Server & n){
-    n.fileWrite();
-    n.consoleWrite();
+  //  n.fileWrite();
+    //n.consoleWrite();
+    cout<<"ancien version à ne pas utiliser"<<endl;
     return sortie;
 }
-int main(int argc, char *argv[])
-{
-    Server serv1(10,5,6);
-    serv1.consoleWrite();
-    serv1.fileWrite();
-    Server serv2 = serv1;
-    cout<<serv2<<endl<<serv1<<endl;
-    return 0;
-}
+//int main(int argc, char *argv[])
+//{
+//    Server serv1(10,5,6);
+//    serv1.consoleWrite(10);
+//    serv1.fileWrite(5);
+//    Server serv2 = serv1;
+//    cout<<serv2<<endl<<serv1<<endl;
+//    return 0;
+//}
 

@@ -1,11 +1,10 @@
 #ifndef LIGHT_H
 #define LIGHT_H
-
+#include "sensor.h"
 
 class Light: public Sensor
 {
-public:
-    Light();
+
 };
 
 #endif // LIGHT_H

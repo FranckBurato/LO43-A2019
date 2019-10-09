@@ -1,5 +1,6 @@
-#include "server.h"
+#include "Server.h"
 #include <iostream>
+#include <fstream>
 
 
 using namespace std;
@@ -22,13 +23,12 @@ Server::~Server(){}
 
 
 
-void Server::consoleWrite(const Server& display){
+void Server::consoleWrite(const string display){
 	cout<<display;
 }
 
-void Server::fileWrite(const Server& F){
-	ofstream file("ex");
-	file<<F;
+void Server::fileWrite(const string F){
+        ofstream file("ex.txt");
 	if(file){
 		file<<F;
 	}

@@ -1,5 +1,5 @@
 #ifndef DEF_SCHEDULER
-#define DEF_SERVER
+#define DEF_SCHEDULER
 
 #include <vector.h>
 #include "Server.h"

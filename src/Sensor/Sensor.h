@@ -5,8 +5,8 @@ template<typename T>
 class Sensor {
 protected:
     T valSense;
-    int delay;
-    int lastUpdate = 0;
+    int delay{};
+    int lastUpdate{};
 
     virtual T aleaGenVal() = 0;
     friend class Scheduler;

@@ -20,7 +20,6 @@ public:
 
     Server& operator=(const Server&);
     void operator<<(const int&);
-    friend void operator<<(const string&, int);
 
     template <class T>
     void dataReceive(T data, int flag);
@@ -28,6 +27,8 @@ public:
     static void consoleWrite(const int&);
     static void fileWrite(const string&, int);
 };
+
+void operator<<(const string&, int);
 
 template<class T>
 void Server::dataReceive(T data, int flag) {
@@ -37,7 +38,7 @@ void Server::dataReceive(T data, int flag) {
     if (this->logActivation) {
         std::stringstream ss;
         ss << data;
-        Server::fileWrite(ss.str(), flag);
+        ss.str() << flag;
     }
 }
 

@@ -1,6 +1,6 @@
 #include "Sensor.h"
 
-Sensor::Sensor(): valSense(){}
+Sensor::Sensor(): valSense(aleaGenVal()){}
 
 Sensor::Sensor(int v){
     this->valSense = v;
@@ -12,9 +12,8 @@ Sensor::Sensor(const Sensor& s){
 Sensor::~Sensor(){}
 
 int Sensor::aleaGenVal(){
-    srand((unsigned)time(0));
-    return -30 + (-30 - 100) * ((double)rand()/(double)RAND_MAX);
-}
+    //srand(time(NULL));
+    return (rand() % 100);}
 
 int Sensor::sendData(){
     return this->valSense;

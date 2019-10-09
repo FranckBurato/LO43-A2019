@@ -64,8 +64,3 @@ void Server::dataRcv(int dataSens){
 }
 
 
-int main(){
-    Server s1;
-    //cout << s1;
-    //s1.fileWrite("Salut");
-}

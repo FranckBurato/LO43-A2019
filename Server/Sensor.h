@@ -1,3 +1,5 @@
+#ifndef SENSOR_H
+#define SENSOR_H
 #include <iostream>
 
 using namespace std;
@@ -19,3 +21,5 @@ class Sensor{
 
 
 };
+
+#endif

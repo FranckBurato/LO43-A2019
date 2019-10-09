@@ -22,23 +22,23 @@ public:
     void operator<<(const int&);
 
     template <class T>
-    void dataReceive(T data, int flag);
+    void dataReceive(T, int);
 
     static void consoleWrite(const int&);
     static void fileWrite(const string&, int);
 };
 
-void operator<<(const string&, int);
+void operator<<(int, const string&);
 
 template<class T>
-void Server::dataReceive(T data, int flag) {
+void Server::dataReceive(T data, int fileFlag) {
     if (this->consoleActivation) {
         *this << data;
     }
     if (this->logActivation) {
         std::stringstream ss;
         ss << data;
-        ss.str() << flag;
+        fileFlag << ss.str();
     }
 }
 

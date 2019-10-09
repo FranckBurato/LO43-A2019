@@ -31,8 +31,8 @@ void Server::operator<<(const int& dataSens) {
     consoleWrite(dataSens);
 }
 
-void operator<<(const string& dataSens_toString, int flag) {
-    Server::fileWrite(dataSens_toString, flag);
+void operator<<(int fileFlag, const string& dataSens_toString) {
+    Server::fileWrite(dataSens_toString, fileFlag);
 }
 
 void Server::consoleWrite(const int& dataSens) {

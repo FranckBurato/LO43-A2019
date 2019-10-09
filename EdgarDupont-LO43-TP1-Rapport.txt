@@ -1,0 +1,38 @@
+Edgar Dupont LO43 TP1 Rapport
+
+Opérateur =
+
+Server&operator=(Server&S)
+{
+	this->capteur1=S.capteur1;
+	this->capteur2=S.capteur2;
+	this->capteur3=S.capteur3;
+	this->capteur4=S.capteur4;
+	return *this;
+};
+
+Opérateur <<
+
+1)
+std::ostream &operator<<(std::ostream &out, Server &str);
+
+2)
+
+
+Git config:
+Permet de configurer ou reconfigurer un fichier, changer son nom, ses valeurs, ajouter des caractéristiques etc...
+
+Git init:
+Permet de créer un repository ou d'en réinistaliser un.
+
+Git status:
+Permet de montrer l'arbre du fichier en HEAD avec ses différents ancêtres et commit.
+
+Git merge:
+Permet de joindre différents fichiers de travail en joignant leurs commit.
+
+Git diff:
+Permet de montrer les différences entre deux fichiers dûes à leurs commit.
+
+Git blame:
+Permet d'avoir un historique des différents commit avec leur auteur.

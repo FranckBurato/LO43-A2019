@@ -17,6 +17,7 @@ public:
     Sensor(T, int, int);
     ~Sensor();
 
+    bool canSend(int);
     T sendData();
 };
 
@@ -43,6 +44,11 @@ Sensor<T>::Sensor(T val, int delay, int lastUpdate) {
 
 template<typename T>
 Sensor<T>::~Sensor() = default;
+
+template<typename T>
+bool Sensor<T>::canSend(int now) {
+    return now - this->lastUpdate >= this->delay;
+}
 
 template<typename T>
 T Sensor<T>::sendData() {

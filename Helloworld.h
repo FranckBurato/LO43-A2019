@@ -11,7 +11,7 @@ class Helloworld
 
     private:
 
-     std::string m_HelloWorld = "Hello World !";
+     std::string HelloWorld=("Hello World !");
 };
 
 #endif

@@ -1,9 +1,17 @@
 #include "Helloworld.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
+
 void Helloworld::CallHelloworld()
+  {
+    std::cout<< this-> HelloWorld<< endl;
+  }
+
+int main()
 {
-    cout << this-> m_HelloWorld << endl;
+ Helloworld::CallHelloworld;
+ return 0;
 }

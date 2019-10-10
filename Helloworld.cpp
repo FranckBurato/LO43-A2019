@@ -5,13 +5,19 @@
 using namespace std;
 
 
+Helloworld::Helloworld()
+{}
+
 void Helloworld::CallHelloworld()
   {
-    std::cout<< this-> HelloWorld<< endl;
+    cout<< helloWorld << endl;
   }
 
 int main()
 {
- Helloworld::CallHelloworld;
+  Helloworld Objet;
+  Objet.CallHelloworld();
+
+ std::cin.get();
  return 0;
 }

@@ -6,12 +6,11 @@
 class Helloworld
 {
     public:
-    
+     Helloworld();
      void CallHelloworld();
 
     private:
-
-     std::string HelloWorld=("Hello World !");
+     std::string helloWorld = ("Hello World !");
 };
 
 #endif

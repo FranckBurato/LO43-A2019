@@ -3,13 +3,13 @@
 
 using namespace std;
 
-void Server::Server()  //Constructeur par défaut
+Server::Server()  //Constructeur par défaut
 {}
-void Server::Server(const Server& server)  //Constructeur de recopie
+Server::Server(const Server& server)  //Constructeur de recopie
 {}
-void Server::Server(int nbrOfSensors_m, bool consolActivation_m, bool logActivation_m) //Constructeur Surchargé
+Server::Server(int nbrOfSensors_m, bool consolActivation_m, bool logActivation_m) //Constructeur Surchargé
 {}
-void Server::~Server()  //Destrcuteur
+Server::~Server()  //Destrcuteur
 {}
 
 Server& Server::operator=(const Server& server)  

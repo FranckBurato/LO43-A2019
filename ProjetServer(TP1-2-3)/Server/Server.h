@@ -2,7 +2,7 @@
 #define DEF_SERVER
 
 class Server
-{
+{ 
     private:
      int nbrOfSensors_m;
      bool consolActivation_m;
@@ -18,8 +18,8 @@ class Server
      Server& operator<<(int dataSens);           
      Server& operator<<(std::string dataSens_toString);  
 
-     fileWrite(int dataSens);
-     consolWrite(int dataSens);
+     void fileWrite(int dataSens);
+     void consolWrite(int dataSens);
 };
 
 #endif

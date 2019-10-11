@@ -1,5 +1,6 @@
 #ifndef DEF_TEMPERATURE
 #define DEF_TEMPERATURE
+
 #include "Sensor.h"
 
 class TemperatureSensor : public Sensor
@@ -8,7 +9,7 @@ class TemperatureSensor : public Sensor
         //Les attributs de Sensor sont héritées
      public:
         //Les methodes de Sensor sont héritées
-
+        int aleaGenVal();
 };
 
 #endif

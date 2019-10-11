@@ -9,6 +9,5 @@ Sensor::~Sensor()
 
 void Sensor::sendData()
 {}
-void Sensor::aleaGenVal()
-{}
+
 

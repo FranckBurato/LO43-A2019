@@ -4,16 +4,17 @@
 class Sensor
 {
     private:
-     int valSensor_m;
+     int sensorData;
     
     public:
      Sensor();
-     Sensor(const Sensor& sensor);
-     Sensor(int valRcv);
+     Sensor(const Sensor&);
      ~Sensor();
 
-     sendData();
-     aleaGenVal();
+     
+     void aleaGenVal();
+     void sendData();
+     
 };
 
 #endif

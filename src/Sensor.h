@@ -3,15 +3,15 @@
 
 #include "Data.h"
 
+template<typename T>
 class Sensor{
 	private:
 		std::string name;
-		Data data;
 	public:
-		virtual std::variant<float, int, bool> sendData() = 0;
-		std::string getName();
-		Data getData();
-		void setData(Data data);
-		void setName(std::string name);
+		virtual T sendData() = 0;
+		virtual T getData() = 0;
+		virtual void setData(Data data);
+		virtual void setName(std::string name);
+		virtual std::strig getName();
 };
 #endif

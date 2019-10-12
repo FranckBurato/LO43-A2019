@@ -2,6 +2,7 @@
 #define DEF_SERVER
 
 #include <string>
+#include "Data.h"
 
 class Server{
 	private:
@@ -15,7 +16,7 @@ class Server{
 		~Server();
 		Server& operator=(const Server& server);
 		void operator<<(Data data);
-		void operator<<(std::string dataToString, std::string sensorName);
+		void operator<<(Data data);
 		void dataReceive(Data data);
 		void consoleWrite(Data data);
 		void fileWrite(Data data);

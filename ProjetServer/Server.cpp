@@ -12,19 +12,27 @@ Server::Server(const Server&)
 {}
 Server::~Server()              
 {}
-Server& Server::operator=(const Server &other) 
+/* Server& Server::operator=(const Server &other) 
 {
     
-} 
+}  */
+
+/* void dataReceive()
+{
+  dataRcv = sensorData;
+}  */
+
 
 void consolWrite()   
-{}
+{
+    cout << dataRcv << endl;
+}
 void fileWrite()     
 {
     ofstream lightFlux("C:/Users/BabaDeathLord/Desktop/ProjetServer-Copie/LogsLight.txt");
     if(lightFlux)
     {
-        lightFlux << "test" << endl;
+        lightFlux << dataRcv << endl;
     }
     else
     {
@@ -35,6 +43,6 @@ void fileWrite()
 
 int main()
 {
-    fileWrite();
+    
     return 0;
 }

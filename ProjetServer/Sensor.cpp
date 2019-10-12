@@ -7,7 +7,9 @@ Sensor::Sensor(const Sensor&)
 Sensor::~Sensor()
 {}
 
-void Sensor::sendData()
-{}
-
+int Sensor::sendData()
+{
+  dataRcv = sensorData;
+  return this -> sensorData;  
+}
 

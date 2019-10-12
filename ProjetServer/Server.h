@@ -1,19 +1,23 @@
 #ifndef DEF_SERVER
 #define DEF_SERVER
 
+#include "Sensor.h"
+
 class Server
 { 
-    private:
-     
+  friend class Sensor;
+  private:
+   int dataRcv = &sensorData;
 
-    public:
-     Server();
-     Server(const Server&);
-     ~Server();
-     Server& operator=(const Server&);  //Forme canonique de Coplien
+  public:
+   Server();
+   Server(const Server&);
+   ~Server();
+   // Server& operator=(const Server&);  //Forme canonique de Coplien
     
-     void consolWrite();   //Visualise les données dans la console
-     void fileWrite();     //Ecrit les données ds un fichier
+   // void dataReceive();
+   void consolWrite();   //Visualise les données dans la console
+   void fileWrite();     //Ecrit les données ds un fichier
 };
 
 #endif

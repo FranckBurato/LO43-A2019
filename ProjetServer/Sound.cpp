@@ -7,5 +7,5 @@ int SoundSensor::aleaGenVal()
 {
    srand(time(NULL));                
    int nombre = (rand() % (194 + 1));
-   return nombre;
+   return nombre = sensorData;
 }

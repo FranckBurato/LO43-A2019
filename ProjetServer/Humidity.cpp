@@ -7,5 +7,5 @@ int HumiditySensor::aleaGenVal()
 {
    srand(time(NULL));                
    int nombre = (rand() % (100 + 1));
-   return nombre;
+   return nombre = sensorData;
 }

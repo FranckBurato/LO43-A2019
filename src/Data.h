@@ -3,12 +3,13 @@
 
 #include <string>
 
+template<typename T>
 class Data{
 	private:
 		std::string sensorName;
 		std::string formatedData;
 		std::string dataDate;
-		std::variant<float, int, bool> data;
+		T data;
 	public:
 		Data();
 		Data(std::string sensorName);

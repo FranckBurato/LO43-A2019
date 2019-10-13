@@ -12,9 +12,13 @@ Sensor::Sensor(const Sensor& s){
 Sensor::~Sensor(){}
 
 int Sensor::aleaGenVal(){
-    //srand(time(NULL));
-    return (rand() % 100);}
+    
+    return (rand() % 100);
 
+}
+void Sensor::resetValue(){
+    this->valSense = aleaGenVal();
+}
 int Sensor::sendData(){
     return this->valSense;
 }

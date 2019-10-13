@@ -20,11 +20,12 @@ class Scheduler{
         Light l;
         Sound s;
 
-        Server server;        
+        Server server;  
+        void getInfos();      
 
     public:
         Scheduler();
-        void getInfos();
+        
 };
 
 

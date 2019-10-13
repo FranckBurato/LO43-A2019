@@ -5,4 +5,8 @@ using namespace std;
 
 class Sound : public Sensor{
 
+    using Sensor::Sensor;
+    
+    public:
+        string getName();
 };

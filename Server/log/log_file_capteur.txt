@@ -1,0 +1,904 @@
+83
+
+86
+
+77
+
+15
+
+83
+
+86
+
+77
+
+15
+
+44
+
+44
+
+44
+
+44
+
+7
+
+7
+
+7
+
+7
+
+22
+
+22
+
+22
+
+22
+
+17
+
+17
+
+17
+
+17
+
+41
+
+41
+
+41
+
+41
+
+1484975888
+
+1484975904
+
+1484975920
+
+1484975936
+
+-1
+
+-1
+
+-1
+
+-1
+
+83
+
+86
+
+77
+
+13
+
+83
+
+86
+
+77
+
+15
+
+83
+
+86
+
+77
+
+15
+
+23
+
+26
+
+27
+
+30
+
+23
+
+26
+
+27
+
+83
+
+23
+
+26
+
+27
+
+83
+
+23
+
+26
+
+27
+
+83
+
+23
+
+26
+
+27
+
+83
+
+23
+
+26
+
+27
+
+83
+
+23
+
+26
+
+27
+
+83
+
+23
+
+26
+
+27
+
+83
+
+23
+
+26
+
+27
+
+0
+
+23
+
+26
+
+27
+
+83
+
+23
+
+26
+
+27
+
+83
+
+23
+
+26
+
+27
+
+61
+
+23
+
+26
+
+27
+
+31
+
+23
+
+26
+
+27
+
+44
+
+23
+
+26
+
+27
+
+58
+
+23
+
+26
+
+27
+
+60
+
+46
+
+46
+
+46
+
+46
+
+68
+
+38
+
+64
+
+67
+
+78
+
+71
+
+32
+
+53
+
+83
+
+56
+
+56
+
+56
+
+27
+
+29
+
+39
+
+5
+
+27
+
+29
+
+39
+
+5
+
+27
+
+29
+
+39
+
+5
+
+27
+
+29
+
+39
+
+5
+
+0
+
+46
+
+84
+
+76
+
+0
+
+46
+
+84
+
+76
+
+0
+
+46
+
+84
+
+76
+
+12
+
+56
+
+96
+
+95
+
+12
+
+56
+
+96
+
+95
+
+45
+
+80
+
+96
+
+26
+
+45
+
+80
+
+96
+
+26
+
+27
+
+95
+
+27
+
+46
+
+27
+
+95
+
+27
+
+46
+
+0
+
+36
+
+85
+
+23
+
+63
+
+51
+
+66
+
+95
+
+72
+
+28
+
+61
+
+32
+
+70
+
+90
+
+66
+
+74
+
+75
+
+95
+
+51
+
+81
+
+12
+
+0
+
+9
+
+81
+
+55
+
+99
+
+17
+
+52
+
+34
+
+57
+
+75
+
+45
+
+63
+
+69
+
+53
+
+93
+
+4
+
+47
+
+76
+
+66
+
+84
+
+52
+
+0
+
+18
+
+81
+
+75
+
+38
+
+2
+
+32
+
+83
+
+55
+
+65
+
+56
+
+50
+
+67
+
+63
+
+49
+
+37
+
+16
+
+36
+
+46
+
+43
+
+81
+
+61
+
+64
+
+87
+
+6
+
+20
+
+34
+
+82
+
+86
+
+18
+
+35
+
+39
+
+89
+
+68
+
+14
+
+27
+
+70
+
+99
+
+62
+
+77
+
+64
+
+18
+
+81
+
+36
+
+14
+
+48
+
+47
+
+54
+
+5
+
+66
+
+35
+
+48
+
+97
+
+62
+
+78
+
+0
+
+44
+
+17
+
+9
+
+74
+
+56
+
+36
+
+2
+
+16
+
+52
+
+43
+
+79
+
+21
+
+0
+
+40
+
+71
+
+15
+
+13
+
+21
+
+11Temperature: 11
+
+8Humidity: 43
+
+5Light: 31
+
+5Sound: 58
+
+11Temperature: 74
+
+8Humidity: 90
+
+5Light: 30
+
+5Sound: 35
+
+11Temperature: 1
+
+8Humidity: 47
+
+5Light: 33
+
+5Sound: 98
+
+11Temperature: 57
+
+8Humidity: 65
+
+5Light: 41
+
+5Sound: 19
+
+11Temperature: 64
+
+8Humidity: 93
+
+5Light: 76
+
+5Sound: 48
+
+11Temperature: 84
+
+8Humidity: 65
+
+5Light: 88
+
+5Sound: 99
+
+11Temperature: 56
+
+8Humidity: 96
+
+5Light: 42
+
+5Sound: 44
+
+11Temperature: 89
+
+8Humidity: 8
+
+5Light: 33
+
+5Sound: 51
+
+11Temperature: 9
+
+8Humidity: 85
+
+5Light: 58
+
+5Sound: 22
+
+11Temperature: 2
+
+8Humidity: 66
+
+5Light: 34
+
+5Sound: 87
+
+11Temperature: 42
+
+8Humidity: 85
+
+5Light: 24
+
+5Sound: 31
+
+Temperature: 90
+
+Humidity: 70
+
+Light: 79
+
+Sound: 88
+
+Temperature: 24
+
+Humidity: 4
+
+Light: 56
+
+Sound: 85
+
+Temperature: 75
+
+Humidity: 40
+
+Light: 14
+
+Sound: 50
+
+	Temperature: 5
+
+	Humidity: 38
+
+	Light: 85
+
+	Sound: 90
+
+	Temperature: 54
+
+	Humidity: 62
+
+	Light: 72
+
+	Sound: 15
+
+	Temperature: 2
+
+	Humidity: 56
+
+	Light: 33
+
+	Sound: 85
+
+	Temperature: 7
+
+	Humidity: 60
+
+	Light: 22
+
+	Sound: 67
+
+	Temperature: 7
+
+	Humidity: 3
+
+	Light: 23
+
+	Sound: 49
+
+	Temperature: 64
+
+	Humidity: 62
+
+	Light: 20
+
+	Sound: 10
+
+	Temperature: 24
+
+	Humidity: 3
+
+	Light: 35
+
+	Sound: 95
+
+	Temperature: 21
+
+	Humidity: 84
+
+	Light: 80
+
+	Sound: 27
+
+	Temperature: 22
+
+	Humidity: 65
+
+	Light: 69
+
+	Sound: 28
+
+	Temperature: 80
+
+	Humidity: 41
+
+	Light: 44
+
+	Sound: 82
+
+	Temperature: 50
+
+	Humidity: 77
+
+	Light: 67
+
+	Sound: 57
+
+	Temperature: 89
+
+	Humidity: 89
+
+	Light: 24
+
+	Sound: 96
+
+	Temperature: 45
+
+	Humidity: 0
+
+	Light: 97
+
+	Sound: 61
+
+	Temperature: 31
+
+	Humidity: 51
+
+	Light: 81
+
+	Sound: 58
+
+	Temperature: 10
+
+	Humidity: 21
+
+	Light: 54
+
+	Sound: 96
+
+	Temperature: 48
+
+	Humidity: 61
+
+	Light: 97
+
+	Sound: 18
+
+	Temperature: 71
+
+	Humidity: 0
+
+	Light: 12
+
+	Sound: 37
+
+	Temperature: 23
+
+	Humidity: 59
+
+	Light: 65
+
+	Sound: 13
+
+	Temperature: 87
+
+	Humidity: 80
+
+	Light: 52
+
+	Sound: 62
+
+	Temperature: 6
+
+	Humidity: 75
+
+	Light: 97
+
+	Sound: 38
+
+	Temperature: 60
+
+	Humidity: 86
+
+	Light: 24
+
+	Sound: 91
+
+	Temperature: 89
+
+	Humidity: 58
+
+	Light: 1
+
+	Sound: 0
+
+	Temperature: 79
+
+	Humidity: 8
+
+	Light: 48
+
+	Sound: 79
+
+	Temperature: 69
+
+	Humidity: 45
+
+	Light: 98
+
+	Sound: 92
+
+	Temperature: 46
+
+	Humidity: 62
+
+	Light: 81
+
+	Sound: 21
+

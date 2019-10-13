@@ -30,36 +30,23 @@ Server& Server:: operator=(const Server& server){
     }
     return *this;
 }
-//operateur de sortie
-void Server::operator<<(int dataSens){
-    this->consoleWrite(dataSens);
-    
+
+void Server::consoleWrite(string type_of_sensor, int dataSens_p){
+    cout << "\t" << type_of_sensor << ": " << dataSens_p << "\n";
 }
-void operator<<(string dataSens_toString, int dataSens){
+void Server::fileWrite(string type_of_sensor, int dataSens_p){
     ofstream mylog;
     mylog.open("log/log_file_capteur.txt", ios::out | ios::app );
-    mylog << dataSens <<"\n\n";
+    mylog << "\t" << type_of_sensor << ": " << dataSens_p <<"\n\n";
     mylog.close();
 }
 
-
-
-void Server::consoleWrite(int dataSens_p){
-    cout << dataSens_p << "\n";
-}
-void Server::fileWrite(int dataSens_p){
-    ofstream mylog;
-    mylog.open("log/log_file_capteur.txt", ios::out | ios::app );
-    mylog << dataSens_p <<"\n\n";
-    mylog.close();
-}
-
-void Server::dataRcv(int dataSens){
+void Server::dataRcv(string type_of_sensor,int dataSens){
     if(this->consolActivation==true){
-        this->consoleWrite(dataSens);
+        this->consoleWrite(type_of_sensor, dataSens);
     }
     if(this->logActivation==true){
-        this->fileWrite(dataSens);
+        this->fileWrite(type_of_sensor, dataSens);
     }
 }
 

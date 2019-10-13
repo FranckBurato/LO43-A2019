@@ -10,8 +10,8 @@ class Server{
         bool consolActivation;
         bool logActivation;
 
-        void consoleWrite(int);
-        void fileWrite(int); 
+        void consoleWrite(string type_of_sensor, int);
+        void fileWrite(string type_of_sensor, int); 
 
     public:
         /*** FORME CANONIQUE DE COPLIEN ***/
@@ -25,10 +25,7 @@ class Server{
         //Operateur d'affectation
         Server& operator=(const Server& server);
 
-        void operator<<(int);
-        friend void operator<<(string, int);
-
-        void dataRcv(int);
+        void dataRcv(string type_of_sensor, int);
 
         
 

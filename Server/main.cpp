@@ -4,7 +4,8 @@ using namespace std;
 
 int main()
 {
+    srand(time(NULL));
     Scheduler scheduler;
-    scheduler.getInfos();
+    
     return 0;
 }

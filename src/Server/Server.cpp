@@ -27,7 +27,7 @@ Server& Server::operator=(const Server &other) {
     return *this;
 }
 
-void Server::operator<<(const int& dataSens) {
+void Server::operator<<(const string& dataSens) {
     consoleWrite(dataSens);
 }
 
@@ -35,7 +35,7 @@ void operator<<(int fileFlag, const string& dataSens_toString) {
     Server::fileWrite(dataSens_toString, fileFlag);
 }
 
-void Server::consoleWrite(const int& dataSens) {
+void Server::consoleWrite(const string& dataSens) {
     cout << dataSens << endl;
 }
 

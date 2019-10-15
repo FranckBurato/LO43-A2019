@@ -26,25 +26,9 @@ C:/Coding/C C++/LO43-TP/src/Sensor/Temperature.h
 ../Sensor/Light.h
 C:/Coding/C C++/LO43-TP/src/Sensor/Light.h
 
-C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.cpp
-random
--
-chrono
--
-Humidity.h
-C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h
-
 C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h
 Sensor.h
 C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
-
-C:/Coding/C C++/LO43-TP/src/Sensor/Light.cpp
-random
--
-chrono
--
-Light.h
-C:/Coding/C C++/LO43-TP/src/Sensor/Light.h
 
 C:/Coding/C C++/LO43-TP/src/Sensor/Light.h
 Sensor.h
@@ -52,34 +36,26 @@ C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
 
 C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
 
-C:/Coding/C C++/LO43-TP/src/Sensor/Sound.cpp
-random
--
-chrono
--
-Sound.h
-C:/Coding/C C++/LO43-TP/src/Sensor/Sound.h
-
 C:/Coding/C C++/LO43-TP/src/Sensor/Sound.h
 Sensor.h
 C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
 
-C:/Coding/C C++/LO43-TP/src/Sensor/Temperature.cpp
-random
--
-chrono
--
-Temperature.h
-C:/Coding/C C++/LO43-TP/src/Sensor/Temperature.h
-
 C:/Coding/C C++/LO43-TP/src/Sensor/Temperature.h
 Sensor.h
 C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-TP/src/Server/Server.cpp
+iostream
+-
+Server.h
+C:/Coding/C C++/LO43-TP/src/Server/Server.h
 
 C:/Coding/C C++/LO43-TP/src/Server/Server.h
 iostream
 -
 sstream
+-
+iomanip
 -
 
 C:/Coding/C C++/LO43-TP/src/main.cpp

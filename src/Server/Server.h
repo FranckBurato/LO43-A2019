@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <sstream>
+#include <iomanip>
 using namespace std;
 
 class Server {
@@ -19,26 +20,28 @@ public:
     ~Server();
 
     Server& operator=(const Server&);
-    void operator<<(const int&);
+    void operator<<(const string&);
 
     template <class T>
     void dataReceive(T, int);
 
-    static void consoleWrite(const int&);
+    static void consoleWrite(const string&);
     static void fileWrite(const string&, int);
 };
 
 void operator<<(int, const string&);
 
-template<class T>
+template<typename T>
 void Server::dataReceive(T data, int fileFlag) {
+    std::stringstream ss;
+    ss << setprecision(2) << fixed << data;
+    string dataString = ss.str();
+
     if (this->consoleActivation) {
-        *this << data;
+        *this << dataString;
     }
     if (this->logActivation) {
-        std::stringstream ss;
-        ss << data;
-        fileFlag << ss.str();
+        fileFlag << dataString;
     }
 }
 

@@ -5,31 +5,34 @@ Scheduler::Scheduler():
     temperature(),humidity(),light(),sound(),
     server(4,true,true){
         // On va définir l'activité du server ici 
-    const int NUM_SECONDS = 1;
+    const int NUM_SECONDS = 2;
+    int capteur =0;
     double time_counter = 0;
     clock_t this_time = clock();
     clock_t last_time = this_time;
     
     while(true){
-        this_time = clock();
+            this_time = clock();
 
-        time_counter += (double)(this_time - last_time);
+            time_counter += (double)(this_time - last_time);
 
-        last_time = this_time;
+            last_time = this_time;
 
-        if(time_counter > (double)(NUM_SECONDS * CLOCKS_PER_SEC))
-        { 
-            time_counter -= (double)(NUM_SECONDS * CLOCKS_PER_SEC);
-            
-            cout << "Actualisation des donnees : " << endl;
-            
-            getData();
+                if(time_counter > (double)(NUM_SECONDS * CLOCKS_PER_SEC))
+                { 
+                    time_counter -= (double)(NUM_SECONDS * CLOCKS_PER_SEC);
+                    capteur = capteur +1;
+                    cout << "Actualisation des donnees : " << endl;
+                    
+                    cout << "Capteur numero "<< capteur << " :" << endl;
+                    getData();
 
-            cout << endl << endl;
-            
-        }
-    }
-
+                   if(capteur >= 4) capteur =0;
+                    cout << endl << endl;
+                
+                }
+            }
+        
     }
 
 

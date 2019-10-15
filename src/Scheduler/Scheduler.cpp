@@ -4,9 +4,8 @@
 #include "Scheduler.h"
 
 Scheduler::Scheduler() :
-           server(),
-           humidity(), sound(), temperature(), light()
-{}
+        server(),
+        humidity(), sound(), temperature(), light() {}
 
 void Scheduler::run() {
     while (true) {

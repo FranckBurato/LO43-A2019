@@ -3,16 +3,19 @@
 
 #include "Sensor.h"
 
-class Sound: public Sensor<int> {
+class Sound : public Sensor<int> {
 protected:
     int aleaGenVal() override;
+
     friend class Scheduler;
 
 public:
     Sound();
-    Sound(Sound&) = default;
 
-    Sound& operator=(const Sound&) = default;
+    Sound(Sound &) = default;
+
+    Sound &operator=(const Sound &) = default;
+
     ~Sound() = default;
 };
 

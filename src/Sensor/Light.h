@@ -3,16 +3,19 @@
 
 #include "Sensor.h"
 
-class Light: public Sensor<bool> {
+class Light : public Sensor<bool> {
 protected:
     bool aleaGenVal() override;
+
     friend class Scheduler;
 
 public:
     Light();
-    Light(Light&) = default;
 
-    Light& operator=(const Light&) = default;
+    Light(Light &) = default;
+
+    Light &operator=(const Light &) = default;
+
     ~Light() = default;
 };
 

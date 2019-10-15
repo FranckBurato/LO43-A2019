@@ -3,16 +3,19 @@
 
 #include "Sensor.h"
 
-class Temperature: public Sensor<float> {
+class Temperature : public Sensor<float> {
 protected:
     float aleaGenVal() override;
+
     friend class Scheduler;
 
 public:
     Temperature();
-    Temperature(Temperature&) = default;
 
-    Temperature& operator=(const Temperature&) = default;
+    Temperature(Temperature &) = default;
+
+    Temperature &operator=(const Temperature &) = default;
+
     ~Temperature() = default;
 };
 

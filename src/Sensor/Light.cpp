@@ -1,11 +1,11 @@
 #include <random>
 #include <chrono>
+
 using namespace std;
 
 #include "Light.h"
 
-Light::Light() : Sensor()
-{
+Light::Light() : Sensor() {
     this->valSense = this->aleaGenVal();
     this->delay = 3;
 }

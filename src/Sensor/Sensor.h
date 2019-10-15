@@ -9,15 +9,20 @@ protected:
     int lastUpdate{};
 
     virtual T aleaGenVal() = 0;
+
     friend class Scheduler;
 
 public:
     Sensor();
-    Sensor(Sensor&);
+
+    Sensor(Sensor &);
+
     Sensor(T, int, int);
+
     ~Sensor();
 
     bool canSend(int);
+
     T sendData();
 };
 

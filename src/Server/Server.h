@@ -4,6 +4,7 @@
 #include <iostream>
 #include <sstream>
 #include <iomanip>
+
 using namespace std;
 
 class Server {
@@ -15,21 +16,26 @@ private:
 
 public:
     Server();
-    Server(Server& other);
+
+    Server(Server &other);
+
     Server(bool, bool);
+
     ~Server();
 
-    Server& operator=(const Server&);
-    void operator<<(const string&);
+    Server &operator=(const Server &);
 
-    template <class T>
+    void operator<<(const string &);
+
+    template<class T>
     void dataReceive(T, int);
 
-    static void consoleWrite(const string&);
-    static void fileWrite(const string&, int);
+    static void consoleWrite(const string &);
+
+    static void fileWrite(const string &, int);
 };
 
-void operator<<(int, const string&);
+void operator<<(int, const string &);
 
 template<typename T>
 void Server::dataReceive(T data, int fileFlag) {

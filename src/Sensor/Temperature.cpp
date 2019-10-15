@@ -1,11 +1,11 @@
 #include <random>
 #include <chrono>
+
 using namespace std;
 
 #include "Temperature.h"
 
-Temperature::Temperature() : Sensor()
-{
+Temperature::Temperature() : Sensor() {
     this->valSense = this->aleaGenVal();
     this->delay = 5;
 }

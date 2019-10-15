@@ -18,6 +18,7 @@ private:
 
 public:
     Scheduler();
+
     ~Scheduler() = default;
 
     void run();

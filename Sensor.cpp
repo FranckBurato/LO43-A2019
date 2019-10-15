@@ -24,11 +24,10 @@ Sensor::~Sensor(){
 
 //methodes : 
 int Sensor::sendData(){
+    valSense = aleaGenVal();
     return this->valSense;
 };
 
 int Sensor::aleaGenVal(){
-    srand(time(NULL));
-    valSense= rand()%100;
-    return valSense;
+    return rand() %100;
 };

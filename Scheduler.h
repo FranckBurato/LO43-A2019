@@ -1,6 +1,7 @@
+#ifndef SCHEDULER_H
+#define SCHEDULER_H
 #include <iostream>
-#include <fstream>
-#include <string>
+#include <time.h>
 #include "Temperature.h"
 #include "Humidity.h"
 #include "Light.h"
@@ -24,3 +25,5 @@ class Scheduler{
     void getData();
  
 };
+
+#endif

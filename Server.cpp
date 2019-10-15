@@ -28,7 +28,7 @@ Server& Server:: operator=(const Server& server){
 }
 
 void Server::operator<<(int dataSens){
-    this->consoleWrite(dataSens);
+    this->consoleWrite(dataSens, "");
    
 }
 
@@ -52,22 +52,22 @@ Server::~Server(){
 }
 
 
-void Server::consoleWrite(int dataSens_p){
-    cout << dataSens_p << "\n";
+void Server::consoleWrite(int dataSens_p, string message){
+    cout << message << " " << dataSens_p << "\n";
 }
-void Server::fileWrite(int dataSens_p){
+void Server::fileWrite(int dataSens_p, string message){
     ofstream logs;
     logs.open("log_capteur.txt", ios::out | ios::app );
-    logs << dataSens_p <<"\n\n";
+    logs << message << "\n" << dataSens_p <<"\n" ;
     logs.close();
 }
  
-void Server::dataRcv(int dataSens){
+void Server::dataRcv(int dataSens,string sensor){
     if(this->consolActivation==true){
-        this->consoleWrite(dataSens);
+        this->consoleWrite(dataSens,sensor);
     }
     if(this->logActivation==true){
-        this->fileWrite(dataSens);
+        this->fileWrite(dataSens,sensor);
     }
 }
 

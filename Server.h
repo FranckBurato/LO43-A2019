@@ -23,8 +23,8 @@ class Server{
 
         ~Server(); // Destructeur
 
-        void dataRcv(int dataSens);
-        void consoleWrite(int dataSens_p); // attribut message a rajouter
-        void fileWrite(int dataSens_p);  // attribut message a rajouter
+        void dataRcv(int dataSens, string message);
+        void consoleWrite(int dataSens_p,string message); // attribut message a rajouter
+        void fileWrite(int dataSens_p,string message);  // attribut message a rajouter
 
 };

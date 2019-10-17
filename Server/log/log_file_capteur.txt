@@ -902,3 +902,555 @@ Sound: 50
 
 	Sound: 21
 
+	Temperature: 75
+
+	Humidity: 16
+
+	Light: 88
+
+	Sound: 32
+
+	Temperature: 97
+
+	Humidity: 54
+
+	Light: 4
+
+	Sound: 51
+
+	Temperature: 67
+
+	Humidity: 71
+
+	Light: 23
+
+	Sound: 21
+
+	Temperature: 1
+
+	Humidity: 45
+
+	Light: 81
+
+	Sound: 2
+
+	Temperature: 31
+
+	Humidity: 79
+
+	Light: 67
+
+	Sound: 70
+
+	Temperature: 61
+
+	Humidity: 17
+
+	Light: 38
+
+	Sound: 6
+
+	Temperature: 94
+
+	Humidity: 32
+
+	Light: 86
+
+	Sound: 66
+
+	Temperature: 1
+
+	Humidity: 84
+
+	Light: 64
+
+	Sound: 30
+
+	Temperature: 1
+
+	Humidity: 34
+
+	Light: 92
+
+	Sound: 39
+
+	Temperature: 0
+
+	Humidity: 24
+
+	Light: 66
+
+	Sound: 62
+
+	Temperature: 2
+
+	Humidity: 76
+
+	Light: 25
+
+	Sound: 47
+
+	Temperature: 77
+
+	Humidity: 95
+
+	Light: 20
+
+	Sound: 94
+
+	Temperature: 38
+
+	Humidity: 34
+
+	Light: 62
+
+	Sound: 25
+
+	Temperature: 83.7208
+
+	Humidity: 99
+
+	Light: 12
+
+	Sound: 84
+
+	Temperature: 74.9543
+
+	Humidity: 26
+
+	Light: 1
+
+	Sound: 60
+
+	Temperature: 97.9899
+
+	Humidity: 87.2336
+
+	Light: 1
+
+	Sound: 72
+
+	Temperature: 62.3917
+
+	Humidity: 57.0197
+
+	Light: 1
+
+	Sound: 98
+
+	Temperature: 14.9809
+
+	Humidity: 42.0358
+
+	Light: 1
+
+	Sound: 50
+
+	Temperature: 39.1792
+
+	Humidity: 31.6498
+
+	Light: 1
+
+	Sound: 80
+
+	Temperature: 35.0789
+
+	Humidity: 47.1998
+
+	Light: 1
+
+	Sound: 25
+
+	Temperature: 67.9223
+
+	Humidity: 29.4794
+
+	Light: 1
+
+	Sound: 76
+
+	Temperature: 35.7118
+
+	Humidity: 51.928
+
+	Light: 1
+
+	Sound: 19
+
+	Temperature: 67.8205
+
+	Humidity: 32.271
+
+	Light: 1
+
+	Sound: 65
+
+	Temperature: 17.0177
+
+	Humidity: 70.23
+
+	Light: 1
+
+	Sound: 31
+
+	Temperature: 39.0755
+
+	Humidity: 9.74076
+
+	Light: 1
+
+	Sound: 37
+
+	Temperature: 60.0612
+
+	Humidity: 27.6065
+
+	Light: 0
+
+	Sound: 35
+
+	Temperature: 35.4401
+
+	Humidity: 83.0648
+
+	Light: 0
+
+	Sound: 11
+
+	Temperature: 36.8808
+
+	Humidity: 97.0892
+
+	Light: 0
+
+	Sound: 78
+
+	Temperature: 86.2735
+
+	Humidity: 6.36122
+
+	Light: 1
+
+	Sound: 20
+
+	Temperature: 39.4135
+
+	Humidity: 28.7786
+
+	Light: 1
+
+	Sound: 89
+
+	Temperature: 59.4676
+
+	Humidity: 15.1936
+
+	Light: 1
+
+	Sound: 38
+
+	Temperature: 92.8863
+
+	Humidity: 22.7946
+
+	Light: 1
+
+	Sound: 90
+
+	Temperature: 21.939
+
+	Humidity: 59.9388
+
+	Light: 1
+
+	Sound: 62
+
+	Temperature: 72.142
+
+	Humidity: 75.7758
+
+	Light: 1
+
+	Sound: 22
+
+	Temperature: 86.5732
+
+	Humidity: 75.5242
+
+	Light: 0
+
+	Sound: 88
+
+	Temperature: 72.6416
+
+	Humidity: 81.3318
+
+	Light: 1
+
+	Sound: 25
+
+	Temperature: 90.4864
+
+	Humidity: 37.9639
+
+	Light: 0
+
+	Sound: 93
+
+	Temperature: 29.0467
+
+	Humidity: 21.4521
+
+	Light: 1
+
+	Sound: 99
+
+	Temperature: 91.1936
+
+	Humidity: 74.5888
+
+	Light: 0
+
+	Sound: 43
+
+	Temperature: 87.9168
+
+	Humidity: 35.1169
+
+	Light: 1
+
+	Sound: 75
+
+	Temperature: 88.9727
+
+	Humidity: 44.2468
+
+	Light: 0
+
+	Sound: 61
+
+	Temperature: 20.0226
+
+	Humidity: 90.378
+
+	Light: 1
+
+	Sound: 6
+
+	Temperature: 65.9022
+
+	Humidity: 58.3969
+
+	Light: 1
+
+	Sound: 38
+
+	Temperature: 39.7287
+
+	Humidity: 84.7228
+
+	Light: 0
+
+	Sound: 30
+
+	Temperature: 22.6867
+
+	Humidity: 33.1923
+
+	Light: 1
+
+	Sound: 51
+
+	Temperature: 54.6444
+
+	Humidity: 38.524
+
+	Light: 1
+
+	Sound: 45
+
+	Temperature: 13.1128
+
+	Humidity: 68.6794
+
+	Light: 0
+
+	Sound: 1
+
+	Temperature: 3.79631
+
+	Humidity: 91.8977
+
+	Light: 0
+
+	Sound: 92
+
+	Temperature: 36.1445
+
+	Humidity: 65.3693
+
+	Light: 1
+
+	Sound: 56
+
+	Temperature: 30.6604
+
+	Humidity: 35.3391
+
+	Light: 0
+
+	Sound: 80
+
+	Temperature: 79.6245
+
+	Humidity: 16.9338
+
+	Light: 1
+
+	Sound: 37
+
+	Temperature: 63.6139
+
+	Humidity: 81.1604
+
+	Light: 0
+
+	Sound: 88
+
+	Temperature: 34.9342
+
+	Humidity: 36.071
+
+	Light: 0
+
+	Sound: 5
+
+	Temperature: 3.42234
+
+	Humidity: 8.72074
+
+	Light: 0
+
+	Sound: 12
+
+	Temperature: 66.869
+
+	Humidity: 94.6579
+
+	Light: 0
+
+	Sound: 86
+
+	Temperature: 93.1082
+
+	Humidity: 9.05573
+
+	Light: 0
+
+	Sound: 57
+
+	Temperature: 35.476
+
+	Humidity: 39.9104
+
+	Light: 0
+
+	Sound: 66
+
+	Temperature: 75.2495
+
+	Humidity: 57.493
+
+	Light: 0
+
+	Sound: 54
+
+	Temperature: 74.4268
+
+	Humidity: 78.5204
+
+	Light: 1
+
+	Sound: 38
+
+	Temperature: 59.6809
+
+	Humidity: 6.05415
+
+	Light: 1
+
+	Sound: 94
+
+	Temperature: 18.214
+
+	Humidity: 1.14845
+
+	Light: 0
+
+	Sound: 48
+
+	Temperature: 89.3547
+
+	Humidity: 18.3828
+
+	Light: 1
+
+	Sound: 84
+
+	Temperature: 6.87907
+
+	Humidity: 73.0492
+
+	Light: 1
+
+	Sound: 82
+
+	Temperature: 79.699
+
+	Humidity: 59.5664
+
+	Light: 0
+
+	Sound: 97
+
+	Temperature: 68.0382
+
+	Humidity: 77.3291
+
+	Light: 0
+
+	Sound: 5
+
+	Temperature: 27.7742
+
+	Humidity: 66.244
+
+	Light: 1
+
+	Sound: 14
+
+	Temperature: 62.3609
+
+	Humidity: 71.8356
+
+	Light: 0
+
+	Sound: 86
+
+	Temperature: 77.3143
+
+	Humidity: 40.8922
+
+	Light: 1
+
+	Sound: 95
+
+	Temperature: 42.0407
+
+	Humidity: 32.4895
+
+	Light: 1
+
+	Sound: 31
+

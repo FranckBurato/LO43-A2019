@@ -1,9 +1,14 @@
+#ifndef DEF_HUMIDITY
+#define DEF_HUMIDITY
 
+#include "Sensor.h"
 
-class Humidity:public Sensor
+class Humidity : public Sensor
 {
 	public :
 	private :
-		float data;
+		int aleaGenVal ();
 		
 };
+
+#endif

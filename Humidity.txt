@@ -1,0 +1,3 @@
+Thu Oct 17 18:01:03 2019 CEST Humidity : 9315
+Thu Oct 17 18:01:19 2019 CEST Humidity : 6056
+Thu Oct 17 18:01:35 2019 CEST Humidity : 6248

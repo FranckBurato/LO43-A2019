@@ -1,51 +1,42 @@
 #include "Server.h"
 #include <iostream>
 #include <fstream>
+#include <ctime>
+#include <iomanip>
 
 using namespace std;
 
-Server::Server():filePath("null.txt"){}
-
-Server::Server(const Server& autre):filePath(autre.filePath){}
-
-Server::Server(string filePath):filePath(filePath){}
-
+Server::Server(){}
+Server::Server(const Server& autre):data(autre.data){}
 Server::~Server(){}
 
-ostream& operator<<(ostream& os, const Server& s)
+/*Server& operator<<(const Server& s)
 {
-	os <<"un test"<< endl;
+	os << this->data << endl;
 	return os;
 }
-/*
-	operator<<(int)
-*/
-ofstream& operator<<(ofstream& of, const Server& s)
-{	
-	of<<"le test"<<endl;
-	return of;
-}
-/*
-	operator<<(string,int)
-*/
 
 Server& Server::operator=(const Server& autre)
 {
-	this->filePath=autre.filePath;
-}
+	this->data = autre.data;
+}*/
 
 
-void Server::fileWrite ()
+void Server::fileWrite (const string filePath)
 {
-	ofstream file(this->filePath);
-	if (file)
-	{
-		file<<*this;
-		file.close();
-	}
+	ofstream file(filePath, ofstream::app);
+	std::time_t t = std::time(nullptr);
+	file << put_time(localtime(&t), "%c %Z") << this->data << endl;
+	file.close();
 }
 
 void Server::consoleWrite ()
 {
-	cout<<*this;
+	std::time_t t = std::time(nullptr);
+	cout << put_time(localtime(&t), "%c %Z") << this->data << endl;
+}
+
+void Server::dataRcv(string data)
+{
+	this->data = data;
 }

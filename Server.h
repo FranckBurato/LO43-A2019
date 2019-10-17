@@ -10,10 +10,10 @@ class Server
 		Server(string);
 		~Server ();
 		void consoleWrite();
-		void fileWrite();
+		void fileWrite(string);
+		void dataRcv(string);
 		friend ostream& operator << (ostream&, const Server& s);
-		friend ofstream& operator<<(ofstream&, const Server& s);
 		Server& operator=(const Server&);
 	private :
-		string filePath;
+		string data;
 };

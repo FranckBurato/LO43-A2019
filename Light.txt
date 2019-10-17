@@ -1,0 +1,7 @@
+Thu Oct 17 18:00:55 2019 CEST Light : 0
+Thu Oct 17 18:01:03 2019 CEST Light : 1
+Thu Oct 17 18:01:11 2019 CEST Light : 1
+Thu Oct 17 18:01:19 2019 CEST Light : 0
+Thu Oct 17 18:01:27 2019 CEST Light : 1
+Thu Oct 17 18:01:35 2019 CEST Light : 0
+Thu Oct 17 18:01:43 2019 CEST Light : 0

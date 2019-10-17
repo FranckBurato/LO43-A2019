@@ -1,9 +1,15 @@
+#ifndef DEF_TEMPERATURE
+#define DEF_TEMPERATURE
+
 #include "Sensor.h"
 
 class Temperature : public Sensor
 {
 	public :
 	private :
-		float data;
+		int aleaGenVal ();
 		
 };
+
+
+#endif

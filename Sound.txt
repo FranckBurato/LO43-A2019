@@ -1,0 +1,14 @@
+Thu Oct 17 18:00:51 2019 CEST Sound : 109
+Thu Oct 17 18:00:55 2019 CEST Sound : 44
+Thu Oct 17 18:00:59 2019 CEST Sound : 19
+Thu Oct 17 18:01:03 2019 CEST Sound : 15
+Thu Oct 17 18:01:07 2019 CEST Sound : 35
+Thu Oct 17 18:01:11 2019 CEST Sound : 113
+Thu Oct 17 18:01:15 2019 CEST Sound : 56
+Thu Oct 17 18:01:19 2019 CEST Sound : 56
+Thu Oct 17 18:01:23 2019 CEST Sound : 64
+Thu Oct 17 18:01:27 2019 CEST Sound : 53
+Thu Oct 17 18:01:31 2019 CEST Sound : 77
+Thu Oct 17 18:01:35 2019 CEST Sound : 148
+Thu Oct 17 18:01:39 2019 CEST Sound : 80
+Thu Oct 17 18:01:43 2019 CEST Sound : 54

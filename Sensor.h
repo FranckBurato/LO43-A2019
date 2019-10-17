@@ -1,3 +1,8 @@
+#ifndef DEF_SENSOR
+#define DEF_SENSOR
+
+#include <iostream>
+using namespace std;
 
 
 class Sensor
@@ -6,7 +11,9 @@ class Sensor
 		Sensor();
 		Sensor(const Sensor&);
 		virtual ~Sensor();
-	protected :
-		template <class T> T aleaGenVal ();
+		virtual string sendData();
 	private :
+		virtual int aleaGenVal ()=0;		
 };
+
+#endif

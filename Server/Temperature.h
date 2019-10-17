@@ -4,9 +4,6 @@ using namespace std;
 
 
 class Temperature : public Sensor<float>{
-    using Sensor<float>::Sensor;
-
-
     public:
         string getName();
 };

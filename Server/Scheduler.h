@@ -20,6 +20,7 @@ class Scheduler{
         Humidity h;
         Light l;
         Sound s;
+        
 
         Server server;  
         void getInfos();      

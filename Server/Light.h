@@ -4,7 +4,6 @@ using namespace std;
 
 
 class Light : public Sensor<bool>{
-    using Sensor<bool>::Sensor;
     public:
         string getName();
 };

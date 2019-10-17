@@ -8,10 +8,11 @@ class LightSensor : public Sensor
      private:
         //Les attributs de Sensor sont héritées
      public:
-        //Les methodes de Sensor sont héritées
-        /* créée des données (Aleatoire, simulation), puis les envoi au serveur.
-          En modifiant les attributs de cette classe, eux meme partagés avec le server?
-          */
+        LightSensor();
+        LightSensor(LightSensor &);
+        LightSensor &operator=(const LightSensor &);
+        ~LightSensor(); //Les methodes de Sensor sont héritées
+        
         int aleaGenVal();
          
 

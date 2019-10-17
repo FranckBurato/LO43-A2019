@@ -3,9 +3,8 @@
 
 #include "Server.h"
 
-class Sensor //Ne sert que de base aux classes filles, n'interagit pas avc server
+class Sensor 
 {
-    friend class Server
     private:
      int sensorData;  
      

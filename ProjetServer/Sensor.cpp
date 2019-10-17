@@ -9,7 +9,7 @@ Sensor::~Sensor()
 
 int Sensor::sendData()
 {
-  dataRcv = sensorData;
+  // dataRcv = sensorData; (get datarcv)
   return this -> sensorData;  
 }
 

@@ -5,19 +5,21 @@
 
 class Server
 { 
-  friend class Sensor;
   private:
-   int dataRcv = &sensorData;
+   bool consolActivation;
+   bool logActivation;
+   int nbrOfSensors;
+   int dataRcv;
 
   public:
    Server();
    Server(const Server&);
    ~Server();
-   // Server& operator=(const Server&);  //Forme canonique de Coplien
+   Server& operator=(const Server&);  //Forme canonique de Coplien
     
-   // void dataReceive();
-   void consolWrite();   //Visualise les données dans la console
-   void fileWrite();     //Ecrit les données ds un fichier
+   void dataReceive();
+   static void consolWrite();   //Visualise les données dans la console
+   static void fileWrite();     //Ecrit les données ds un fichier
 };
 
 #endif

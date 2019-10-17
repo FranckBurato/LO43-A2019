@@ -12,27 +12,30 @@ Server::Server(const Server&)
 {}
 Server::~Server()              
 {}
-/* Server& Server::operator=(const Server &other) 
+Server& Server::operator=(const Server &other) 
 {
-    
-}  */
+    this->consolActivation = other.consolActivation;  // THIS?
+    this->logActivation = other.logActivation;
+    return *this;   
+} 
 
 /* void dataReceive()
 {
+    getsensordata
   dataRcv = sensorData;
 }  */
 
 
 void consolWrite()   
 {
-    cout << dataRcv << endl;
+    cout <<"lol"  << endl; //datarcv
 }
 void fileWrite()     
 {
     ofstream lightFlux("C:/Users/BabaDeathLord/Desktop/ProjetServer-Copie/LogsLight.txt");
     if(lightFlux)
     {
-        lightFlux << dataRcv << endl;
+        lightFlux <<  "lol" << endl; //datarcv
     }
     else
     {
@@ -40,9 +43,3 @@ void fileWrite()
     }
     
 } 
-
-int main()
-{
-    
-    return 0;
-}

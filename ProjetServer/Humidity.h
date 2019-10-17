@@ -8,7 +8,11 @@ class HumiditySensor : public Sensor
      private:
         //Les attributs de Sensor sont héritées
      public:
-        //Les methodes de Sensor sont héritées
+        HumiditySensor();
+        HumiditySensor(HumiditySensor &);
+        HumiditySensor &operator=(const HumiditySensor &);
+        ~HumiditySensor(); //Les methodes de Sensor sont héritées
+        
         int aleaGenVal();
 };
 

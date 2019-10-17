@@ -8,7 +8,11 @@ class TemperatureSensor : public Sensor
      private:
         //Les attributs de Sensor sont héritées
      public:
-        //Les methodes de Sensor sont héritées
+        TemperatureSensor();
+        TemperatureSensor(TemperatureSensor &);
+        TemperatureSensor &operator=(const TemperatureSensor &);   
+        ~TemperatureSensor();   //Les methodes de Sensor sont héritées
+
         int aleaGenVal();
 };
 

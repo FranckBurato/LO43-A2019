@@ -1,0 +1,12 @@
+lumiere : 0
+lumiere : 1
+lumiere : 1
+lumiere : 0
+lumiere : 1
+lumiere : 0
+lumiere : 0
+lumiere : 1
+lumiere : 1
+lumiere : 0
+lumiere : 1
+lumiere : 1

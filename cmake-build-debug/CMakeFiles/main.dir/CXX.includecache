@@ -6,17 +6,91 @@
 
 #IncludeRegexTransform: 
 
-C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.cpp
+C:/Coding/C C++/LO43-A2019/src/Scheduler/Scheduler.cpp
+ctime
+-
+winbase.h
+-
+Scheduler.h
+C:/Coding/C C++/LO43-A2019/src/Scheduler/Scheduler.h
+
+C:/Coding/C C++/LO43-A2019/src/Scheduler/Scheduler.h
+../Server/Server.h
+C:/Coding/C C++/LO43-A2019/src/Server/Server.h
+../Sensor/Humidity.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Humidity.h
+../Sensor/Sound.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Sound.h
+../Sensor/Temperature.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Temperature.h
+../Sensor/Light.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Light.h
+
+C:/Coding/C C++/LO43-A2019/src/Sensor/Humidity.cpp
 random
 -
 chrono
 -
 Humidity.h
-C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Humidity.h
 
-C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Humidity.h
 Sensor.h
-C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Sensor.h
 
-C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Light.cpp
+random
+-
+chrono
+-
+Light.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Light.h
+
+C:/Coding/C C++/LO43-A2019/src/Sensor/Light.h
+Sensor.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-A2019/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-A2019/src/Sensor/Sound.cpp
+random
+-
+chrono
+-
+Sound.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Sound.h
+
+C:/Coding/C C++/LO43-A2019/src/Sensor/Sound.h
+Sensor.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-A2019/src/Sensor/Temperature.cpp
+random
+-
+chrono
+-
+Temperature.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Temperature.h
+
+C:/Coding/C C++/LO43-A2019/src/Sensor/Temperature.h
+Sensor.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-A2019/src/Server/Server.cpp
+iostream
+-
+Server.h
+C:/Coding/C C++/LO43-A2019/src/Server/Server.h
+
+C:/Coding/C C++/LO43-A2019/src/Server/Server.h
+iostream
+-
+sstream
+-
+iomanip
+-
+
+C:/Coding/C C++/LO43-A2019/src/main.cpp
+Scheduler/Scheduler.h
+C:/Coding/C C++/LO43-A2019/src/Scheduler/Scheduler.h
 

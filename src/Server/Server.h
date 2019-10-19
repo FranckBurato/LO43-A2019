@@ -40,7 +40,7 @@ void operator<<(int, const string &);
 template<typename T>
 void Server::dataReceive(T data, int fileFlag) {
     std::stringstream ss;
-    ss << setprecision(2) << fixed << data;
+    ss << setprecision(2) << fixed << boolalpha << data;
     string dataString = ss.str();
 
     if (this->consoleActivation) {

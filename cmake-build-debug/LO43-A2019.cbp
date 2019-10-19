@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Coding/C C++/LO43-TP/cmake-build-debug"/>
+				<Option working_dir="C:/Coding/C C++/LO43-A2019/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Coding/C C++/LO43-TP/cmake-build-debug"/>
+				<Option working_dir="C:/Coding/C C++/LO43-A2019/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="main">
-				<Option output="C:/Coding/C C++/LO43-TP/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Coding/C C++/LO43-TP/cmake-build-debug"/>
+				<Option output="C:/Coding/C C++/LO43-A2019/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Coding/C C++/LO43-A2019/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -42,15 +42,15 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="main/fast">
-				<Option output="C:/Coding/C C++/LO43-TP/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Coding/C C++/LO43-TP/cmake-build-debug"/>
+				<Option output="C:/Coding/C C++/LO43-A2019/cmake-build-debug/main.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Coding/C C++/LO43-A2019/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -63,66 +63,66 @@
 					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/8.2.0/include-fixed"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Coding/C C++/LO43-TP/cmake-build-debug"/>
+				<Option working_dir="C:/Coding/C C++/LO43-A2019/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Coding/C C++/LO43-A2019/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Scheduler/Scheduler.cpp">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Scheduler/Scheduler.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Scheduler/Scheduler.h">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Scheduler/Scheduler.h">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.cpp">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Sensor/Humidity.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Humidity.h">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Sensor/Humidity.h">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Light.cpp">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Sensor/Light.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Light.h">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Sensor/Light.h">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Sensor.h">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Sensor/Sensor.h">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Sound.cpp">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Sensor/Sound.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Sound.h">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Sensor/Sound.h">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Temperature.cpp">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Sensor/Temperature.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Sensor/Temperature.h">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Sensor/Temperature.h">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Server/Server.cpp">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Server/Server.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/Server/Server.h">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/Server/Server.h">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/src/main.cpp">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/src/main.cpp">
 			<Option target="main"/>
 		</Unit>
-		<Unit filename="C:/Coding/C C++/LO43-TP/CMakeLists.txt">
+		<Unit filename="C:/Coding/C C++/LO43-A2019/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

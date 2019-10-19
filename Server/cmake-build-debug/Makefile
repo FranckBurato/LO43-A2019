@@ -122,221 +122,248 @@ Server/fast:
 	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/build
 .PHONY : Server/fast
 
-Humidity.obj: Humidity.cpp.obj
+Source/Data.obj: Source/Data.cpp.obj
 
-.PHONY : Humidity.obj
-
-# target to build an object file
-Humidity.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Humidity.cpp.obj
-.PHONY : Humidity.cpp.obj
-
-Humidity.i: Humidity.cpp.i
-
-.PHONY : Humidity.i
-
-# target to preprocess a source file
-Humidity.cpp.i:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Humidity.cpp.i
-.PHONY : Humidity.cpp.i
-
-Humidity.s: Humidity.cpp.s
-
-.PHONY : Humidity.s
-
-# target to generate assembly for a file
-Humidity.cpp.s:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Humidity.cpp.s
-.PHONY : Humidity.cpp.s
-
-Light.obj: Light.cpp.obj
-
-.PHONY : Light.obj
+.PHONY : Source/Data.obj
 
 # target to build an object file
-Light.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Light.cpp.obj
-.PHONY : Light.cpp.obj
+Source/Data.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Data.cpp.obj
+.PHONY : Source/Data.cpp.obj
 
-Light.i: Light.cpp.i
+Source/Data.i: Source/Data.cpp.i
 
-.PHONY : Light.i
+.PHONY : Source/Data.i
 
 # target to preprocess a source file
-Light.cpp.i:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Light.cpp.i
-.PHONY : Light.cpp.i
+Source/Data.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Data.cpp.i
+.PHONY : Source/Data.cpp.i
 
-Light.s: Light.cpp.s
+Source/Data.s: Source/Data.cpp.s
 
-.PHONY : Light.s
+.PHONY : Source/Data.s
 
 # target to generate assembly for a file
-Light.cpp.s:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Light.cpp.s
-.PHONY : Light.cpp.s
+Source/Data.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Data.cpp.s
+.PHONY : Source/Data.cpp.s
 
-Scheduler.obj: Scheduler.cpp.obj
+Source/Humidity.obj: Source/Humidity.cpp.obj
 
-.PHONY : Scheduler.obj
+.PHONY : Source/Humidity.obj
 
 # target to build an object file
-Scheduler.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Scheduler.cpp.obj
-.PHONY : Scheduler.cpp.obj
+Source/Humidity.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Humidity.cpp.obj
+.PHONY : Source/Humidity.cpp.obj
 
-Scheduler.i: Scheduler.cpp.i
+Source/Humidity.i: Source/Humidity.cpp.i
 
-.PHONY : Scheduler.i
+.PHONY : Source/Humidity.i
 
 # target to preprocess a source file
-Scheduler.cpp.i:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Scheduler.cpp.i
-.PHONY : Scheduler.cpp.i
+Source/Humidity.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Humidity.cpp.i
+.PHONY : Source/Humidity.cpp.i
 
-Scheduler.s: Scheduler.cpp.s
+Source/Humidity.s: Source/Humidity.cpp.s
 
-.PHONY : Scheduler.s
+.PHONY : Source/Humidity.s
 
 # target to generate assembly for a file
-Scheduler.cpp.s:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Scheduler.cpp.s
-.PHONY : Scheduler.cpp.s
+Source/Humidity.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Humidity.cpp.s
+.PHONY : Source/Humidity.cpp.s
 
-Sensor.obj: Sensor.cpp.obj
+Source/Light.obj: Source/Light.cpp.obj
 
-.PHONY : Sensor.obj
+.PHONY : Source/Light.obj
 
 # target to build an object file
-Sensor.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sensor.cpp.obj
-.PHONY : Sensor.cpp.obj
+Source/Light.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Light.cpp.obj
+.PHONY : Source/Light.cpp.obj
 
-Sensor.i: Sensor.cpp.i
+Source/Light.i: Source/Light.cpp.i
 
-.PHONY : Sensor.i
+.PHONY : Source/Light.i
 
 # target to preprocess a source file
-Sensor.cpp.i:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sensor.cpp.i
-.PHONY : Sensor.cpp.i
+Source/Light.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Light.cpp.i
+.PHONY : Source/Light.cpp.i
 
-Sensor.s: Sensor.cpp.s
+Source/Light.s: Source/Light.cpp.s
 
-.PHONY : Sensor.s
+.PHONY : Source/Light.s
 
 # target to generate assembly for a file
-Sensor.cpp.s:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sensor.cpp.s
-.PHONY : Sensor.cpp.s
+Source/Light.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Light.cpp.s
+.PHONY : Source/Light.cpp.s
 
-Server.obj: Server.cpp.obj
+Source/Scheduler.obj: Source/Scheduler.cpp.obj
 
-.PHONY : Server.obj
+.PHONY : Source/Scheduler.obj
 
 # target to build an object file
-Server.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Server.cpp.obj
-.PHONY : Server.cpp.obj
+Source/Scheduler.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Scheduler.cpp.obj
+.PHONY : Source/Scheduler.cpp.obj
 
-Server.i: Server.cpp.i
+Source/Scheduler.i: Source/Scheduler.cpp.i
 
-.PHONY : Server.i
+.PHONY : Source/Scheduler.i
 
 # target to preprocess a source file
-Server.cpp.i:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Server.cpp.i
-.PHONY : Server.cpp.i
+Source/Scheduler.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Scheduler.cpp.i
+.PHONY : Source/Scheduler.cpp.i
 
-Server.s: Server.cpp.s
+Source/Scheduler.s: Source/Scheduler.cpp.s
 
-.PHONY : Server.s
+.PHONY : Source/Scheduler.s
 
 # target to generate assembly for a file
-Server.cpp.s:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Server.cpp.s
-.PHONY : Server.cpp.s
+Source/Scheduler.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Scheduler.cpp.s
+.PHONY : Source/Scheduler.cpp.s
 
-Sound.obj: Sound.cpp.obj
+Source/Sensor.obj: Source/Sensor.cpp.obj
 
-.PHONY : Sound.obj
+.PHONY : Source/Sensor.obj
 
 # target to build an object file
-Sound.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sound.cpp.obj
-.PHONY : Sound.cpp.obj
+Source/Sensor.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Sensor.cpp.obj
+.PHONY : Source/Sensor.cpp.obj
 
-Sound.i: Sound.cpp.i
+Source/Sensor.i: Source/Sensor.cpp.i
 
-.PHONY : Sound.i
+.PHONY : Source/Sensor.i
 
 # target to preprocess a source file
-Sound.cpp.i:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sound.cpp.i
-.PHONY : Sound.cpp.i
+Source/Sensor.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Sensor.cpp.i
+.PHONY : Source/Sensor.cpp.i
 
-Sound.s: Sound.cpp.s
+Source/Sensor.s: Source/Sensor.cpp.s
 
-.PHONY : Sound.s
+.PHONY : Source/Sensor.s
 
 # target to generate assembly for a file
-Sound.cpp.s:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Sound.cpp.s
-.PHONY : Sound.cpp.s
+Source/Sensor.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Sensor.cpp.s
+.PHONY : Source/Sensor.cpp.s
 
-Temperature.obj: Temperature.cpp.obj
+Source/Server.obj: Source/Server.cpp.obj
 
-.PHONY : Temperature.obj
+.PHONY : Source/Server.obj
 
 # target to build an object file
-Temperature.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Temperature.cpp.obj
-.PHONY : Temperature.cpp.obj
+Source/Server.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Server.cpp.obj
+.PHONY : Source/Server.cpp.obj
 
-Temperature.i: Temperature.cpp.i
+Source/Server.i: Source/Server.cpp.i
 
-.PHONY : Temperature.i
+.PHONY : Source/Server.i
 
 # target to preprocess a source file
-Temperature.cpp.i:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Temperature.cpp.i
-.PHONY : Temperature.cpp.i
+Source/Server.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Server.cpp.i
+.PHONY : Source/Server.cpp.i
 
-Temperature.s: Temperature.cpp.s
+Source/Server.s: Source/Server.cpp.s
 
-.PHONY : Temperature.s
+.PHONY : Source/Server.s
 
 # target to generate assembly for a file
-Temperature.cpp.s:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Temperature.cpp.s
-.PHONY : Temperature.cpp.s
+Source/Server.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Server.cpp.s
+.PHONY : Source/Server.cpp.s
 
-main.obj: main.cpp.obj
+Source/Sound.obj: Source/Sound.cpp.obj
 
-.PHONY : main.obj
+.PHONY : Source/Sound.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+Source/Sound.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Sound.cpp.obj
+.PHONY : Source/Sound.cpp.obj
 
-main.i: main.cpp.i
+Source/Sound.i: Source/Sound.cpp.i
 
-.PHONY : main.i
+.PHONY : Source/Sound.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/main.cpp.i
-.PHONY : main.cpp.i
+Source/Sound.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Sound.cpp.i
+.PHONY : Source/Sound.cpp.i
 
-main.s: main.cpp.s
+Source/Sound.s: Source/Sound.cpp.s
 
-.PHONY : main.s
+.PHONY : Source/Sound.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/main.cpp.s
-.PHONY : main.cpp.s
+Source/Sound.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Sound.cpp.s
+.PHONY : Source/Sound.cpp.s
+
+Source/Temperature.obj: Source/Temperature.cpp.obj
+
+.PHONY : Source/Temperature.obj
+
+# target to build an object file
+Source/Temperature.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Temperature.cpp.obj
+.PHONY : Source/Temperature.cpp.obj
+
+Source/Temperature.i: Source/Temperature.cpp.i
+
+.PHONY : Source/Temperature.i
+
+# target to preprocess a source file
+Source/Temperature.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Temperature.cpp.i
+.PHONY : Source/Temperature.cpp.i
+
+Source/Temperature.s: Source/Temperature.cpp.s
+
+.PHONY : Source/Temperature.s
+
+# target to generate assembly for a file
+Source/Temperature.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/Temperature.cpp.s
+.PHONY : Source/Temperature.cpp.s
+
+Source/main.obj: Source/main.cpp.obj
+
+.PHONY : Source/main.obj
+
+# target to build an object file
+Source/main.cpp.obj:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/main.cpp.obj
+.PHONY : Source/main.cpp.obj
+
+Source/main.i: Source/main.cpp.i
+
+.PHONY : Source/main.i
+
+# target to preprocess a source file
+Source/main.cpp.i:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/main.cpp.i
+.PHONY : Source/main.cpp.i
+
+Source/main.s: Source/main.cpp.s
+
+.PHONY : Source/main.s
+
+# target to generate assembly for a file
+Source/main.cpp.s:
+	$(MAKE) -f CMakeFiles\Server.dir\build.make CMakeFiles/Server.dir/Source/main.cpp.s
+.PHONY : Source/main.cpp.s
 
 # Help Target
 help:
@@ -347,30 +374,33 @@ help:
 	@echo ... Server
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Humidity.obj
-	@echo ... Humidity.i
-	@echo ... Humidity.s
-	@echo ... Light.obj
-	@echo ... Light.i
-	@echo ... Light.s
-	@echo ... Scheduler.obj
-	@echo ... Scheduler.i
-	@echo ... Scheduler.s
-	@echo ... Sensor.obj
-	@echo ... Sensor.i
-	@echo ... Sensor.s
-	@echo ... Server.obj
-	@echo ... Server.i
-	@echo ... Server.s
-	@echo ... Sound.obj
-	@echo ... Sound.i
-	@echo ... Sound.s
-	@echo ... Temperature.obj
-	@echo ... Temperature.i
-	@echo ... Temperature.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... Source/Data.obj
+	@echo ... Source/Data.i
+	@echo ... Source/Data.s
+	@echo ... Source/Humidity.obj
+	@echo ... Source/Humidity.i
+	@echo ... Source/Humidity.s
+	@echo ... Source/Light.obj
+	@echo ... Source/Light.i
+	@echo ... Source/Light.s
+	@echo ... Source/Scheduler.obj
+	@echo ... Source/Scheduler.i
+	@echo ... Source/Scheduler.s
+	@echo ... Source/Sensor.obj
+	@echo ... Source/Sensor.i
+	@echo ... Source/Sensor.s
+	@echo ... Source/Server.obj
+	@echo ... Source/Server.i
+	@echo ... Source/Server.s
+	@echo ... Source/Sound.obj
+	@echo ... Source/Sound.i
+	@echo ... Source/Sound.s
+	@echo ... Source/Temperature.obj
+	@echo ... Source/Temperature.i
+	@echo ... Source/Temperature.s
+	@echo ... Source/main.obj
+	@echo ... Source/main.i
+	@echo ... Source/main.s
 .PHONY : help
 
 

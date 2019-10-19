@@ -6,5 +6,4 @@ set(CMAKE_CXX_STANDARD 14)
 include_directories(.)
 
 add_executable(Server
-        Server.cpp
-        Server.hpp main.cpp Sensor.cpp Sensor.h Temperature.cpp Temperature.h Humidity.cpp Humidity.h Light.cpp Light.h Sound.cpp Sound.h Scheduler.cpp Scheduler.h)
+        Source/main.cpp Source/Sensor.cpp Header/Sensor.h Source/Temperature.cpp Header/Temperature.h Source/Humidity.cpp Header/Humidity.h Source/Light.cpp Header/Light.h Source/Sound.cpp Header/Sound.h Source/Scheduler.cpp Header/Scheduler.h Source/Data.cpp Header/Data.h Source/Server.cpp Header/Server.h)

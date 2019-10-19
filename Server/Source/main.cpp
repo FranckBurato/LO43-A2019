@@ -1,10 +1,10 @@
 #include <iostream>
-#include "Server.hpp"
+#include "Header/Server.h"
 
 int main() {
     Server server;
     server.fileWrite("coucou");
     server.consoleWrite("coucou");
-    std::cin >> server;
+
     return 0;
 }

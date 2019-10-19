@@ -13,5 +13,6 @@ Humidity::Humidity() : Sensor() {
 float Humidity::aleaGenVal() {
     default_random_engine generator(chrono::system_clock::now().time_since_epoch().count());
     uniform_real_distribution<float> distribution(0, 100);
-    return distribution(generator);
+    this->valSense = distribution(generator);
+    return this->valSense;
 }

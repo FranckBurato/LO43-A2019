@@ -8,18 +8,18 @@
 #include "sound.h"
 #include "temperature.h"
 
-
 #include <vector>
 #include <time.h>
-
 
 using namespace std;
 
 class Scheduler
 {
+	
 public:
     Scheduler();
     void transInfo();
+    
 private :
     Server serv;
     vector<Sensor<int> > sens;//on peut utilise  un vecteur de sensor pour tester la classe sensor 

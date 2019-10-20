@@ -23,6 +23,7 @@ public:
 private:
     T valSense;
     int aleaGenVal();
+    
 protected:    
     int numSens;//le but ici est de tester protected à travers les classe qui hérite de sensor (on pourrait renovyer directement le int correspond à travers la fonction
     //int getSensNumb()const au lieu de l'enregistrer dans int numSens) 
@@ -44,13 +45,14 @@ Sensor<T>::Sensor(const Sensor & sensor_p){
     this->valSense=sensor_p.valSense;
     this->numSens=sensor_p.numSens;
 }
+
 template <class T>
 Sensor<T>::Sensor(T valRcv):valSense(valRcv){
     this->numSens = 0;
     cout<<"test num sens : "<<this->numSens<<endl;
 }
-template <class T>
 
+template <class T>
 Sensor<T>& Sensor<T>::operator=(const Sensor& sensor_p){
 	this->valSense=sensor_p.valSense;
     this->numSens=sensor_p.numSens;

@@ -1,6 +1,5 @@
 #include "server.h"
 
-
 using namespace std;
 
 //Server::Server(int capteur1,int capteur2,int capteur3)
@@ -16,11 +15,13 @@ Server::Server(int nbrOfSensors,bool consolActivation,bool logActivation){
     this->consolActivation=consolActivation;
     this->logActivation=logActivation;
 }
+
 Server::Server(const Server & serv){
     this->nbrOfSensors=serv.nbrOfSensors;
     this->consolActivation=serv.consolActivation;
     this->logActivation=serv.logActivation;
 }
+
 Server& Server::operator=(const Server& serv){
 	if(this != &serv){
 	    this->nbrOfSensors=serv.nbrOfSensors;
@@ -31,7 +32,6 @@ Server& Server::operator=(const Server& serv){
 }
 Server::~Server(){
 }
-
 
 //sinon fair un gether dans chaque
 void operator<<(std::string dataString,int numSens){

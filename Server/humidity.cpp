@@ -2,8 +2,7 @@
 
 Humidity::Humidity(float valRcv): Sensor<float>(valRcv){
 	this->numSens = 2;
-	
-    std::cout<<"numsens humidity : "<<this->getSensNumb()<<this->numSens<<std::endl<<std::endl;
+    std::cout<<"numsens humidity : "<<this->numSens<<std::endl<<std::endl;
 }
 
 int Humidity::getSensNumb()const{

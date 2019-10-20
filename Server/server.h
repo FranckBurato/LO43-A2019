@@ -5,7 +5,9 @@
 #include <string>
 
 #include "sensor.h"
+
 using namespace std;
+
 class Server
 {
 
@@ -31,15 +33,12 @@ private:
 //    int capteur3;
 };
 
-
 std::ostream& operator << (std::ostream& sortie, const Server & n);
-
 
 
 template<typename T>
 void Server::operator<<(T data){
     this->consoleWrite(data);
-    
 }
 
 template<typename T>
@@ -56,15 +55,13 @@ template<typename T>
 void Server::consoleWrite(T dataSens_p){
     cout<<"capteur : "<<dataSens_p<<endl;
 }
+
 template<typename T>
 void Server::fileWrite(T dataSens_p){
-
     ofstream mylog;
     mylog.open("log/log_file_capteur.txt", ios::out | ios::app );
     mylog << dataSens_p <<"\n\n";
     mylog.close();
-
-
 }
 
 #endif // SERVER_H

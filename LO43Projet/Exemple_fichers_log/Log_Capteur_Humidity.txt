@@ -1,0 +1,40 @@
+Humidity : 65
+
+Humidity : 15
+
+Humidity : 37
+
+Humidity : 4
+
+Humidity : 27
+
+Humidity : 61
+
+Humidity : 61
+
+Humidity : 47
+
+Humidity : 74
+
+Humidity : 83
+
+Humidity : 25
+
+Humidity : 79
+
+Humidity : 95
+
+Humidity : 15
+
+Humidity : 57
+
+Humidity : 68
+
+Humidity : 87
+
+Humidity : 8
+
+Humidity : 49
+
+Humidity : 25
+

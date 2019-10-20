@@ -1,0 +1,40 @@
+Temperature : 41
+
+Temperature : 19
+
+Temperature : 69
+
+Temperature : 75
+
+Temperature : 99
+
+Temperature : 79
+
+Temperature : 71
+
+Temperature : 80
+
+Temperature : 12
+
+Temperature : 58
+
+Temperature : 85
+
+Temperature : 100
+
+Temperature : 72
+
+Temperature : 5
+
+Temperature : 65
+
+Temperature : 63
+
+Temperature : 15
+
+Temperature : 61
+
+Temperature : 86
+
+Temperature : 69
+

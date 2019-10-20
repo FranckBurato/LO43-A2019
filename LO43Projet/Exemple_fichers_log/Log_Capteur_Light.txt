@@ -1,0 +1,40 @@
+Light : 1
+
+Light : 0
+
+Light : 1
+
+Light : 1
+
+Light : 1
+
+Light : 1
+
+Light : 0
+
+Light : 1
+
+Light : 0
+
+Light : 0
+
+Light : 1
+
+Light : 0
+
+Light : 0
+
+Light : 1
+
+Light : 1
+
+Light : 1
+
+Light : 0
+
+Light : 1
+
+Light : 1
+
+Light : 0
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LO43Server"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LO43Server">
+				<Option output="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/LO43Server.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 LO43Server"/>
+					<CompileFile command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LO43Server/fast">
+				<Option output="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/LO43Server.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/i686-w64-mingw32"/>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/INFO/mingw32/bin/../lib/gcc/i686-w64-mingw32/8.1.0/../../../../i686-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 LO43Server/fast"/>
+					<CompileFile command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/INFO/mingw32/bin/mingw32-make.exe -f &quot;C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Headers/Data.h">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Headers/Humidity.h">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Headers/Light.h">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Headers/Scheduler.h">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Headers/Sensor.h">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Headers/SensorInterface.h">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Headers/Server.h">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Headers/Sound.h">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Headers/Temperature.h">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sources/Data.cpp">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sources/Humidity.cpp">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sources/Light.cpp">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sources/Scheduler.cpp">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sources/SensorInterface.cpp">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sources/Server.cpp">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sources/Sound.cpp">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/Sources/Temperature.cpp">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/main.cpp">
+			<Option target="LO43Server"/>
+		</Unit>
+		<Unit filename="C:/Users/alomb/CLionProjects/Server/LO43-A2019/Server/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

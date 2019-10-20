@@ -3,12 +3,14 @@
 
 using namespace std;
 
-Server::Server(int capteur1,int capteur2,int capteur3)
-{
-this->capteur1=capteur1;
-this->capteur2=capteur2;
-this->capteur3=capteur3;
-}
+//Server::Server(int capteur1,int capteur2,int capteur3)
+//{
+//this->capteur1=capteur1;
+//this->capteur2=capteur2;
+//this->capteur3=capteur3;
+//}
+Server::Server():nbrOfSensors(),consolActivation(),logActivation(){}
+
 Server::Server(int nbrOfSensors,bool consolActivation,bool logActivation){
     this->nbrOfSensors=nbrOfSensors;
     this->consolActivation=consolActivation;
@@ -20,41 +22,41 @@ Server::Server(const Server & serv){
     this->logActivation=serv.logActivation;
 }
 Server& Server::operator=(const Server& serv){
-    this->nbrOfSensors=serv.nbrOfSensors;
-    this->consolActivation=serv.consolActivation;
-    this->logActivation=serv.logActivation;
+	if(this != &serv){
+	    this->nbrOfSensors=serv.nbrOfSensors;
+	    this->consolActivation=serv.consolActivation;
+	    this->logActivation=serv.logActivation;
+	}
     return *this;
 }
 Server::~Server(){
 }
-void Server::dataRcv(int dataSens){
-    if(this->consolActivation==true){
-        this->consoleWrite(dataSens);
-    }
-    if(this->logActivation==true){
-        this->fileWrite(dataSens);
-    }
 
-}
-void Server::consoleWrite(int dataSens_p){
-    cout<<"capteur : "<<dataSens_p<<endl;
-}
-void Server::fileWrite(int dataSens_p){
 
+//sinon fair un gether dans chaque
+void operator<<(std::string dataString,int numSens){
     ofstream mylog;
-    mylog.open("log/log_file_capteur.txt", ios::out | ios::app );
-    mylog << dataSens_p <<"\n\n";
-    mylog.close();
-
-}
-void Server::operator<<(int data){
-    this->consoleWrite(data);
-}
-void Server::operator<<(std::string dataString){
-    ofstream mylog;
-    mylog.open("log/log_file_capteur.txt", ios::out | ios::app );
-    mylog << dataString <<"\n\n";
-    mylog.close();
+    if(numSens==1){
+    	mylog.open("log/log_file_capteur_temperature.txt", ios::out | ios::app );
+	    mylog << dataString <<"\n\n";
+	    mylog.close();	
+	}else if (numSens==2){
+		mylog.open("log/log_file_capteur_humidity.txt", ios::out | ios::app );
+	    mylog << dataString <<"\n\n";
+	    mylog.close();	
+	}else if (numSens==3){
+		mylog.open("log/log_file_capteur_light.txt", ios::out | ios::app );
+	    mylog << dataString <<"\n\n";
+	    mylog.close();	
+	}else if (numSens==4){
+		mylog.open("log/log_file_capteur_sound.txt", ios::out | ios::app );
+	    mylog << dataString <<"\n\n";
+	    mylog.close();	
+	}else{
+	    mylog.open("log/log_file_capteur.txt", ios::out | ios::app );
+	    mylog << dataString <<"\n\n";
+	    mylog.close();
+	}
 }
 
 ostream& operator << (ostream& sortie, const Server & n){
@@ -63,13 +65,5 @@ ostream& operator << (ostream& sortie, const Server & n){
     cout<<"ancien version à ne pas utiliser"<<endl;
     return sortie;
 }
-//int main(int argc, char *argv[])
-//{
-//    Server serv1(10,5,6);
-//    serv1.consoleWrite(10);
-//    serv1.fileWrite(5);
-//    Server serv2 = serv1;
-//    cout<<serv2<<endl<<serv1<<endl;
-//    return 0;
-//}
+
 

@@ -11,7 +11,7 @@ class Sensor{
 		virtual T sendData() = 0;
 		virtual T getData();
 		virtual void setData(Data data);
-		virtual void setName(std::string name);
-		virtual std::strig getName();
+		void setName(std::string name);
+		std::string getName();
 };
 #endif

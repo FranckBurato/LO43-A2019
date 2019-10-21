@@ -2,7 +2,7 @@
 #define DEF_SERVER
 
 #include <string>
-#include "Data.h"
+#include <fstream>
 
 class Server{
 	private:
@@ -12,20 +12,21 @@ class Server{
 	public:
 		Server();
 		Server(int nbrOfSensors, bool consoleActivation, bool logActivation);
-		Server(const Server& server);
+		Server(const Server &server);
 		~Server();
-		Server& operator=(const Server& server);
-		void operator<<(Data data);
-		void operator<<(Data data);
-		void dataReceive(Data data);
-		void consoleWrite(Data data);
-		void fileWrite(Data data);
-		int getNbrOfSensors();
+		Server& operator=(const Server &server);
+		void dataReceive(std::string data, std::string sensorName);
+		void consoleWrite(std::string data);
+		void fileWrite(std::string sensorName, std::string const data);
+		int getNbrOfSensors() const;
 		void setNbrOfSensors(int nbrOfSensors);
-		bool getConsoleActivation();
+		bool getConsoleActivation() const;
 		void setConsoleActivation(bool consoleActivation);
-		bool getLogActivation();
+		bool getLogActivation() const;
 		void setLogActivation(bool logActivation);
 };
+
+std::ostream& operator<<(std::ostream &out, std::string const data);
+std::ofstream& operator<<(std::ofstream &log, std::string const data);
 
 #endif

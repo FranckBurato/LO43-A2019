@@ -7,7 +7,8 @@
 #ifndef Sensor_HPP
 
 #define Sensor_HPP
-
+#include <string>
+#include <iostream>
 
 template <class T> class Sensor
 {
@@ -17,13 +18,14 @@ template <class T> class Sensor
         virtual ~Sensor ();
 	Sensor(const Sensor& sensor);
         Sensor(T valSense);
-	T sendData();
+	std::string sendData();
 	aleaGen();
 	Sensor& operator=(const Sensor& sensor);
+	std::ostream& operator<<(std::ostream& os, const Sensor& sensor);
     protected:
         /* private data */
 	T valSense;
-	String id;
+	std::string id;
 };
 
 #endif /* end of include guard Sensor_HPP */

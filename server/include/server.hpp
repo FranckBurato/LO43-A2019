@@ -5,14 +5,13 @@
 
 class Server{
 	private:
-		float temperature;
-		float humidity;
-		bool brightness;
-		int loudness;
+		std::string temperature;
+		std::string humidity;
+		std::string brightness;
+		std::string loudness;
 	public:
 		friend class scheduler;
 		Server();
-		//Server(std::string str);
 		Server(const Server& server);
 		virtual ~Server();
 		Server& operator=(const Server& server);

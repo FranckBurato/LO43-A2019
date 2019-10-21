@@ -3,18 +3,19 @@
 
 #include "Server.h"
 
-class Sensor 
+class Sensor
 {
-    private:
-     int sensorData;  
-     
+    friend class Server;
+    protected:
+     int sup, inf;
+     int sensorData;
+
     public:
      Sensor();
      Sensor(const Sensor&);
      ~Sensor();
 
-     virtual int sendData() = 0;
-    
+     virtual void aleaGenVal();
 };
 
 #endif

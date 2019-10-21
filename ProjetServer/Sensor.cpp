@@ -1,3 +1,6 @@
+#include <ctime>
+#include <cstdlib>
+
 #include "Sensor.h"
 
 Sensor::Sensor()
@@ -7,9 +10,9 @@ Sensor::Sensor(const Sensor&)
 Sensor::~Sensor()
 {}
 
-int Sensor::sendData()
+void Sensor::aleaGenVal()
 {
-  // dataRcv = sensorData; (get datarcv)
-  return this -> sensorData;  
+    srand(time(NULL));
+    this->sensorData = (rand() % (this->sup - (this->inf) + 1)) + (this->inf);
 }
 

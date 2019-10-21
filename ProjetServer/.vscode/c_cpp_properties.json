@@ -3,8 +3,7 @@
         {
             "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/**",
-                "${workspaceFolder}/Sensor"
+                "${workspaceFolder}/**"
             ],
             "defines": [
                 "_DEBUG",
@@ -16,6 +15,6 @@
             "cppStandard": "c++17",
             "intelliSenseMode": "${default}"
         }
-     ],
+    ],
     "version": 4
 }

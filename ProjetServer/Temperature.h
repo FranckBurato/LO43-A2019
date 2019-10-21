@@ -1,19 +1,16 @@
 #ifndef DEF_TEMPERATURE
 #define DEF_TEMPERATURE
-
 #include "Sensor.h"
 
 class TemperatureSensor : public Sensor
 {
      private:
+        int inf = -20;
+        int sup = 60; 
         //Les attributs de Sensor sont héritées
      public:
-        TemperatureSensor();
-        TemperatureSensor(TemperatureSensor &);
-        TemperatureSensor &operator=(const TemperatureSensor &);   
-        ~TemperatureSensor();   //Les methodes de Sensor sont héritées
+        //Les methodes de Sensor sont héritées
 
-        int aleaGenVal();
 };
 
 #endif

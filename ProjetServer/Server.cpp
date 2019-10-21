@@ -1,12 +1,18 @@
-#include "Server.h"
-#include "Sensor.h"
-
 #include <fstream>
 #include <iostream>
 
+#include "Server.h"
+#include "Scheduler.h"
+#include "Light.h"
+#include "Sound.h"
+#include "Humidity.h"
+#include "Temperature.h"
+#include "Sensor.h"
+
+
 using namespace std;
 
-Server::Server()                
+Server::Server() : scheduler(), light(), humidity(), temperature(), sound()   
 {}
 Server::Server(const Server&)    
 {}
@@ -14,32 +20,135 @@ Server::~Server()
 {}
 Server& Server::operator=(const Server &other) 
 {
-    this->consolActivation = other.consolActivation;  // THIS?
+    this->consolActivation = other.consolActivation;
     this->logActivation = other.logActivation;
-    return *this;   
+    return *this;
 } 
 
-/* void dataReceive()
+void Server::dataRcv()     
 {
-    getsensordata
-  dataRcv = sensorData;
-}  */
-
-
-void consolWrite()   
-{
-    cout <<"lol"  << endl; //datarcv
+  switch (scheduler.sNumber) 
+  {
+      case 0:
+         this->dataRcvd = light.sensorData;
+         break;
+      case 1:
+         this->dataRcvd = sound.sensorData;
+         break; 
+      case 2:
+         this->dataRcvd = humidity.sensorData;
+         break;
+      case 3:
+         this->dataRcvd = temperature.sensorData; 
+         break; 
+      default:
+        break;
+   }     
 }
-void fileWrite()     
+
+void Server::request()
 {
-    ofstream lightFlux("C:/Users/BabaDeathLord/Desktop/ProjetServer-Copie/LogsLight.txt");
-    if(lightFlux)
+    switch (scheduler.sNumber)
+     {
+         case 0:
+           light.aleaGenVal();
+           break;
+         case 1:
+           sound.aleaGenVal();
+           break;
+         case 2:
+           humidity.aleaGenVal();
+           break;
+         case 3:
+           temperature.aleaGenVal();
+           break;
+         default:
+           break;
+     }
+}
+
+void Server::consolWrite()   
+{
+   switch (scheduler.sNumber)
     {
-        lightFlux <<  "lol" << endl; //datarcv
+      case 0:
+       cout << "from Light Sensor : " << this->dataRcvd << " lux" <<endl;
+       break;
+      case 1:
+       cout << "from Sound Sensor : " << this->dataRcvd << " dB" <<endl;
+       break;
+      case 2:
+       cout << "from Humidity Sensor : " << this->dataRcvd << " %" <<endl;
+       break;
+      case 3:
+       cout << "from Temperature Sensor : " << this->dataRcvd << " °C" <<endl;
+       break;
+      default:
+       break;
     }
-    else
+}
+
+void Server::fileWrite()     
+{
+    switch (scheduler.sNumber)
     {
-       cout << "ERREUR : Impossible d'ouvrir le fichier logs" << endl;
-    }
-    
+        case 0:
+          {
+           ofstream lightFlux("C:/Users/BabaDeathLord/Desktop/ProjetServer/LogsLight.txt");
+              if(lightFlux)
+                {
+                   lightFlux << this->dataRcvd << endl;
+                }
+              else
+                {
+                   cout << "ERREUR : Impossible d'ouvrir le fichier logs" << endl;
+                }
+             lightFlux.close();
+             break;
+          }
+        case 1:
+          {
+           ofstream soundFlux("C:/Users/BabaDeathLord/Desktop/ProjetServer/LogsSound.txt");
+              if(soundFlux)
+                {
+                   soundFlux << this->dataRcvd << endl;
+                }
+              else
+                {
+                   cout << "ERREUR : Impossible d'ouvrir le fichier logs" << endl;
+                }
+             soundFlux.close();
+             break;
+          }
+        case 2:
+          {
+           ofstream humidityFlux("C:/Users/BabaDeathLord/Desktop/ProjetServer/LogsHumidity.txt");
+              if(humidityFlux)
+                {
+                   humidityFlux << this->dataRcvd << endl;
+                }
+              else
+                {
+                 cout << "ERREUR : Impossible d'ouvrir le fichier logs" << endl;
+                }
+             humidityFlux.close();
+             break;
+          }
+        case 3:
+          {
+           ofstream temperatureFlux("C:/Users/BabaDeathLord/Desktop/ProjetServer/LogsTemperature.txt");
+              if(temperatureFlux)
+                {
+                   temperatureFlux << this->dataRcvd << endl;
+                }
+              else
+                {
+                 cout << "ERREUR : Impossible d'ouvrir le fichier logs" << endl;
+                }
+             temperatureFlux.close();
+             break;
+          }
+        default:
+          break;         
+     }
 } 

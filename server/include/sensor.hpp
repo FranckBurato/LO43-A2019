@@ -13,7 +13,6 @@
 template <class T> class Sensor
 {
     public:
-	friend class Scheduler;
         Sensor ();
         virtual ~Sensor ();
 	Sensor(const Sensor& sensor);

@@ -8,7 +8,7 @@
 
 #define Scheduler_HPP
 #include "server.hpp"
-#include "sensor.hpp"
+#include "sensor.cpp"
 
 
 class Scheduler

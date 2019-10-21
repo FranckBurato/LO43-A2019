@@ -2,13 +2,15 @@
 
 int main()
 {
-    return 0;
+	return 0;
 }
-void fileWrite (const int& dataSens_p, int nFile)
+
+void fileWrite (const Data& dataSens_p, int nFile)
 {
-	  
+	 
 }
-void consolWrite(const int& dataSens_p)
+
+void consolWrite(const Data& dataSens_p)
 {
-		std::cout << *dataSens_p << std::endl;
+	std::cout << *dataSens_p << std::endl;
 }

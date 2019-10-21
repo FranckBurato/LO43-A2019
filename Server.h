@@ -13,6 +13,7 @@ class Server
 		void fileWrite(string);
 		void dataRcv(string);
 		friend ostream& operator << (ostream&, const Server& s);
+		friend void operator << (const string, const Server& s);
 		Server& operator=(const Server&);
 	private :
 		string data;

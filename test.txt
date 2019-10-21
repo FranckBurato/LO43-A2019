@@ -1,1 +1,16 @@
 le test
+ Température : 50
+ Température : 34
+ Sound : 124
+ Température : 54
+ Température : -29
+ Sound : 111
+ Light : 1
+ Température : 11
+ Température : -33
+ Sound : 57
+ Température : 26
+ Température : -13
+ Sound : 127
+ Light : 1
+ Humidity : 227

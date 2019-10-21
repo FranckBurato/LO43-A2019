@@ -23,17 +23,14 @@ Server::Server(const Server & serv){
 }
 
 Server& Server::operator=(const Server& serv){
-	if(this != &serv){
-	    this->nbrOfSensors=serv.nbrOfSensors;
-	    this->consolActivation=serv.consolActivation;
-	    this->logActivation=serv.logActivation;
-	}
+    this->nbrOfSensors=serv.nbrOfSensors;	    
+	this->consolActivation=serv.consolActivation;
+	this->logActivation=serv.logActivation;
     return *this;
 }
 Server::~Server(){
 }
 
-//sinon fair un gether dans chaque
 void operator<<(std::string dataString,int numSens){
     ofstream mylog;
     if(numSens==1){

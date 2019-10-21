@@ -14,32 +14,26 @@ Scheduler::Scheduler()	//:t(50),h(40),l(256),s(27),serv(4,true,true) //version a
 
 }
 void Scheduler::transInfo(){
-
-    
-	 int NUM_SECONDS = 3;
-    double time_counter = 0;
     clock_t now_time = clock();
     clock_t last_time = now_time;
-    
-    
+	int seconds = 3;
+    double time_counter = 0;
     
 	cout<<" veuillez preciser en secondes (int) l'intervalle de temps entre chaque mesure en seconde	 : "<<endl;
-	cin>>NUM_SECONDS;
+	cin>>seconds;
     cout << "Le serveur demarre, entrez ctrl-c pour l'arreter' " << endl << endl;
     
     while(true){
         now_time = clock();
         time_counter += (double)(now_time - last_time);
         last_time = now_time;
-
-        if(time_counter > (double)(NUM_SECONDS * CLOCKS_PER_SEC))//clokcs_per_sec et définie dans time.h
+        if(time_counter > (double)(seconds * CLOCKS_PER_SEC))//clokcs_per_sec et définie dans time.h
         { 
-            time_counter -= (double)(NUM_SECONDS * CLOCKS_PER_SEC);
-            
+            time_counter -= (double)(seconds * CLOCKS_PER_SEC);
             
             this->serv.dataRcv(this->sens[0].sendData());//si on veut utiliser un vecteur de sensor
     		
-            this->serv.dataRcv(this->t.sendData());//ici rajouter attrivue nume sens?
+            this->serv.dataRcv(this->t.sendData());
 		    this->serv.dataRcv(this->h.sendData());
 		    this->serv.dataRcv(this->l.sendData());
 		    this->serv.dataRcv(this->s.sendData());

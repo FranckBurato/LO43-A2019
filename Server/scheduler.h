@@ -18,6 +18,7 @@ class Scheduler
 	
 public:
     Scheduler();
+    ~Scheduler(){};
     void transInfo();
     
 private :

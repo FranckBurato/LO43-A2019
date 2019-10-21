@@ -6,8 +6,6 @@
 
 
 using namespace std;
-class Light : public Sensor{
-    public:
-        int valSense;
-        int sendData();
+class Light : public Sensor<bool>{
+ 
 };  

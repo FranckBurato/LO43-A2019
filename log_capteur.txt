@@ -2476,3 +2476,683 @@ Light :
 1
 Sound : 
 69
+Temperature : 
+70
+Humidity :
+24
+Light : 
+1
+Sound : 
+70
+Temperature : 
+53
+Humidity :
+58
+Light : 
+1
+Sound : 
+64
+Temperature : 
+8
+Humidity :
+79
+Light : 
+0
+Sound : 
+7
+Temperature : 
+24
+Humidity :
+43
+Light : 
+0
+Sound : 
+47
+Temperature : 
+12
+Humidity :
+57
+Light : 
+0
+Sound : 
+65
+Temperature : 
+90
+Humidity :
+59
+Light : 
+0
+Sound : 
+98
+Temperature : 
+78
+Humidity :
+78
+Light : 
+0
+Sound : 
+14
+Temperature : 
+1
+Humidity :
+34
+Light : 
+1
+Sound : 
+13
+Temperature : 
+23
+Humidity :
+10
+Light : 
+1
+Sound : 
+42
+Temperature : 
+7
+Humidity :
+76
+Light : 
+0
+Sound : 
+61
+Temperature : 
+41
+Humidity :
+38
+Light : 
+1
+Sound : 
+82
+Temperature : 
+30
+Humidity :
+19
+Light : 
+1
+Sound : 
+38
+Temperature : 
+71
+Humidity :
+95
+Light : 
+0
+Sound : 
+93
+Temperature : 
+60
+Humidity :
+88
+Light : 
+0
+Sound : 
+57
+Temperature : 
+35
+Humidity :
+98
+Light : 
+1
+Sound : 
+86
+Temperature : 
+15
+Humidity :
+82
+Light : 
+0
+Sound : 
+23
+Temperature : 
+71
+Humidity :
+39
+Light : 
+1
+Sound : 
+92
+Temperature : 
+97
+Humidity :
+12
+Light : 
+1
+Sound : 
+80
+Temperature : 
+1
+Humidity :
+65
+Light : 
+1
+Sound : 
+45
+Temperature : 
+78
+Humidity :
+44
+Light : 
+1
+Sound : 
+46
+Temperature : 
+46
+Humidity :
+75
+Light : 
+0
+Sound : 
+8
+Temperature : 
+81
+Humidity :
+83
+Light : 
+0
+Sound : 
+52
+Temperature : 
+26
+Humidity :
+54
+Light : 
+0
+Sound : 
+23
+Temperature : 
+42
+Humidity :
+23
+Light : 
+1
+Sound : 
+53
+Temperature : 
+37
+Humidity :
+77
+Light : 
+1
+Sound : 
+60
+Temperature : 
+84.1365
+Humidity :
+45.6923
+Light : 
+0
+Sound : 
+96
+Temperature : 
+93.8383
+Humidity :
+97.8149
+Light : 
+0
+Sound : 
+85
+Temperature : 
+61.5741
+Humidity :
+65.2974
+Light : 
+1
+Sound : 
+32
+Temperature : 
+11.298
+Humidity :
+46.2569
+Light : 
+1
+Sound : 
+29
+Temperature : 
+26.4229
+Humidity :
+58.0798
+Light : 
+1
+Sound : 
+1
+Temperature : 
+59.5965
+Humidity :
+20.6061
+Light : 
+1
+Sound : 
+76
+Temperature : 
+74.7063
+Humidity :
+42.616
+Light : 
+0
+Sound : 
+90
+Temperature : 
+99.2401
+Humidity :
+77.2454
+Light : 
+0
+Sound : 
+14
+Temperature : 
+15.1006
+Humidity :
+62.0075
+Light : 
+1
+Sound : 
+32
+Temperature : 
+66.0787
+Humidity :
+8.97855
+Light : 
+1
+Sound : 
+86
+Temperature : 
+9.96429
+Humidity :
+60.8325
+Light : 
+0
+Sound : 
+98
+Temperature : 
+93.6003
+Humidity :
+78.2739
+Light : 
+0
+Sound : 
+86
+Temperature : 
+59.9414
+Humidity :
+17.1758
+Light : 
+0
+Sound : 
+19
+Temperature : 
+55.9069
+Humidity :
+16.1779
+Light : 
+1
+Sound : 
+89
+Temperature : 
+56.0106
+Humidity :
+30.6528
+Light : 
+0
+Sound : 
+72
+Temperature : 
+48.3993
+Humidity :
+89.3673
+Light : 
+1
+Sound : 
+55
+Temperature : 
+6.37837
+Humidity :
+22.6447
+Light : 
+1
+Sound : 
+64
+Temperature : 
+41.1023
+Humidity :
+66.8172
+Light : 
+0
+Sound : 
+34
+Temperature : 
+20.0842
+Humidity :
+71.1356
+Light : 
+1
+Sound : 
+90
+Temperature : 
+17.1758
+Humidity :
+10.3854
+Light : 
+1
+Sound : 
+88
+Temperature : 
+9.58586
+Humidity :
+56.3097
+Light : 
+0
+Sound : 
+86
+Temperature : 
+87.6217
+Humidity :
+10.889
+Light : 
+1
+Sound : 
+63
+Temperature : 
+92.7274
+Humidity :
+54.7166
+Light : 
+0
+Sound : 
+84
+Temperature : 
+49.4888
+Humidity :
+13.4983
+Light : 
+0
+Sound : 
+20
+Temperature : 
+7.19016
+Humidity :
+95.883
+Light : 
+1
+Sound : 
+15
+Temperature : 
+56.5813
+Humidity :
+5.64287
+Light : 
+0
+Sound : 
+23
+Temperature : 
+37.4493
+Humidity :
+81.4753
+Light : 
+0
+Sound : 
+86
+Temperature : 
+2.65206
+Humidity :
+67.3879
+Light : 
+1
+Sound : 
+98
+Temperature : 
+54.2192
+Humidity :
+66.9301
+Light : 
+0
+Sound : 
+13
+Temperature : 
+17.1178
+Humidity :
+84.3165
+Light : 
+1
+Sound : 
+43
+Temperature : 
+66.4052
+Humidity :
+5.59099
+Light : 
+1
+Sound : 
+16
+Temperature : 
+73.2475
+Humidity :
+22.9499
+Light : 
+1
+Sound : 
+12
+Temperature : 
+85.5678
+Humidity :
+55.3636
+Light : 
+0
+Sound : 
+83
+Temperature : 
+8.86868
+Humidity :
+68.6117
+Light : 
+1
+Sound : 
+51
+Temperature : 
+2.86874
+Humidity :
+47.8439
+Light : 
+0
+Sound : 
+91
+Temperature : 
+59.5935
+Humidity :
+25.8248
+Light : 
+1
+Sound : 
+5
+Temperature : 
+78.5302
+Humidity :
+19.9561
+Light : 
+1
+Sound : 
+87
+Temperature : 
+4.48317
+Humidity :
+81.2128
+Light : 
+0
+Sound : 
+82
+Temperature : 
+43.7635
+Humidity :
+8.10877
+Light : 
+0
+Sound : 
+41
+Temperature : 
+24.2836
+Humidity :
+28.8705
+Light : 
+1
+Sound : 
+83
+Temperature : 
+15.2654
+Humidity :
+4.82498
+Light : 
+0
+Sound : 
+52
+Temperature : 
+72.1152
+Humidity :
+58.2781
+Light : 
+0
+Sound : 
+92
+Temperature : 
+22.132
+Humidity :
+77.8802
+Light : 
+0
+Sound : 
+21
+Temperature : 
+56.6698
+Humidity :
+4.67238
+Light : 
+0
+Sound : 
+31
+Temperature : 
+45.3352
+Humidity :
+51.9425
+Light : 
+0
+Sound : 
+88
+Temperature : 
+37.9254
+Humidity :
+61.9495
+Light : 
+0
+Sound : 
+73
+Temperature : 
+69.6585
+Humidity :
+52.7299
+Light : 
+1
+Sound : 
+24
+Temperature : 
+35.3465
+Humidity :
+58.0462
+Light : 
+0
+Sound : 
+23
+Temperature : 
+48.1674
+Humidity :
+13.6296
+Light : 
+0
+Sound : 
+96
+Temperature : 
+48.5855
+Humidity :
+92.8373
+Light : 
+0
+Sound : 
+60
+Temperature : 
+79.1497
+Humidity :
+44.85
+Light : 
+0
+Sound : 
+88
+Temperature : 
+90.6857
+Humidity :
+38.5266
+Light : 
+0
+Sound : 
+36
+Temperature : 
+95.5809
+Humidity :
+65.0594
+Light : 
+1
+Sound : 
+85
+Temperature : 
+33.7748
+Humidity :
+2.52998
+Light : 
+0
+Sound : 
+49
+Temperature : 
+67.0583
+Humidity :
+95.526
+Light : 
+1
+Sound : 
+18
+Temperature : 
+67.2964
+Humidity :
+52.8825
+Light : 
+1
+Sound : 
+63
+Temperature : 
+14.2705
+Humidity :
+16.7577
+Light : 
+1
+Sound : 
+80
+Temperature : 
+68.6788
+Humidity :
+6.10065
+Light : 
+0
+Sound : 
+7
+Temperature : 
+35.9569
+Humidity :
+87.6492
+Light : 
+1
+Sound : 
+91
+Temperature : 
+86.5658
+Humidity :
+77.6055
+Light : 
+0
+Sound : 
+24

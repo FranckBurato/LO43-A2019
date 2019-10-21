@@ -5,6 +5,6 @@
 #include "Sensor.h"
 
 using namespace std;
-class Sound : public Sensor{
+class Sound : public Sensor<int>{
 
 };

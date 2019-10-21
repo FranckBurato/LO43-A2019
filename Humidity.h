@@ -5,6 +5,6 @@
 #include "Sensor.h"
 
 using namespace std;
-class Humidity : public Sensor{
+class Humidity : public Sensor<float>{
 
 };   

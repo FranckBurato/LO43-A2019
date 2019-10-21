@@ -5,7 +5,7 @@
 #include "Sensor.h"
 
 using namespace std;
-class Temperature : public Sensor{
+class Temperature : public Sensor<float>{
  
 
 };

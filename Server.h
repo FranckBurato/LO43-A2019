@@ -4,6 +4,8 @@ private:
 	int nbrOfSensors;
 	bool consolActivation;
 	bool logActivation;
+	void fileWrite (const int& dataSens_p, int nFile){};
+	void consolWrite(const int& dataSens_p){};
 public:
 	Server()
 	{
@@ -26,12 +28,16 @@ public:
 		this->logActivation=autre.logActivation;
 		return *this;
 	};
-//	std::ostream& operator << (std::ostream& os, <type de ton choix> <const & ?> bidule) 
-//	{
-// 		 return os;
-//	};
-//	std::ostream& operator << (std::ostream& os, <type de ton choix> <const & ?> bidule) 
-//	{
-// 		 return os;
-//	};
+	void operator<<(const int& dataSens_p, int nFile) 
+	{
+		fileWrite (const int& dataSens_p, int nFile)
+	};
+	void operator<<(const int& dataSens_p) 
+	{
+		consolWrite(const int& dataSens_p);
+	};
+	void dataRcv(const int dataSens)
+	{
+		
+	};
 }

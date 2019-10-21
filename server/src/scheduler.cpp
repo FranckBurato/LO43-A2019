@@ -30,13 +30,13 @@ Scheduler::operator=(const Scheduler& scheduler){
 
 Scheduler::dataRcv(const Sensor<T> sensor){
     if constexpr (std::is_same_v<T, int>) {
-	this->server.loudness = sensor.valSense;
+	this->server.loudness = sensor.sendData();
     }
     if constexpr (std::is_same_v<T, bool>) {
-	this->server.brightness = sensor.valSense;
+	this->server.brightness = sensor.sendData();
     }
     if constexpr (std::is_same_v<T, float>) {
-	this->server.temperature = sensor.valSense;
+	this->server.temperature = sensor.sendData();
 	//TO-DO : Find a way to differenciate temp and humidity
     }
 }

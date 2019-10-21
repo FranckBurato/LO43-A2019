@@ -23,6 +23,7 @@ template <class T> class Sensor
     protected:
         /* private data */
 	T valSense;
+	String id;
 };
 
 #endif /* end of include guard Sensor_HPP */

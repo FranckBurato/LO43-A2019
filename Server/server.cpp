@@ -56,10 +56,10 @@ void operator<<(std::string dataString,int numSens){
 	}
 }
 
-ostream& operator << (ostream& sortie, const Server & n){
-  //  n.fileWrite();
-    //n.consoleWrite();
-    cout<<"ancien version Ã  ne pas utiliser"<<endl;
+ostream& operator << (ostream& sortie, const Server & n){//ancienne version permettant d'afficher et d'écrire dans un fichier log 
+//  	n.fileWrite();
+//    n.consoleWrite();
+    cout<<"ancienne version a ne pas utiliser"<<endl;
     return sortie;
 }
 

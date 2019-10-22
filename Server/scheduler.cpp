@@ -4,14 +4,10 @@
 Scheduler::Scheduler()	//:t(50),h(40),l(256),s(27),serv(4,true,true) //version avec int uniquement
 						//t(),h(),l(),s(), serv(4,true,true)		//ici on utilise pas les constructeurs par défaut car il utilisent alenGenVal 
 																	//qui doit être rédefinie car on utilise les templates pour les différnets capteurs.
-  
   :t(50.2),h(2.4),l(true),s(20), serv(4,true,true)	//Dans cette version on utilise le constructeur en passent un valeurs pour tester la transformation en template de sensor
 {
 
-    
     this->sens.push_back(sensor);//si on veut utiliser un vecteur de sensor
-	
-
 }
 void Scheduler::transInfo(){
     clock_t now_time = clock();

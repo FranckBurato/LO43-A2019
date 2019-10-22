@@ -33,6 +33,6 @@ private :
  	Temperature t;
     Humidity h;
     Light l;
-    Sound s;//on aurrait pu modifier la gestion du template sur les classes héritant de sensor pour choissir n'importe quelle type (ex : Sound<float> s  au lieu de définir sound en 'dure' )voir ligne commenté au dessus
+    Sound s;//on aurrait pu modifier la gestion du template sur les classes heritant de sensor pour choissir n'importe quelle type (ex : Sound<float> s  au lieu de définir sound en 'dure' )voir ligne commenté au dessus
 };
 #endif // SCHEDULER_H

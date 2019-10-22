@@ -22,7 +22,7 @@ public:
     template<typename T>void consoleWrite(T dataSens_p);
     template<typename T>void fileWrite(T dataSens_p);
 	template<typename T>void operator<<(T data);   
-	friend void operator<<(std::string dataString, int numSens);//changer
+	friend void operator<<(std::string dataString, int numSens);
 
 private:
     int nbrOfSensors;

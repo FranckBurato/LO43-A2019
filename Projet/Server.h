@@ -1,29 +1,41 @@
-#ifndef SERVER_INCLUDED
-#define SERVER_INCLUDED
+#ifndef SERVER_H
+#define SERVER_H
+
 #include <iostream>
 #include <string>
 #include <fstream>
 
 class Server
 {
-	public:
-	//Methodes
-	void consoleWrite(double, double, double, double);
-	void fileWright();
+    public:
 
-	Server();    				  //Constructeur
-	Server(Server const&);  	          //Constructeur de recopie
-	virtual ~Server();     		          //Destructeur
-	Server&operator=(const Server&);          //Operateurs d'affectation
-	Server&operator<<(Server&)
+        Server();
+        Server(int nbrOfSensors, bool consolActivation, bool logActivation);
+        virtual ~Server();
+        Server(const Server& other);
 
-	private:
-	//Attributs
-	double capteurTemp;
-	double capteurHumi;
-	double capteurLumi;
-	double capteurSono;
+        Server& operator=(const Server& other);
+//       std::ostream& operator<<(int dataSens);
+//       std::string operator<<(int numFile,std::string dataSens_toString);
 
+        void consoleWrite(std::string dataSens_p, std::string sensorName);
+        void fileWrite(std::string sensorName, std::string dataSens_toString);
+
+        void dataRcv(std::string dataSens, std::string fileName, std::string sensorName);
+
+
+    private:
+
+        int nbrOfSensors;                       //nombre de capteur(s)
+        bool consolActivation, logActivation;
+};
+
+
+/*
+std::ostream& Server::operator<<(int dataSens)
+{
+    std::cout << dataSens << std::endl;
 }
+*/
 
-#endif // SERVER_INCLUDED
+#endif // SERVER_H

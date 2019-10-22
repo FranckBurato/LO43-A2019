@@ -11,6 +11,6 @@ public:
 	~Light();
 	virtual Light& operator=(const Light& autre){};
 	virtual bool sendData(){};
-}
+};
 
 #endif

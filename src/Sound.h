@@ -11,6 +11,8 @@ class Sound : public Sensor<int>{
 		Sound(const Sound& sound);
 		~Sound();
 		Sound& operator=(const Sound& sound);
-		int getData();
+		int getData() const;
+		void setData(int sound);
+		std::string sendData() const;
 };
 #endif

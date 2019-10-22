@@ -11,6 +11,8 @@ class Temp : public Sensor<float>{
 		Temp(const Temp& temp);
 		~Temp();
 		Temp& operator=(const Temp& temp);
-		float getData();
+		float getData() const;
+		void setData(float temp);
+		std::string sendData() const;
 };
 #endif

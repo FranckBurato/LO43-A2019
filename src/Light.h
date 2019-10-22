@@ -11,6 +11,8 @@ class Light : public Sensor<bool>{
 		Light(const Light& light);
 		~Light();
 		Light& operator=(const Light& light);
-		bool getData();
+		bool getData() const;
+		void setData(bool isLight);
+		std::string sendData() const;
 };
 #endif

@@ -4,15 +4,10 @@
 #include "Sensor.h"
 
 class Light : public Sensor<bool>{
-	private:
-		bool isLight;
 	public:
 		Light();
 		Light(const Light& light);
 		~Light();
 		Light& operator=(const Light& light);
-		bool getData() const;
-		void setData(bool isLight);
-		std::string sendData() const;
 };
 #endif

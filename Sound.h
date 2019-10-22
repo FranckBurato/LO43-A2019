@@ -1,7 +1,10 @@
 class Sound public Sensor
 {
-private:
-	int sound;
 public:
-	
+	virtual Sound(){};
+	virtual Sound(const Sound& autre){};
+	virtual Sound(int valRcv){};
+	~Sound();
+	virtual Sound& operator=(const Sound& autre){};
+	virtual int sendData(){};	
 }

@@ -7,7 +7,8 @@
 #include "scheduler.hpp"
 #include <string>
 
-Scheduler::Scheduler(): server(), tempS(), humiS(), brightS(), loudS(){}
+//Nothing much here, just coplien form. dataRcv is a template function defined in scheduler.hpp
+Scheduler::Scheduler(): server(), tempS("Temperature"), humiS("Humidity"), brightS("Brightness"), loudS("Loudness"){}
 
 Scheduler::~Scheduler(){}
 
@@ -28,25 +29,4 @@ Scheduler& Scheduler::operator=(const Scheduler& scheduler){
     return *this;
 }
 
-template <class T> void Scheduler::dataRcv(const Sensor<T> sensor){
-    std::string data = sensor.sendData();
-    std::string delimiter = " : ";
-    size_t pos = 0;
-    std::string token;
-    while ((pos = data.find(delimiter)) != std::string::npos){
-	token = data.substr(0,pos);
-	data.erase(0, pos + delimiter.length());
-    }
-    if (token.compare("Temperature") == 0 ){
-	server.temperature = data;
-    }
-    if (token.compare("Humidity") == 0 ){
-	server.humidity = data;
-    }
-    if (token.compare("Brightness") == 0 ){
-	server.brightness = data;
-    }
-    if (token.compare("Loudness") == 0 ){
-	server.loudness = data;
-    }
-}
+

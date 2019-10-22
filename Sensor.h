@@ -1,26 +1,34 @@
-class Sensor
+#ifndef SENSOR_H
+#define SENSOR_H
+
+template <class Data> class Sensor
 {
 private:
 	int dataSens;
-	template <class Data>
-	Data aleaGenVal (void){};
+	virtual Data aleaGenVal (void){};
 public:
-	Sensor();
-	Sensor(const Sensor& autre)
+	virtual Sensor()
 	{
-		
+		dataSens();
 	};
-	Sensor(int valRcv)
+	virtual Sensor(const Sensor& autre)
 	{
-		
+		this->Sensor=autre.Sensor;
+	};
+	virtual Sensor(Data valRcv)
+	{
+		this->Sensor.dataSens=valRcv;
 	};
 	~Sensor();
-	Sensor& operator=(const Sensor& autre);
+	virtual Sensor& operator=(const Sensor& autre)
 	{
-		
+		this->Sensor.dataSens=autre.dataSens;
+		return *this;
 	};
-	int sendData()
+	virtual int sendData()
 	{
 	
 	};
-}
+};
+
+#endif

@@ -2,6 +2,7 @@
 #include <time.h>
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 
 string Temperature::aleaGenVal()
 {
@@ -10,7 +11,12 @@ string Temperature::aleaGenVal()
 	data = rand()%10000;
 	data -= 4000;
 	data = data/100;
-	return to_string(data);
+	
+	ostringstream stream;
+	stream << fixed << setprecision(2) << data;
+
+	string sData = stream.str();
+	return sData;
 }
 
 

@@ -2,6 +2,7 @@
 #include <time.h>
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 
 string Humidity::aleaGenVal()
 {
@@ -9,5 +10,10 @@ string Humidity::aleaGenVal()
 	float data;
 	data = rand()%10000;
 	data = data/100;
-	return to_string(data);
+
+	ostringstream stream;
+	stream << fixed << setprecision(2) << data;
+
+	string sData = stream.str();
+	return sData;
 }

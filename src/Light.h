@@ -2,16 +2,15 @@
 #define DEF_LIGHT
 
 #include "Sensor.h"
-#include "Data.h"
 
-class Light : public Sensor{
+class Light : public Sensor<bool>{
 	private:
-		Data<bool> isLight;
+		bool isLight;
 	public:
 		Light();
 		Light(const Light& light);
 		~Light();
 		Light& operator=(const Light& light);
-		bool sendData();
+		bool getData();
 };
 #endif

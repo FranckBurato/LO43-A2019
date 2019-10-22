@@ -2,16 +2,15 @@
 #define DEF_SOUND
 
 #include "Sensor.h"
-#include "Data.h"
 
-class Sound : public Sensor{
+class Sound : public Sensor<int>{
 	private:
-		Data<int> sound;
+		int sound;
 	public:
 		Sound();
 		Sound(const Sound& sound);
 		~Sound();
 		Sound& operator=(const Sound& sound);
-		int sendData();
+		int getData();
 };
 #endif

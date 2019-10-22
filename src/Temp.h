@@ -2,16 +2,15 @@
 #define DEF_TEMP
 
 #include "Sensor.h"
-#include "Data.h"
 
-class Temp : public Sensor{
+class Temp : public Sensor<float>{
 	private:
-		Data<float> temperature;
+		float temperature;
 	public:
 		Temp();
 		Temp(const Temp& temp);
 		~Temp();
 		Temp& operator=(const Temp& temp);
-		float sendData();
+		float getData();
 };
 #endif

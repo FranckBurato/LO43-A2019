@@ -5,18 +5,26 @@
 
 class Server{
 	private:
-		std::string temperature;
-		std::string humidity;
-		std::string brightness;
-		std::string loudness;
+        bool console, file;
 	public:
-		friend class scheduler;
+        //Coplien form
 		Server();
 		Server(const Server& server);
 		virtual ~Server();
 		Server& operator=(const Server& server);
+
 		friend std::ostream& operator<<(std::ostream& os, const Server& server);
-		void consoleWrite() const;
-		void fileWrite(const std::string &name) const;
+        //Used to log info about server
+
+		void consoleWrite(const std::string &sensorData) const; 
+        //Write string recieved to cout
+
+		void fileWrite(const std::string &fileName, const std::string &sensorData) const;
+        //Write string recieved to file with name "Everything that's before the first ':'
+        //in the received string"
+        
+        void dataRcv(const std::string &sensorData) const; 
+        //Receives a string and calls fileWrite and consoleWrite 
+        //according to the private variables console and file
 };
 #endif /* ifndef SERVER_H */

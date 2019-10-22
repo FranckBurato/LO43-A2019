@@ -1,3 +1,7 @@
+#ifndef TEMPERATURE_H
+#define TEMPERATURE_H
+#include "Sensor.h"
+
 class Temperature public Sensor
 {
 public:
@@ -7,4 +11,6 @@ public:
 	~Temperature();
 	virtual Temperature& operator=(const Temperature& autre){};
 	virtual float sendData(){};
-}
+};
+
+#endif

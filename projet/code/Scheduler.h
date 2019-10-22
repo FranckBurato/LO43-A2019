@@ -17,5 +17,5 @@ public:
 	Scheduler& operator=( Scheduler& a);
 
 	void begin();//pour rajouter des sensor et configuration
-	void run();//mod®¶lisation du syst®®me
+	void run();//mod√©lisation du syst√©me
 };

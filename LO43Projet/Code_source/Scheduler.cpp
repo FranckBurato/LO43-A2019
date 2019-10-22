@@ -22,18 +22,19 @@ sv(4,true,true){
         }
     }
 }
+
     
-void Scheduler::getData(){//recevoir les datas de capteurs avec l'aide de serveur
-        sv.dataRcv(t.getTypSsr(), t.sendData());
+void Scheduler::getData(){//recevoir les datas de capteurs
+        sv.dataRcv(t.getTypSsr(), t.getValue());
         t.NewValue();
         sleep((rand()%(3)) + 0);
-        sv.dataRcv(h.getTypSsr(), h.sendData());
+        sv.dataRcv(h.getTypSsr(), h.getValue());
         h.NewValue();
         sleep((rand()%(3)) + 0);
-        sv.dataRcv(l.getTypSsr(), l.sendData());
+        sv.dataRcv(l.getTypSsr(), l.getValue());
         l.NewValue();
         sleep((rand()%(3)) + 0);
-        sv.dataRcv(s.getTypSsr(), s.sendData());
+        sv.dataRcv(s.getTypSsr(), s.getValue());
         s.NewValue();
         sleep((rand()%(3)) + 0);
 }

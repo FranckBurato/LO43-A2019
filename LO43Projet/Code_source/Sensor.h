@@ -27,7 +27,7 @@ public:
     Sensor(const Sensor& s);//constructeur par recopie
     ~Sensor(){}//destructeur
     Sensor& operator=(Sensor& s);//opérateur d'affectation
-    T sendData();//renvoyer le data de capteur
+    T getValue();//renvoyer le data de capteur
     void NewValue();//avoir les datas différents
     virtual string getTypSsr()=0;//redéfinir dans les classes de fille
 };
@@ -64,7 +64,7 @@ Sensor<T>& Sensor<T>::operator=(Sensor& s){//opérateur d'affectation
 }
 
 template<class T>
-T Sensor<T>::sendData(){//renvoyer le data de capteur
+T Sensor<T>::getValue(){//renvoyer le data de capteur
     return valSense;
 }
 

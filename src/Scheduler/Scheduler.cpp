@@ -1,5 +1,5 @@
-#include <ctime>
-#include <winbase.h>
+#include <thread>
+#include <chrono>
 
 #include "Scheduler.h"
 
@@ -35,6 +35,6 @@ void Scheduler::run() {
             this->light.lastUpdate = now;
         }
 
-        Sleep(100);
+        std::this_thread::sleep_for(100ms);
     }
 }

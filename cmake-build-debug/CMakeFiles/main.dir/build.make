@@ -59,93 +59,93 @@ include CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/main.cpp.obj: ../src/main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Coding\C C++\LO43-A2019\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/src/main.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\main.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\main.cpp"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\main.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\main.cpp"
 
 CMakeFiles/main.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/main.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\main.cpp" > CMakeFiles\main.dir\src\main.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\main.cpp" > CMakeFiles\main.dir\src\main.cpp.i
 
 CMakeFiles/main.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/main.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\main.cpp" -o CMakeFiles\main.dir\src\main.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\main.cpp" -o CMakeFiles\main.dir\src\main.cpp.s
 
 CMakeFiles/main.dir/src/Server/Server.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Server/Server.cpp.obj: ../src/Server/Server.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Coding\C C++\LO43-A2019\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Server/Server.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Server\Server.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Server\Server.cpp"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Server\Server.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Server\Server.cpp"
 
 CMakeFiles/main.dir/src/Server/Server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Server/Server.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Server\Server.cpp" > CMakeFiles\main.dir\src\Server\Server.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Server\Server.cpp" > CMakeFiles\main.dir\src\Server\Server.cpp.i
 
 CMakeFiles/main.dir/src/Server/Server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Server/Server.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Server\Server.cpp" -o CMakeFiles\main.dir\src\Server\Server.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Server\Server.cpp" -o CMakeFiles\main.dir\src\Server\Server.cpp.s
 
 CMakeFiles/main.dir/src/Sensor/Humidity.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Sensor/Humidity.cpp.obj: ../src/Sensor/Humidity.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Coding\C C++\LO43-A2019\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/Sensor/Humidity.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Sensor\Humidity.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Sensor\Humidity.cpp"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Sensor\Humidity.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Sensor\Humidity.cpp"
 
 CMakeFiles/main.dir/src/Sensor/Humidity.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Sensor/Humidity.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Sensor\Humidity.cpp" > CMakeFiles\main.dir\src\Sensor\Humidity.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Sensor\Humidity.cpp" > CMakeFiles\main.dir\src\Sensor\Humidity.cpp.i
 
 CMakeFiles/main.dir/src/Sensor/Humidity.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Sensor/Humidity.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Sensor\Humidity.cpp" -o CMakeFiles\main.dir\src\Sensor\Humidity.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Sensor\Humidity.cpp" -o CMakeFiles\main.dir\src\Sensor\Humidity.cpp.s
 
 CMakeFiles/main.dir/src/Sensor/Sound.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Sensor/Sound.cpp.obj: ../src/Sensor/Sound.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Coding\C C++\LO43-A2019\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/Sensor/Sound.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Sensor\Sound.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Sensor\Sound.cpp"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Sensor\Sound.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Sensor\Sound.cpp"
 
 CMakeFiles/main.dir/src/Sensor/Sound.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Sensor/Sound.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Sensor\Sound.cpp" > CMakeFiles\main.dir\src\Sensor\Sound.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Sensor\Sound.cpp" > CMakeFiles\main.dir\src\Sensor\Sound.cpp.i
 
 CMakeFiles/main.dir/src/Sensor/Sound.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Sensor/Sound.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Sensor\Sound.cpp" -o CMakeFiles\main.dir\src\Sensor\Sound.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Sensor\Sound.cpp" -o CMakeFiles\main.dir\src\Sensor\Sound.cpp.s
 
 CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj: ../src/Scheduler/Scheduler.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Coding\C C++\LO43-A2019\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Scheduler\Scheduler.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Scheduler\Scheduler.cpp"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Scheduler\Scheduler.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Scheduler\Scheduler.cpp"
 
 CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Scheduler\Scheduler.cpp" > CMakeFiles\main.dir\src\Scheduler\Scheduler.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Scheduler\Scheduler.cpp" > CMakeFiles\main.dir\src\Scheduler\Scheduler.cpp.i
 
 CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Scheduler/Scheduler.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Scheduler\Scheduler.cpp" -o CMakeFiles\main.dir\src\Scheduler\Scheduler.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Scheduler\Scheduler.cpp" -o CMakeFiles\main.dir\src\Scheduler\Scheduler.cpp.s
 
 CMakeFiles/main.dir/src/Sensor/Temperature.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Sensor/Temperature.cpp.obj: ../src/Sensor/Temperature.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Coding\C C++\LO43-A2019\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/Sensor/Temperature.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Sensor\Temperature.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Sensor\Temperature.cpp"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Sensor\Temperature.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Sensor\Temperature.cpp"
 
 CMakeFiles/main.dir/src/Sensor/Temperature.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Sensor/Temperature.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Sensor\Temperature.cpp" > CMakeFiles\main.dir\src\Sensor\Temperature.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Sensor\Temperature.cpp" > CMakeFiles\main.dir\src\Sensor\Temperature.cpp.i
 
 CMakeFiles/main.dir/src/Sensor/Temperature.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Sensor/Temperature.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Sensor\Temperature.cpp" -o CMakeFiles\main.dir\src\Sensor\Temperature.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Sensor\Temperature.cpp" -o CMakeFiles\main.dir\src\Sensor\Temperature.cpp.s
 
 CMakeFiles/main.dir/src/Sensor/Light.cpp.obj: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Sensor/Light.cpp.obj: ../src/Sensor/Light.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Coding\C C++\LO43-A2019\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/Sensor/Light.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Sensor\Light.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Sensor\Light.cpp"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\main.dir\src\Sensor\Light.cpp.obj -c "C:\Coding\C C++\LO43-A2019\src\Sensor\Light.cpp"
 
 CMakeFiles/main.dir/src/Sensor/Light.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Sensor/Light.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Sensor\Light.cpp" > CMakeFiles\main.dir\src\Sensor\Light.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Coding\C C++\LO43-A2019\src\Sensor\Light.cpp" > CMakeFiles\main.dir\src\Sensor\Light.cpp.i
 
 CMakeFiles/main.dir/src/Sensor/Light.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Sensor/Light.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Sensor\Light.cpp" -o CMakeFiles\main.dir\src\Sensor\Light.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Coding\C C++\LO43-A2019\src\Sensor\Light.cpp" -o CMakeFiles\main.dir\src\Sensor\Light.cpp.s
 
 # Object files for target main
 main_OBJECTS = \

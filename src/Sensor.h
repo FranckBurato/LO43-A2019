@@ -3,13 +3,13 @@
 
 template<typename T>
 class Sensor{
-	private:
+	protected:
 		std::string sensorName;
 		std::string formatedData;
 	public:
-		virtual std::string sendData() = 0;
-		virtual T getData() = 0;
-		virtual void setData(T data) = 0;
+		virtual std::string sendData();
+		virtual T getData();
+		virtual void setData(T data);
 		virtual std::string getSensorName() const;
 };
 #endif

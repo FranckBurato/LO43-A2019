@@ -22,9 +22,8 @@ sv(4,true,true){
         }
     }
 }
-
     
-void Scheduler::getData(){//recevoir les datas de capteurs
+void Scheduler::getData(){//recevoir les datas de capteurs avec l'aide de serveur
         sv.dataRcv(t.getTypSsr(), t.sendData());
         t.NewValue();
         sleep((rand()%(3)) + 0);

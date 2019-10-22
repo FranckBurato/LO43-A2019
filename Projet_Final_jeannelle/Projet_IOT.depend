@@ -1,0 +1,131 @@
+# depslib dependency file v1.0
+1571684504 source:c:\users\jeann\documents\cours\utbm\info1\lo43\nouveau dossier\projet_iot\server.cpp
+	"server.h"
+
+1571684937 c:\users\jeann\documents\cours\utbm\info1\lo43\nouveau dossier\projet_iot\server.h
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+
+1571684942 source:c:\users\jeann\documents\cours\utbm\info1\lo43\nouveau dossier\projet_iot\main.cpp
+	<iostream>
+	"Server.h"
+
+1571684703 source:c:\users\jeann\documents\cours\utbm\info1\lo43\nouveau dossier\projet_iot\humidity.cpp
+
+1571684686 source:c:\users\jeann\documents\cours\utbm\info1\lo43\nouveau dossier\projet_iot\light.cpp
+
+1571684759 source:c:\users\jeann\documents\cours\utbm\info1\lo43\nouveau dossier\projet_iot\scheduler.cpp
+
+1571684738 source:c:\users\jeann\documents\cours\utbm\info1\lo43\nouveau dossier\projet_iot\sensor.cpp
+
+1571684722 source:c:\users\jeann\documents\cours\utbm\info1\lo43\nouveau dossier\projet_iot\sound.cpp
+
+1571684781 source:c:\users\jeann\documents\cours\utbm\info1\lo43\nouveau dossier\projet_iot\temperature.cpp
+
+1571773480 source:c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\humidity.cpp
+	"Humidity.h"
+	<stdlib.h>
+
+1571773480 source:c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\light.cpp
+	"Light.h"
+	<stdlib.h>
+
+1571777317 source:c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\main.cpp
+	<iostream>
+	"Scheduler.h"
+	<time.h>
+	<sstream>
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+
+1571777307 c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\server.h
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+
+1571781629 source:c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\scheduler.cpp
+	<fstream>
+	<string>
+	<iostream>
+	<windows.h>
+	<chrono>
+	<ctime>
+	<stdlib.h>
+	<stdio.h>
+	<unistd.h>
+	"Temperature.h"
+	"Humidity.h"
+	"Sensor.h"
+	"Sound.h"
+	"Scheduler.h"
+	"Light.h"
+	"Server.h"
+
+1571781526 source:c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\server.cpp
+	"server.h"
+	<fstream>
+	<string>
+	<sstream>
+	<cstdlib>
+	<ctime>
+
+1571700508 source:c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\sound.cpp
+	"Sound.h"
+	<stdlib.h>
+
+1571773480 source:c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\temperature.cpp
+	"Temperature.h"
+	<stdlib.h>
+	<stdio.h>
+
+1571780717 source:c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\sensor.cpp
+	"sensor.h"
+	<stdlib.h>
+	<sstream>
+	<string>
+	<iostream>
+	<time.h>
+
+1571780717 c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\sensor.h
+	<iostream>
+	<ostream>
+	<fstream>
+	<stdlib.h>
+	<math.h>
+	<time.h>
+	<string>
+
+1571777024 c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\humidity.h
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	"Sensor.h"
+
+1571777024 c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\light.h
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	"Sensor.h"
+
+1571773480 c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\sound.h
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	"Sensor.h"
+
+1571773480 c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\temperature.h
+	<iostream>
+	<fstream>
+	<string>
+	<cstdlib>
+	"Sensor.h"
+
+1571780979 c:\users\jeann\documents\cours\utbm\info1\lo43\projet_iot\scheduler.h
+

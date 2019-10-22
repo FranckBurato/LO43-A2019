@@ -2,9 +2,15 @@ class Sensor
 {
 private:
 	int dataSens;
+	template <class Data>
+	Data aleaGenVal (void){};
 public:
 	Sensor();
 	Sensor(const Sensor& autre)
+	{
+		
+	};
+	Sensor(int valRcv)
 	{
 		
 	};
@@ -12,5 +18,9 @@ public:
 	Sensor& operator=(const Sensor& autre);
 	{
 		
+	};
+	int sendData()
+	{
+	
 	};
 }

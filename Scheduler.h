@@ -1,3 +1,11 @@
+#ifndef SCHEDULER_H
+#define SCHEDULER_H
+#include "Server.h"
+#include "Humidity.h"
+#include "Temperature.h"
+#include "Light.h"
+#include "Sound.h"
+
 class Scheduler
 {
 private:
@@ -16,4 +24,6 @@ public:
 		return *this;
 	};
 	~Sheduler(){};
-}
+};
+
+#endif

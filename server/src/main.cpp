@@ -6,7 +6,8 @@
 
 int main(){
     srand(time(0));
-    Scheduler schedul;
+    int console = 1, file = 1;
+    Scheduler schedul(console, file);
     while(1){
         schedul.dataRcv(schedul.tempS);
         usleep(1000000);

@@ -9,6 +9,7 @@
 
 //Nothing much here, just coplien form. dataRcv is a template function defined in scheduler.hpp
 Scheduler::Scheduler(): server(), tempS("Temperature"), humiS("Humidity"), brightS("Brightness"), loudS("Loudness"){}
+Scheduler::Scheduler(int console, int file): server(console, file), tempS("Temperature"), humiS("Humidity"), brightS("Brightness"), loudS("Loudness"){}
 
 Scheduler::~Scheduler(){}
 

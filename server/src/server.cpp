@@ -6,9 +6,10 @@
 #include <ctime>
 
 //Coplien form
-Server::Server(): console(1), file(1){
+Server::Server(): console(1), file(0){
 }
 Server::Server(const Server& server):console(server.console),file(server.file){}
+Server::Server(int console, int file):console(console),file(file){}
 Server::~Server(){}
 Server& Server::operator=(const Server& server){
     this->console = server.console;

@@ -28,6 +28,7 @@ class Scheduler
 
         //Coplien form
         Scheduler ();
+        Scheduler(int console, int file);
         virtual ~Scheduler ();
         Scheduler (const Scheduler& scheduler);
         Scheduler& operator=(const Scheduler& scheduler);

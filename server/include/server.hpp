@@ -10,6 +10,7 @@ class Server{
         //Coplien form
         Server();
         Server(const Server& server);
+        Server(int console, int file);
         virtual ~Server();
         Server& operator=(const Server& server);
 

@@ -8,7 +8,9 @@ class HumiditySensor : public Sensor
         int inf = 0;
         int sup = 100;//Les attributs de Sensor sont héritées
      public:
-        //Les methodes de Sensor sont héritées
+        HumiditySensor();
+        ~HumiditySensor();
+        HumiditySensor(const HumiditySensor&);//Les methodes de Sensor sont héritées
 
 };
 

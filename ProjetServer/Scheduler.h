@@ -9,10 +9,9 @@ class Scheduler
 {
   friend class Server;
   private: 
-    Server server;  
+    Server server;
 
   public: 
-    int sNumber = 0;   //Scheduler number, permet d'orchestrer les capteurs
     Scheduler();
     ~Scheduler();
     

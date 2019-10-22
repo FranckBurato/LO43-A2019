@@ -14,16 +14,15 @@ class Server
     private:
      bool consolActivation;
      bool logActivation;
+     
      int dataRcvd;
-
-     Scheduler scheduler;
 
      LightSensor light;
      HumiditySensor humidity;
      SoundSensor sound;
      TemperatureSensor temperature; 
-
-    public:
+     
+    public: 
      Server();
      Server(const Server&);
      ~Server();

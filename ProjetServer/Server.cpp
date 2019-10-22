@@ -9,10 +9,9 @@
 #include "Temperature.h"
 #include "Sensor.h"
 
-
 using namespace std;
 
-Server::Server() : scheduler(), light(), humidity(), temperature(), sound()   
+Server::Server() : light(), humidity(), temperature(), sound()   
 {}
 Server::Server(const Server&)    
 {}
@@ -27,7 +26,8 @@ Server& Server::operator=(const Server &other)
 
 void Server::dataRcv()     
 {
-  switch (scheduler.sNumber) 
+  extern int sNumber;
+  switch (sNumber) 
   {
       case 0:
          this->dataRcvd = light.sensorData;
@@ -47,8 +47,9 @@ void Server::dataRcv()
 }
 
 void Server::request()
-{
-    switch (scheduler.sNumber)
+{ 
+   extern int sNumber;
+    switch (sNumber)
      {
          case 0:
            light.aleaGenVal();
@@ -68,8 +69,9 @@ void Server::request()
 }
 
 void Server::consolWrite()   
-{
-   switch (scheduler.sNumber)
+{ 
+   extern int sNumber;
+   switch (sNumber)
     {
       case 0:
        cout << "from Light Sensor : " << this->dataRcvd << " lux" <<endl;
@@ -90,11 +92,12 @@ void Server::consolWrite()
 
 void Server::fileWrite()     
 {
-    switch (scheduler.sNumber)
+   extern int sNumber;
+    switch (sNumber)
     {
         case 0:
           {
-           ofstream lightFlux("C:/Users/BabaDeathLord/Desktop/ProjetServer/LogsLight.txt");
+           ofstream lightFlux("../LogsLight.txt");
               if(lightFlux)
                 {
                    lightFlux << this->dataRcvd << endl;
@@ -108,7 +111,7 @@ void Server::fileWrite()
           }
         case 1:
           {
-           ofstream soundFlux("C:/Users/BabaDeathLord/Desktop/ProjetServer/LogsSound.txt");
+           ofstream soundFlux("../LogsSound.txt");
               if(soundFlux)
                 {
                    soundFlux << this->dataRcvd << endl;
@@ -122,7 +125,7 @@ void Server::fileWrite()
           }
         case 2:
           {
-           ofstream humidityFlux("C:/Users/BabaDeathLord/Desktop/ProjetServer/LogsHumidity.txt");
+           ofstream humidityFlux("../LogsHumidity.txt");
               if(humidityFlux)
                 {
                    humidityFlux << this->dataRcvd << endl;
@@ -136,7 +139,7 @@ void Server::fileWrite()
           }
         case 3:
           {
-           ofstream temperatureFlux("C:/Users/BabaDeathLord/Desktop/ProjetServer/LogsTemperature.txt");
+           ofstream temperatureFlux("../LogsTemperature.txt");
               if(temperatureFlux)
                 {
                    temperatureFlux << this->dataRcvd << endl;

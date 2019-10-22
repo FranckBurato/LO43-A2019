@@ -9,6 +9,9 @@ class SoundSensor : public Sensor
         int sup = 140;
         //Les attributs de Sensor sont héritées
      public:
+        SoundSensor();
+        ~SoundSensor();
+        SoundSensor(const SoundSensor&);
         //Les methodes de Sensor sont héritées
 
 };

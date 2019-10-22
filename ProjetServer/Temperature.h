@@ -9,6 +9,9 @@ class TemperatureSensor : public Sensor
         int sup = 60; 
         //Les attributs de Sensor sont héritées
      public:
+        TemperatureSensor();
+        ~TemperatureSensor();
+        TemperatureSensor(const TemperatureSensor&);
         //Les methodes de Sensor sont héritées
 
 };

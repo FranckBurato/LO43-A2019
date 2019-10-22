@@ -15,7 +15,7 @@ class Sensor
      Sensor(const Sensor&);
      ~Sensor();
 
-     virtual void aleaGenVal();
+    void aleaGenVal();
 };
 
 #endif

@@ -2,11 +2,16 @@
 #include "Server.h"
 
 
-Scheduler::Scheduler(): server() 
+
+Scheduler::Scheduler() : server()
 {}
+
+Scheduler::~Scheduler()
+{} 
 
 void Scheduler::run()
 {
+   extern int sNumber;
    while (true)
    {
       if(sNumber != 4)

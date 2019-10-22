@@ -5,3 +5,5 @@ Dossier de base pour les TPs de C++.
 Le premier test se trouve dans le dossier **hello_world**.
 
 Le projet se trouve dans le dossier **server**
+
+Quelques commqndes git sont expliquées dans le fichier **git.md**

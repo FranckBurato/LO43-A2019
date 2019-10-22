@@ -7,7 +7,7 @@ class Temperature : public Sensor
 {
 	public :
 	private :
-		int aleaGenVal ();
+		string aleaGenVal ();
 		
 };
 

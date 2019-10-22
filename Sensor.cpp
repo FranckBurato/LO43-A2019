@@ -16,6 +16,6 @@ Sensor::~Sensor(){}
 
 string Sensor::sendData ()
 {
-	return to_string(this->aleaGenVal());
+	return this->aleaGenVal();
 }
 

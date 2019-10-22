@@ -3,8 +3,10 @@
 #include <iostream>
 #include <fstream>
 
-int Light::aleaGenVal()
+string Light::aleaGenVal()
 {
 	srand(time(NULL));
-	return rand()%2;
+	if (rand()%2==0) 
+		return to_string(false);
+	return to_string(true);
 }

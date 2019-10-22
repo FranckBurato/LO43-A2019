@@ -3,8 +3,8 @@
 #include <iostream>
 #include <fstream>
 
-int Sound::aleaGenVal()
+string Sound::aleaGenVal()
 {
 	srand(time(NULL));
-	return rand()%150;
+	return to_string(rand()%150);
 }

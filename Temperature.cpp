@@ -3,10 +3,14 @@
 #include <iostream>
 #include <fstream>
 
-int Temperature::aleaGenVal()
+string Temperature::aleaGenVal()
 {
 	srand(time(NULL));
-	return rand()%100-40;
+	float data;
+	data = rand()%10000;
+	data -= 4000;
+	data = data/100;
+	return to_string(data);
 }
 
 

@@ -13,7 +13,7 @@ class Sensor
 		virtual ~Sensor();
 		virtual string sendData();
 	private :
-		virtual int aleaGenVal ()=0;		
+		virtual string aleaGenVal ()=0;		
 };
 
 #endif

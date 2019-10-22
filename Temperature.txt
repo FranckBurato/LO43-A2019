@@ -35,3 +35,15 @@ Mon Oct 21 20:35:32 2019 CEST Température : 11
 Mon Oct 21 20:35:34 2019 CEST Température : -33
 Mon Oct 21 20:35:36 2019 CEST Température : 26
 Mon Oct 21 20:35:38 2019 CEST Température : -13
+Tue Oct 22 12:04:26 2019 CEST Température : 33.200001
+Tue Oct 22 12:04:28 2019 CEST Température : 40.930000
+Tue Oct 22 12:04:30 2019 CEST Température : -34.270000
+Tue Oct 22 12:04:32 2019 CEST Température : -33.220001
+Tue Oct 22 12:04:34 2019 CEST Température : 16.389999
+Tue Oct 22 12:04:36 2019 CEST Température : 12.510000
+Tue Oct 22 12:04:38 2019 CEST Température : 25.360001
+Tue Oct 22 12:04:40 2019 CEST Température : 17.080000
+Tue Oct 22 12:04:42 2019 CEST Température : 38.959999
+Tue Oct 22 12:04:44 2019 CEST Température : 58.810001
+Tue Oct 22 12:04:46 2019 CEST Température : 23.670000
+Tue Oct 22 12:04:48 2019 CEST Température : -27.930000

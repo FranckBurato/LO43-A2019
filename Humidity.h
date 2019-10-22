@@ -7,7 +7,7 @@ class Humidity : public Sensor
 {
 	public :
 	private :
-		int aleaGenVal ();
+		string aleaGenVal ();
 		
 };
 

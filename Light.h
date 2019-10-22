@@ -7,7 +7,7 @@ class Light:public Sensor
 {
 	public :
 	private :
-		int aleaGenVal ();
+		string aleaGenVal ();
 		
 };
 

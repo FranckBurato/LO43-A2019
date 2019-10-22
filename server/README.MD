@@ -1,6 +1,5 @@
 # LO43-A2019
-TP C++ UTBM LO43 - AUTOMNE 2019
-Maxime Suratteau
+TP C++ UTBM LO43 - AUTOMNE 2019 - Maxime Suratteau
 
 ## Mise en contexte
 Ce projet a pour but la réalisation d’un simulateur, permettant de modéliser un écosystème IOT

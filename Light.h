@@ -1,3 +1,7 @@
+#ifndef LIGHT_H
+#define LIGHT_H
+#include "Sensor.h"
+
 class Light public Sensor
 {
 public:
@@ -9,3 +13,4 @@ public:
 	virtual bool sendData(){};
 }
 
+#endif

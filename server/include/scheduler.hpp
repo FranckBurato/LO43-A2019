@@ -8,7 +8,7 @@
 
 #define Scheduler_HPP
 #include "server.hpp"
-#include "sensor.cpp"
+#include "sensor.hpp"
 
 
 class Scheduler
@@ -17,8 +17,8 @@ class Scheduler
         Scheduler ();
         virtual ~Scheduler ();
 	Scheduler (const Scheduler& scheduler);
-	operator= (const Scheduler& scheduler);
-	dataRcv (const Sensor<T> sensor);
+	Scheduler& operator= (const Scheduler& scheduler);
+	template <class T> void dataRcv (const Sensor<T> sensor);
     private:
         /* private data */
 	Server server;

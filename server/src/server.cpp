@@ -29,11 +29,11 @@ std::ostream& operator<<(std::ostream& os, const Server& server) {
     return os;
 }
 
-void Server::consoleWrite() {
+void Server::consoleWrite() const{
     std::cout<< this << std::endl;
 }
 
-void Server::fileWrite(const std::string &name) {
+void Server::fileWrite(const std::string &name) const{
     std::ofstream file;
     file.open(name);
     if(file){

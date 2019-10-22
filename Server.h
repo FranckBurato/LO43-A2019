@@ -1,12 +1,13 @@
-class Server
+#ifndef SERVER_H
+#define SERVER_H
+
+template <class Data> class Server
 {
 private:
 	int nbrOfSensors;
 	bool consolActivation;
 	bool logActivation;
-	template <class Data>
 	void fileWrite (const Data& dataSens_p, int nFile){};
-	template <class Data>
 	void consolWrite(const Data& dataSens_p){};
 public:
 	Server()
@@ -30,19 +31,18 @@ public:
 		this->logActivation=autre.logActivation;
 		return *this;
 	};
-	template <class Data>
 	void operator<<(const Data& dataSens_p, int nFile) 
 	{
 		fileWrite (const Data& dataSens_p, int nFile)
 	};
-	template <class Data>
 	void operator<<(const Data& dataSens_p) 
 	{
 		consolWrite(const Data& dataSens_p);
 	};
-	template <class Data>
 	void dataRcv(const Data dataSens)
 	{
 		
 	};
-}
+};
+
+#endif

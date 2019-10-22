@@ -1,25 +1,13 @@
-CC=gcc
-CXX=g++
+CC=clang
+CXX=clang++
 RM=rm -f
-CPPFLAGS=-I../include -Wall -Wextra -Werror
-LDFLAGS=
-LDLIBS=
+CPPFLAGS=-I../include -Wall -Wextra -Werror -flto -O2 -fomit-frame-pointer
 
 SRCS=main.cpp server.cpp scheduler.cpp 
-OBJS=$(subst .cpp,.o,$(SRCS))
-all: server
+all: scheduler
 
-server: $(OBJS)
-	$(CXX) $(LDFLAGS) -o server $(OBJS) $(LDLIBS)
-
-main.o: main.cpp
-
-server.o: server.cpp
-
-scheduler.o: scheduler.cpp
-
-clean:
-	$(RM) $(OBJS)
+scheduler: $(SRCS)
+	$(CXX) $(CPPFLAGS) -o scheduler $(SRCS)
 
 distclean:
-	$(RM) server
+	$(RM) scheduler

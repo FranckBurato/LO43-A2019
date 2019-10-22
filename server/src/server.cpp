@@ -16,7 +16,7 @@ Server& Server::operator=(const Server& server){
     return *this;
 }
 
-std::ostream& operator<<(std::ostream& os, const Server& server) {   //Used to log info about server
+std::ostream& operator<<(std::ostream& os, const Server& server){   //Used to log info about server
     std::time_t time = std::chrono::system_clock::to_time_t(std::chrono::system_clock::now());
     os << "Server logs :" << std::endl;
     os << "    Date : " << std::ctime(&time) << std::endl;

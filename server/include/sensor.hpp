@@ -20,20 +20,20 @@ template <class T> class Sensor
         //Coplien form
         Sensor ();
         virtual ~Sensor ();
-	    Sensor(const Sensor& sensor);
+        Sensor(const Sensor& sensor);
         Sensor(std::string id);
-	    Sensor<T>& operator=(const Sensor& sensor);
+        Sensor<T>& operator=(const Sensor& sensor);
 
-	    std::string sendData();
+        std::string sendData() const;
         //Basically a "get" statement that we use in scheduler
 
-	    void aleaGen();
+        void aleaGen();
         //Generate a random value according to the type of the sensor
 
     protected:
         /* private data */
-	    T value;
-	    std::string id;
+        T value;
+        std::string id;
 };
 
 //Coplien form
@@ -47,7 +47,7 @@ template <class T> Sensor<T>& Sensor<T>::operator=(const Sensor& sensor){
     return *this;
 }
 
-template <class T> std::string Sensor<T>::sendData(){
+template <class T> std::string Sensor<T>::sendData() const{
     //Basically a "get" statement that we use in scheduler
     std::string data = this->id + " : " + std::to_string(this->value);
     return data;
@@ -62,7 +62,7 @@ template <class T> void Sensor<T>::aleaGen(){
         this->value = -40.0 + static_cast <float> (rand()) /( static_cast <float> (RAND_MAX/(100.0)));
     }
     if (std::is_same<T, int>::value){
-	    this->value = (rand() % static_cast<int>(140 + 1));
+        this->value = (rand() % static_cast<int>(140 + 1));
     }
 }
 #endif /* end of include guard Sensor_HPP */

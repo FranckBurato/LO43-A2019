@@ -4,25 +4,25 @@
 #define SERVER_H
 
 class Server{
-	private:
+    private:
         bool console, file;
-	public:
+    public:
         //Coplien form
-		Server();
-		Server(const Server& server);
-		virtual ~Server();
-		Server& operator=(const Server& server);
+        Server();
+        Server(const Server& server);
+        virtual ~Server();
+        Server& operator=(const Server& server);
 
-		friend std::ostream& operator<<(std::ostream& os, const Server& server);
+        friend std::ostream& operator<<(std::ostream& os, const Server& server);
         //Used to log info about server
 
-		void consoleWrite(const std::string &sensorData) const; 
+        void consoleWrite(const std::string &sensorData) const; 
         //Write string recieved to cout
 
-		void fileWrite(const std::string &fileName, const std::string &sensorData) const;
+        void fileWrite(const std::string &fileName, const std::string &sensorData) const;
         //Write string recieved to file with name "Everything that's before the first ':'
         //in the received string"
-        
+
         void dataRcv(const std::string &sensorData) const; 
         //Receives a string and calls fileWrite and consoleWrite 
         //according to the private variables console and file

@@ -17,5 +17,5 @@ int main(){
         schedul.dataRcv(schedul.humiS);
         usleep(1000000);
     }
-	return 0;
+    return 0;
 }

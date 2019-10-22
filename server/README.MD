@@ -24,7 +24,7 @@ Le projet a été développé avec clang, mais g++ devrait pouvoir compiler sans
       cd src
       make
       ```
-- Si vous n'avez que g++, il vous faudra modifier le make afin de remplacer `clang` par `g++`
+- Si vous n'avez que g++, il vous faudra modifier le make afin de remplacer `clang` par `gcc` et `clang++` par `g++`
 
 ## Utilisation
 Lancez le projet avec `./scheduler`

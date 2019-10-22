@@ -1,7 +1,7 @@
 CC = g++ -std=c++17
 CFLAGS = -Wall
 EXEC_NAMES = IoTSystem 
-OBJ_FILES = Server.o Scheduler.o Data.o Sensor.o Humidity.o Light.o Temp.o Sound.o Main.o 
+OBJ_FILES = Server.o Scheduler.o Data.o Sensor.o Humidity.o Light.o Temp.o Sound.o main.o
 
 all : $(EXEC_NAMES)
 

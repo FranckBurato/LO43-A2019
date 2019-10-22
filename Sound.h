@@ -1,3 +1,7 @@
+#ifndef SOUND_H
+#define SOUND_H
+#include "Sensor.h"
+
 class Sound public Sensor
 {
 public:
@@ -7,4 +11,6 @@ public:
 	~Sound();
 	virtual Sound& operator=(const Sound& autre){};
 	virtual int sendData(){};	
-}
+};
+
+#endif

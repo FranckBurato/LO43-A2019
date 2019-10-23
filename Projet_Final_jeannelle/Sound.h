@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include "Sensor.h"
 
-class Sound: public Sensor
+class Sound: public Sensor//<int>
 {
     public:
         Sound();

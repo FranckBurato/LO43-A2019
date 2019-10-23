@@ -26,9 +26,9 @@ public:
     
     template <class T>
     void dataRcv(string typeSens,T dataSens);
-    template <typename T>
+    template <class T>
     void consoleWrite(string typeSens, T dataSens);//visualiser les données arrivantes dans la console
-    template <typename T>
+    template <class T>
     void fileWrite(string typeSens, T dataSens);//stocker les données des capteurs dans des fichiers de logs
 };
 

@@ -1,0 +1,115 @@
+# depslib dependency file v1.0
+1571827417 source:c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	"Server.h"
+	"Scheduler.h"
+	"Sensor.h"
+	"Temperature.h"
+	"Humidity.h"
+	"Light.h"
+	"Sound.h"
+
+1571827853 source:c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\server.cpp
+	"Server.h"
+	<iostream>
+	<string>
+	<fstream>
+	<ctime>
+	<cstdio>
+	<cstdlib>
+
+1571827955 c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\server.h
+	<iostream>
+	<string>
+	<fstream>
+
+1571827783 source:c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\sensor.cpp
+	"Sensor.h"
+	"Scheduler.h"
+	"Server.h"
+	<iostream>
+	<string>
+	<cstdlib>
+	<cstdio>
+	<ctime>
+	<sstream>
+
+1571827903 c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\sensor.h
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+	<cstdio>
+
+1571821127 source:c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\light.cpp
+	<cstdlib>
+	<ctime>
+	"Light.h"
+	"Sensor.h"
+
+1571820508 c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\light.h
+	"Sensor.h"
+
+1571821127 source:c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\sound.cpp
+	<cstdlib>
+	<ctime>
+	"Sound.h"
+	"Sensor.h"
+
+1571820556 c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\sound.h
+	"Sensor.h"
+
+1571827097 source:c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\temperature.cpp
+	<cstdlib>
+	<ctime>
+	"Temperature.h"
+	"Sensor.h"
+
+1571820531 c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\temperature.h
+	"Sensor.h"
+
+1571826648 source:c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\humidity.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+	"Humidity.h"
+	"Scheduler.h"
+	"Sensor.h"
+	"Server.h"
+
+1571824807 c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\humidity.h
+	"Sensor.h"
+
+1571827717 source:c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\scheduler.cpp
+	<iostream>
+	<string>
+	<ctime>
+	<cstdlib>
+	<cstdio>
+	<windows.h>
+	"Scheduler.h"
+	"Temperature.h"
+	"Humidity.h"
+	"Light.h"
+	"Sound.h"
+	"Server.h"
+	"Sensor.h"
+
+1571827893 c:\users\julia\desktop\ecole\utbm\cours\branche\info 1\lo43\tp\project_v2\scheduler.h
+	<iostream>
+	<string>
+	<ctime>
+	<cstdio>
+	<cstdlib>
+	"Temperature.h"
+	"Humidity.h"
+	"Light.h"
+	"Sound.h"
+	"Server.h"
+	<vector>
+

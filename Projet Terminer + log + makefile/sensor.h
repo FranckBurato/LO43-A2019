@@ -11,7 +11,6 @@ class sensor
         virtual ~sensor();
         sensor(const sensor& other);
         sensor& operator=(const sensor& other);
-        //template <class T> T aleaGenValue(int);
         float aleaGenValue(int);
 };
 

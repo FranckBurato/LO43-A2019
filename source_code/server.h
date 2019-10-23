@@ -25,8 +25,8 @@ public:
 	virtual ~Server();
 
 	Server& operator=(const Server& s);
-	//friend void operator<<(int dataSens_p, const Server& s);       //filewrite
-	//friend void operator<<(string dataSens_toString, const Server& s);       //consolewrite
+	friend void operator<<(int dataSens_p, const Server& s);       //filewrite
+	friend void operator<<(string dataSens_toString, const Server& s);       //consolewrite
 
 	
 	template <class T>
@@ -37,8 +37,8 @@ public:
 		ctime_s(str, sizeof str, &result);
 
 
-		 //获取time_t类型当前时间
-		cout << "data of " << type << " is " << dataSens_p << " at: " << str << endl;//转换为常见的字符串：Fri Jan 11 17:04:08 2008
+		 //鑾峰彇time_t绫诲瀷褰撳墠鏃堕棿
+		cout << "data of " << type << " is " << dataSens_p << " at: " << str << endl;//杞崲涓哄父瑙佺殑瀛楃涓诧細Fri Jan 11 17:04:08 2008
 #endif
 	
 	}
@@ -50,9 +50,9 @@ public:
 #ifdef __STDC_LIB_EXT1__
 		char str[26];
 		ctime_s(str, sizeof str, &result);
-		//获取time_t类型当前时间
+		//鑾峰彇time_t绫诲瀷褰撳墠鏃堕棿
 
-	  //存储数据  std::ofstream outfile("log_fichiers",std::ofstream::app);
+	  //瀛樺偍鏁版嵁  std::ofstream outfile("log_fichiers",std::ofstream::app);
 
 		ofstream log_fichiers;
 		log_fichiers.open("log_fichiers.txt", ios::app);

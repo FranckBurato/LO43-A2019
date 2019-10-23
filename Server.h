@@ -1,5 +1,6 @@
 #ifndef SERVER_H
 #define SERVER_H
+#include <iostream>
 
 template <class Data> class Server
 {
@@ -41,7 +42,7 @@ public:
 	};
 	void dataRcv(const Data dataSens, nFile)
 	{
-		std::cout << (*dataSens_p, nFile);
+		std::cout << (*dataSens, nFile);
 	};
 };
 

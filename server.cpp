@@ -17,21 +17,21 @@ Server::Server(int capteur1, int capteur2){
     cap2 = capteur2;
 
 }
-
+// On visualise les donnees arrivantes dans la console
 void Server::consoleWrite()
 {
     cout <<"Capteur1 :" <<cap1 <<endl;
     cout <<"capteur2 :" <<cap2 <<endl;
 }
-
+//On stocke les donnees des capteurs dans des fichiers de logs (chaques capteur devra disposer de son fichier de logs)
 void Server::fileWrite(Server capteur){
-    std::ofstream resultats("CapteurResultat.txt");
-    if(resultats){
-        resultats <<"capteur1 :" <<capteur.cap1;
-        resultats <<"capteur2 :" <<capteur.cap2;
+    std::ofstream Res("CapteurRes.txt");
+    if(Res){
+        Res <<"capteur1 :" <<capteur.cap1;
+        Res <<"capteur2 :" <<capteur.cap2;
     }
     else{
-        cout <<"L'ecriture dans le fichier incorrecte'" <<endl;
+        cout <<"L'ecriture dans le fichier est incorrecte'" <<endl;
     }
 
 }

@@ -72,7 +72,7 @@ void Scheduler::sched_run()
 
         cout<<"\n"<<"Capteur Son: "<<endl;
         s.dataRvc(so.sendData(so.aleaGenVal(2),2),2);
-        this->nbrSec=rand()%500 + 200; //génération d'une valeur entre 200 et 700 secondes
+        this->nbrSec=rand()%500 + 200; //génération d'une valeur entre 200 et 700 millisecondes
         Sleep(this->nbrSec);
 
         cout<<"\n"<<"Capteur Lumiere: "<<endl;

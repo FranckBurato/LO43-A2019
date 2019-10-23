@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include "Sensor.h"
 
-class Temperature: public Sensor
+class Temperature: public Sensor//<float>
 {
 
     public:

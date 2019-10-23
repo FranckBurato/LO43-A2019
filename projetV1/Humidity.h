@@ -2,7 +2,7 @@
 #define HUMIDITY_H
 
 
-class Humidity: public Sensor
+class Humidity: public Sensor//<float>
 {
     private:
         float Hum;

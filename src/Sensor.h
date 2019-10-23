@@ -1,23 +1,28 @@
 #ifndef DEF_SENSOR
 #define DEF_SENSOR
 
-template<typename T>
 class Sensor{
 	protected:
-		T data;
 		std::string sensorName;
 	public:
-		virtual std::string sendData(){
-			return "--" + this->getSensorName() + " Sensor-- Value : " + std::to_string(this->getData());
+		std::string getSensorName() const;
+		virtual std::string sendData();
+		template<typename T>
+		T& generateValues(const T& max, const T& min){
+			std::srand(std::time(nullptr));
+			T rand = std::rand()%(max+1) + min;
+			return rand;
 		}
-		virtual T getData() const{
-			return this->data;
-		}
-		virtual void setData(T data){
-			this->data = data;
-		}
-		virtual std::string getSensorName() const{
-			return this->sensorName;
-		}
+		
+		template<>
+		bool& generateValues(const bool& max, const bool& min){
+			std::srand(std::time(nullptr));
+			int rand = std::rand()%100;
+			if(rand <= 50){
+				return min;
+			}else{
+				return max;
+			}
+		}	
 };
 #endif

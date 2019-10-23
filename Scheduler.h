@@ -12,7 +12,7 @@ private:
 	Server server;
 	Sensor sensor;
 public:
-	Scheduler()
+	virtual Scheduler()
 	{
 		Server();
 		Sensor();

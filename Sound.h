@@ -4,6 +4,9 @@
 
 class Sound public Sensor
 {
+private:
+	int dataSens;
+	virtual int aleaGenVal (int nType){};
 public:
 	virtual Sound(){};
 	virtual Sound(const Sound& autre){};

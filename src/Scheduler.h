@@ -8,15 +8,14 @@
 #include "Humidity.h"
 #include "Sound.h"
 #include <vector>
-#include <variant>
 
 class Scheduler{
 	private:
 		Server server;
-		std::vector<std::variant<Temp, Sound, Light, Humidity>> sensors;
+		std::vector<Sensor> sensors;
 	public:
 		Scheduler();
-		Scheduler(int nbOfSensors, bool consoleActivation, bool logActivation);
+		Scheduler(bool consoleActivation, bool logActivation);
 		Scheduler(Server server);
 		Scheduler(const Scheduler& scheduler);
 		~Scheduler();
@@ -24,7 +23,7 @@ class Scheduler{
 		void run();
 		Server getServer() const;
 		void setServer(Server server);
-		std::vector<std::variant<Temp, Sound, Light, Humidity>> getSensors() const;
-		void setSensors(std::vector<std::variant<Temp, Sound, Light, Humidity>> sensors);
+		std::vector<Sensor> getSensors() const;
+		void setSensors(std::vector<Sensor> sensors);
 };
 #endif

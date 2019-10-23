@@ -96,3 +96,69 @@ string Sensor::sendData(float f,int dataSens_p)
 
 }
 
+/* template<typename T> T Sensor<T>::AleaGenVal(int n)
+{
+    T h;
+
+    switch(n)
+    {
+
+    case 1 :
+        h= (rand() / (float)RAND_MAX * 100.0); //génération d'une valeur entre 0 et 100%
+        break;
+
+    case 2:
+        h= (rand()* 150); //génération d'une valeur entre 0 et 150 db
+        break;
+    case 3:
+        h=(bool)(rand()*2); //génération d'une valeur entre 0 et 1
+        break;
+    case 4:
+        h=((rand() / (float)RAND_MAX * 100.0)) - 50.0; //génération d'une valeur entre -50.0 et 50.0 °C
+        break;
+
+    }
+    return h;
+
+}
+template<typename T> string Sensor<T>::sendData(T f,int dataSens_p)
+{
+
+    string data;
+    ostringstream os;
+
+    switch(dataSens_p)
+    {
+    case 1: //taux humidite
+        {
+                os << f;
+                data=os.str();
+                data += " %"; //ajout du pourcentage à la fin de la string
+                break;
+        }
+    case 2: //son converti le réel en entier puis en string et ajoute l'unite.
+        {
+                os << f;
+                data=os.str();
+                data += " db";
+                break;
+        }
+    case 3: //lumiere: donne une valeur false si f est inférieur à 0.5 et true si supérieur.
+        {
+                os << f;
+                data=os.str();
+                break;
+        }
+    case 4: //température
+        {
+                os << f;
+                data=os.str();
+                data += " °C";
+                break;
+        }
+    }
+    return data;
+
+}
+
+*/

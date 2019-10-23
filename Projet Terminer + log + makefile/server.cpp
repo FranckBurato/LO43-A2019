@@ -33,7 +33,7 @@ void operator<<(string dataSensorToString, int sensorLog)
 
         case 1:
         {
-            ofstream fluxLogHumidity("C:\\Users\\Benjamin\\Desktop\\INFO\\LO43\\LOG\\logHumidity.txt");
+            ofstream fluxLogHumidity("logHumidity.txt");
             if (fluxLogHumidity)
             {
                 fluxLogHumidity << dataSensorToString <<endl ;
@@ -49,7 +49,7 @@ void operator<<(string dataSensorToString, int sensorLog)
 
         case 2:
         {
-            ofstream fluxLogTemperature("C:\\Users\\Benjamin\\Desktop\\INFO\\LO43\\LOG\\logTemperature.txt");
+            ofstream fluxLogTemperature("logTemperature.txt");
             if (fluxLogTemperature)
             {
                 fluxLogTemperature << dataSensorToString << endl ;
@@ -64,7 +64,7 @@ void operator<<(string dataSensorToString, int sensorLog)
 
         case 3:
         {
-            ofstream fluxLogLight("C:\\Users\\Benjamin\\Desktop\\INFO\\LO43\\LOG\\logLight.txt");
+            ofstream fluxLogLight("logLight.txt");
             if (fluxLogLight)
             {
                 fluxLogLight << dataSensorToString << endl ;
@@ -78,7 +78,7 @@ void operator<<(string dataSensorToString, int sensorLog)
         }
         case 4:
         {
-            ofstream fluxLogSound("C:\\Users\\Benjamin\\Desktop\\INFO\\LO43\\LOG\\logSound.txt");
+            ofstream fluxLogSound("logSound.txt");
             if (fluxLogSound)
             {
                 fluxLogSound << dataSensorToString << "," << endl;

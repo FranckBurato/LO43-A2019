@@ -4,19 +4,27 @@
 using namespace std;
 
 Light::Light(){
-	this->data = false;
-	this->sensorName = "Light";
+	isLight = false;
+	this->sensorName = "Photodetector";
 }
 
 Light::Light(const Light& light){
-	this->data = light.getData();
+	isLight = light.getData();
 	this->sensorName = light.getSensorName();
 }
 
 Light::~Light(){}
 
 Light& Light::operator=(const Light& light){
-	this->data = light.getData();
+	isLight = light.getData();
 	this->sensorName = light.getSensorName();
 	return *this;
+}
+
+string Light::sendData(){
+	return "-Photodetector- Light detected : " + to_string(generateValues<bool>(true, false));
+}
+
+bool Light::getData() const{
+	return isLight;
 }

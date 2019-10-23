@@ -4,19 +4,27 @@
 using namespace std;
 
 Sound::Sound(){
-	this->data = 0;
-	this->sensorName = "Sound";
+	sound = 0;
+	this->sensorName = "Soundlevelmeter";
 }
 
 Sound::Sound(const Sound& sound){
-	this->data = sound.getData();
+	this->sound = sound.getData();
 	this->sensorName = sound.getSensorName();
 }
 
 Sound::~Sound(){}
 
 Sound& Sound::operator=(const Sound& sound) {
-	this->data = sound.getData();
+	this->sound = sound.getData();
 	this->sensorName = sound.getSensorName();
 	return *this;
+}
+
+string Sound::sendData(){
+	return "-Soundlevelmeter- Sound level (dB) : " + to_string(generateValues<int>(0, 200));
+}
+
+int Sound::getData() const{
+	return sound;
 }

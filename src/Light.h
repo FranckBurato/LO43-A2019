@@ -3,11 +3,15 @@
 
 #include "Sensor.h"
 
-class Light : public Sensor<bool>{
+class Light : public Sensor{
+	private:
+		bool isLight;
 	public:
 		Light();
 		Light(const Light& light);
 		~Light();
 		Light& operator=(const Light& light);
+		std::string sendData();
+		bool getData() const;
 };
 #endif

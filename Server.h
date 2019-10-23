@@ -39,9 +39,9 @@ public:
 	{
 		consolWrite(const Data& dataSens_p);
 	};
-	void dataRcv(const Data dataSens)
+	void dataRcv(const Data dataSens, nFile)
 	{
-		
+		std::cout << (*dataSens_p, nFile);
 	};
 };
 

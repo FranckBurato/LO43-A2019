@@ -4,6 +4,9 @@
 
 class Temperature public Sensor
 {
+private:
+	float dataSens;
+	virtual float aleaGenVal (int nType){};
 public:
 	virtual Temperature(){};
 	virtual Temperature(const Temperature& autre){};

@@ -4,6 +4,9 @@
 
 class Light public Sensor
 {
+private:
+	bool dataSens;
+	virtual bool aleaGenVal (int nType){};
 public:
 	virtual Light(){};
 	virtual Light(const Light& autre){};

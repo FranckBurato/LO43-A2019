@@ -12,25 +12,18 @@ Scheduler::Scheduler(){
 Scheduler::Scheduler(bool consoleActivation, bool logActivation){
 	Server server(4, consoleActivation, logActivation);
 	this->server = server;
-	Light light;
-	Sound sound;
-	Temp temp;
-	this->sensors.push_back(temp);
-	this->sensors.push_back(sound);
-	this->sensors.push_back(light);
-	this->sensors.push_back(*(new Humidity));	
+	this->sensors.push_back(*(new Temp()));
+	this->sensors.push_back(*(new Sound()));
+	this->sensors.push_back(*(new Light()));
+	this->sensors.push_back(*(new Humidity()));	
 }
 
 Scheduler::Scheduler(Server server){
 	this->server = server;
-	Humidity humid;
-	Light light;
-	Sound sound;
-	Temp temp;
-	this->sensors.push_back(temp);
-	this->sensors.push_back(sound);
-	this->sensors.push_back(light);
-	this->sensors.push_back(humid);
+	this->sensors.push_back(*(new Temp()));
+	this->sensors.push_back(*(new Sound()));
+	this->sensors.push_back(*(new Light()));
+	this->sensors.push_back(*(new Humidity()));
 }
 
 Scheduler::Scheduler(const Scheduler& scheduler){
@@ -47,27 +40,22 @@ Scheduler& Scheduler::operator=(const Scheduler& scheduler){
 }
 
 void Scheduler::run(){
-	//vector<int> timers (this->sensors.size, 15);
 	int time = 2; //time in seconds when the scheduler will get the data from the sensors
 	int count = 3; //number of repeat, only for simulation
 	int i=1, j=0;
 
 	chrono::time_point<chrono::steady_clock> end;
 	bool running = true;	
-
-	Humidity humid;
-	cout << humid.getSensorName();
 	
 	end = chrono::steady_clock::now() + chrono::seconds(time);
 	while(running){
 		if(chrono::steady_clock::now() >= end){
 			cout << "Getting data from sensors..." << endl;		
-				cout << "A sensor data" << endl;
+			//Just for the example, normally I would have to get the real generated data
+			this->server.dataReceive("-Hygrometer- Humidity level (%) : 80", "Hygrometer");
 
 			/*for(i=0;i<sensors.size();++i){
-				for(j=0;j<4;++j){
-					server.dataReceive(get<j>(sensors[i]).sendData(),get<j>(sensors[i]).getSensorName);
-				}
+				server.dataReceive(get<j>(sensors[i]).sendData(),get<j>(sensors[i]).getSensorName);
 			}*/
 
 			if(i < count){

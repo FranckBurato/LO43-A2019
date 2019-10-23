@@ -2,6 +2,7 @@
 #define SERVER_H
 #include <iostream>
 
+//ON UTILISE UN TEMPLATE DATA POUR FLOAT / INT / BOOL
 template <class Data> class Server
 {
 private:
@@ -32,14 +33,17 @@ public:
 		this->logActivation=autre.logActivation;
 		return *this;
 	};
+//<< AVEC POINTEUR SUR UN DATA ET UN NFILE POUR SAVOIR QUEL TYPE DE DATA
 	void operator<<(const Data& dataSens_p, int nFile) 
 	{
 		fileWrite (const Data& dataSens_p, int nFile)
 	};
+//<< POUR AFFICHAGE SUR LA CONSOLE
 	void operator<<(const Data& dataSens_p) 
 	{
 		consolWrite(const Data& dataSens_p);
 	};
+//METHODE POUR ECRIRE LA DATA RECUE DANS UN FICHIER
 	void dataRcv(const Data dataSens, nFile)
 	{
 		std::cout << (*dataSens, nFile);

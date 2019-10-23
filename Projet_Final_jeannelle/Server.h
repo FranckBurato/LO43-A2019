@@ -15,20 +15,20 @@ private:
         bool logActivation; // Verifie si on peut ecrire dans les fichiers log (true par default)
 
 public:     //Forme canonique de Coplien
-		Server(); //Constructeur par défault
+		Server(); //Constructeur par dÃ©fault
 		Server(const Server& server_p); //Constructeur par recopie
 		Server(int nbrOfSensor_p, bool consolActivation,bool logActivation); //Constructeur par recopie
 		~Server (); //destructeur
-		Server &operator=(const Server&server_p); //surcharge opérateur
+		Server &operator=(const Server&server_p); //surcharge opÃ©rateur
+        	std::ostream &operator<<(std::string dataSens);
 
-        void dataRvc(string dataSens,int dataSens_p); //Ecrira dans les fichiers des capteurs et sur la console si logActivation et consoleActivation sont vérifié.
-		void consolewrite(string dataSens);//Affiche les données du capteur dans la console
-		void filewrite(string dataSens,int dataSens_p);//Ecrit les données du capteur dans un fichier texte qui lui est associé
+        void dataRvc(string dataSens,int dataSens_p); //Ecrira dans les fichiers des capteurs et sur la console si logActivation et consoleActivation sont vÃ©rifiÃ©.
+		void consolewrite(string dataSens);//Affiche les donnÃ©es du capteur dans la console
+		void filewrite(string dataSens,int dataSens_p);//Ecrit les donnÃ©es du capteur dans un fichier texte qui lui est associÃ©
 
 
 };
 
-Server& operator<<(Server s,string dataSens);
 Server& operator<<(string dataSens,int dataSens_p);
 
 #endif // SERVER_H_INCLUDED

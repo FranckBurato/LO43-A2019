@@ -1,5 +1,6 @@
 #include <iostream>
 #include <chrono>
+#include <ctime>
 #include "Scheduler.h"
 
 using namespace std;
@@ -42,29 +43,28 @@ Scheduler& Scheduler::operator=(const Scheduler& scheduler){
 void Scheduler::run(){
 	int time = 2; //time in seconds when the scheduler will get the data from the sensors
 	int count = 3; //number of repeat, only for simulation
-	int i=1, j=0;
+	int i=1;
 
-	chrono::time_point<chrono::steady_clock> end;
-	bool running = true;	
+	chrono::time_point<chrono::steady_clock> end; //We use the chrono namespace to save time
+	bool running = true; //Var to controle the infinite loop
 	
-	end = chrono::steady_clock::now() + chrono::seconds(time);
+	end = chrono::steady_clock::now() + chrono::seconds(time); //We set the first boundarie for the first period of the scheduler
 	while(running){
 		if(chrono::steady_clock::now() >= end){
 			cout << "Getting data from sensors..." << endl;		
-			//Just for the example, normally I would have to get the real generated data
-			this->server.dataReceive("-Hygrometer- Humidity level (%) : 80", "Hygrometer");
-
-			/*for(i=0;i<sensors.size();++i){
-				server.dataReceive(get<j>(sensors[i]).sendData(),get<j>(sensors[i]).getSensorName);
-			}*/
-
+			
+			//Getting the data for each sensors
+			for(Sensor s : sensors){
+				server.dataReceive("[" + ctime(time(0)) + "] " + s.sendData(),s.getSensorName);
+			}
+			
+			//Checking if we can continue the simulation
 			if(i < count){
 				++i;
-				j = 0;
-				end = chrono::steady_clock::now() + chrono::seconds(time);
+				end = chrono::steady_clock::now() + chrono::seconds(time); //Setting up the next boundarie
 			}else{
 				cout << "Ending acquisition" << endl;
-				running = false;
+				running = false; //We end the simulation by quitting the infinite loop
 			}
 		}
 	}

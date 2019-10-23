@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include "Sensor.h"
 
-class Light : public Sensor
+class Light : public Sensor//<bool>
 {
     public:
         Light();

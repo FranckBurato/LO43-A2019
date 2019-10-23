@@ -31,7 +31,7 @@ string temperature::sendData()
 {
 	delay();
 	string m;
-	m = this->getime()+this->sensor_type + ":" +this->test()+ "°c";
+	m = this->getime()+this->sensor_type + ":" +this->test()+ "隆茫c";
 	return m;
 }
 
@@ -131,8 +131,7 @@ string sound::test()
 void Sensor::delay()
 {
 	time_t timep;
-	time(&timep); /*获取time_t类型的当前时间*/
-	//printf("%s", asctime(gmtime(&timep)));
+	time(&timep); 
 	long int o = static_cast<long int> (time(NULL));
 	long int t = static_cast<long int> (time(NULL));
 	while (o != t + fre)

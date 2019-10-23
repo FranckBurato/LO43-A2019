@@ -15,7 +15,6 @@ sensor& sensor::operator=(const sensor& other)
     return *this;
 }
 
-//template <class T>
 float sensor::aleaGenValue(int type)
 {
     //type : 1= bool light, 2=int sound, et 3=float humidity et 4=float temperature

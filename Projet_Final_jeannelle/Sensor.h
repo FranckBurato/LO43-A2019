@@ -24,6 +24,8 @@ class Sensor
 
         string sendData(float f,int dataSens_p);
         float aleaGenVal(int n);
+        //template<typename T> string sendData(T f,int dataSens_p);
+        //template<typename T> T AleaGenval(int n);
 
 };
 

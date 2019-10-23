@@ -5,7 +5,7 @@
 #include <iostream>
 #include <time.h>
 
-//Constructeur par dÈfault
+//Constructeur par d√©fault
 Sensor::Sensor(){}
 
 //Destructeur
@@ -16,14 +16,14 @@ Sensor::Sensor(int sensor_p)
     this->valSense = sensor_p;
 }
 
-//Surcharge opÈrateur =
+//Surcharge op√©rateur =
 Sensor& Sensor::operator=(const Sensor& sensor_p)
 {
     this->valSense = sensor_p.valSense;
     return *this;
 }
 
-//GÈnËre un nombre alÈatoire en fonction du type de capteur.
+//G√©n√®re un nombre al√©atoire en fonction du type de capteur.
 float Sensor::aleaGenVal(int n){
 
     float h;
@@ -32,24 +32,24 @@ float Sensor::aleaGenVal(int n){
     {
 
     case 1 :
-        h= (rand() / (float)RAND_MAX * 100.0);
+        h= (rand() / (float)RAND_MAX * 100.0); //g√©n√©ration d'une valeur entre 0 et 100%
         break;
 
     case 2:
-        h= (rand() / (float)RAND_MAX * 150);
+        h= (rand() / (float)RAND_MAX * 150); //g√©n√©ration d'une valeur entre 0 et 150 db
         break;
     case 3:
-        h=(rand() / (float)RAND_MAX * 1.0);
+        h=(rand() / (float)RAND_MAX * 1.0); //g√©n√©ration d'une valeur entre 0 et 1
         break;
     case 4:
-        h=(rand() / (float)RAND_MAX * 50.0);
+        h=((rand() / (float)RAND_MAX * 100.0)) - 50.0; //g√©n√©ration d'une valeur entre -50.0 et 50.0 ¬∞C
         break;
 
     }
     return h;
 }
 
-//Transforme un nombre rÈel en string et ajoute l'unitÈ en fonction du capteur
+//Transforme un nombre r√©el en string et ajoute l'unit√© en fonction du capteur
 string Sensor::sendData(float f,int dataSens_p)
 {
 
@@ -62,17 +62,17 @@ string Sensor::sendData(float f,int dataSens_p)
         {
                 os << f;
                 data=os.str();
-                data.insert (data.end(),' %');
+                data += " %"; //ajout du pourcentage √† la fin de la string
                 break;
         }
-    case 2: //son converti le rÈel en entier puis en string et ajoute l'unite.
+    case 2: //son converti le r√©el en entier puis en string et ajoute l'unite.
         {
                 os << (int)f;
                 data=os.str();
                 data += " db";
                 break;
         }
-    case 3: //lumiere: donne une valeur false si f est infÈrieur ‡ 0.5 et true si supÈrieur.
+    case 3: //lumiere: donne une valeur false si f est inf√©rieur √† 0.5 et true si sup√©rieur.
         {
                 if(f<0.5)
                 {
@@ -84,11 +84,11 @@ string Sensor::sendData(float f,int dataSens_p)
                 }
                 break;
         }
-    case 4: //tempÈrature
+    case 4: //temp√©rature
         {
                 os << f;
                 data=os.str();
-                data += " ∞C";
+                data += " ¬∞C";
                 break;
         }
     }

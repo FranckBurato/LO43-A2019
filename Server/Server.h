@@ -24,7 +24,7 @@ class Server{
         //constructeur de recopie
         Server(const Server& server);
         //destructeur
-        ~Server();
+        virtual ~Server();
         //Operateur d'affectation
         Server& operator=(const Server& server);
         template <typename T> void dataRcv(string type_of_sensor, T data);

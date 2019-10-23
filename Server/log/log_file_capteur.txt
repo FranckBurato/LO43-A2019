@@ -1526,3 +1526,107 @@ Sound: 50
 
 	Sound: 42
 
+	Temperature: 95.899
+
+	Humidity: 38.5415
+
+	Light: 0
+
+	Sound: 38
+
+	Temperature: 22.8324
+
+	Humidity: 80.4912
+
+	Light: 1
+
+	Sound: 53
+
+	Temperature: 75.4367
+
+	Humidity: 97.0716
+
+	Light: 0
+
+	Sound: 50
+
+	Temperature: 26.7237
+
+	Humidity: 92.6751
+
+	Light: 0
+
+	Sound: 47
+
+	Temperature: 27.9402
+
+	Humidity: 56.4622
+
+	Light: 1
+
+	Sound: 95
+
+	Temperature: 94.613
+
+	Humidity: 73.8468
+
+	Light: 0
+
+	Sound: 84
+
+	Temperature: 58.0145
+
+	Humidity: 90.9886
+
+	Light: 0
+
+	Sound: 13
+
+	Temperature: 2.45944
+
+	Humidity: 33.0477
+
+	Light: 0
+
+	Sound: 90
+
+	Temperature: 85.4656
+
+	Humidity: 91.6269
+
+	Light: 0
+
+	Sound: 63
+
+	Temperature: 41.4444
+
+	Humidity: 71.99
+
+	Light: 0
+
+	Sound: 45
+
+	Temperature: 75.8553
+
+	Humidity: 43.1571
+
+	Light: 0
+
+	Sound: 99
+
+	Temperature: 90.8775
+
+	Humidity: 79.7224
+
+	Light: 1
+
+	Sound: 31
+
+	Temperature: 17.5015
+
+	Humidity: 29.8552
+
+	Light: 0
+
+	Sound: 12
+

@@ -18,7 +18,7 @@ class Sensor{
         Sensor();
         Sensor(T i);
         Sensor(const Sensor&);
-        ~Sensor();
+        virtual ~Sensor();
         Sensor& operator=(const Sensor&);
         
         T sendData();
@@ -65,9 +65,6 @@ T Sensor<T>::sendData(){
 template <class T>
 Sensor<T>& Sensor<T>::operator=(const Sensor& s){
     this->valSense = s.valSense;
-
-
-    s.~Sensor();
 
     return *this;
 }

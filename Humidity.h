@@ -4,6 +4,9 @@
 
 class Humidity public Sensor
 {
+private:
+	float dataSens;
+	virtual float aleaGenVal (int nType){};
 public:
 	virtual Humidity(){};
 	virtual Humidity(const Humidity& autre){};

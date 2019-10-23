@@ -5,7 +5,8 @@ using namespace std;
 
 int main(){
 	
-	Scheduler scheduler(4, true, true);
+	Scheduler scheduler(true, true);
+	cout << "Begining acquisition..." << endl;
 	scheduler.run();
 	return 0;
 

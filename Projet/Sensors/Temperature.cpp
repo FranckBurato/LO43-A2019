@@ -10,6 +10,13 @@ Temperature::Temperature() {
     this->id = 1;
     this->path = "../Logs/temperature.txt";
     this->type = "Temperature";
+    this->interval = 1;
+}
+Temperature::Temperature(int interval) {
+    this->id = 1;
+    this->path = "../Logs/temperature.txt";
+    this->type = "Temperature";
+    this->interval = interval;
 }
 Temperature::Temperature(const Temperature &temperature) {}
 Temperature& Temperature::operator=(const Temperature &temperature) {
@@ -21,5 +28,5 @@ Temperature& Temperature::operator=(const Temperature &temperature) {
 Temperature::~Temperature() {}
 
 std::string Temperature::getValue() {
-    return std::to_string(this->generateValue(0,100));
+    return std::to_string(this->generateValue(-20,50));
 }

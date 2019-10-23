@@ -13,6 +13,7 @@ public:
     virtual std::string getPath()=0;
     virtual std::string getType()=0;
     virtual std::string getValue()=0;
+    virtual bool canSend()=0;
 };
 
 #endif //PROJET_SENSORINTERFACE_H

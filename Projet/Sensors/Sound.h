@@ -7,6 +7,7 @@
 class Sound : public Sensor<int> {
 	public:
         Sound();
+        Sound(int interval);
         Sound(const Sound &sound);
         Sound &operator=(const Sound &sound);
         virtual ~Sound();

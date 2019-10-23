@@ -6,6 +6,7 @@
 class Light : public Sensor<bool> {
 	public:
         Light();
+        Light(int interval);
         Light(const Light &light);
         Light &operator=(const Light &light);
         virtual ~Light();

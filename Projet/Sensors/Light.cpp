@@ -10,6 +10,13 @@ Light::Light() {
     this->id = 3;
     this->path = "../Logs/light.txt";
     this->type = "Light";
+    this->interval = 1;
+}
+Light::Light(int interval) {
+    this->id = 3;
+    this->path = "../Logs/light.txt";
+    this->type = "Light";
+    this->interval = interval;
 }
 Light::Light(const Light &light){}
 Light& Light::operator=(const Light &light) {

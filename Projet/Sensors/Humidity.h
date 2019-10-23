@@ -6,6 +6,7 @@
 class Humidity : public Sensor<float> {
 	public:
         Humidity();
+        Humidity(int interval);
         Humidity(const Humidity &humidity);
         Humidity &operator=(const Humidity &humidity);
         virtual ~Humidity();

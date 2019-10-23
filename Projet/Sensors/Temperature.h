@@ -7,6 +7,7 @@
 class Temperature : public Sensor<float> {
 	public:
 		Temperature();
+        Temperature(int interval);
 		Temperature(const Temperature &temperature);
 		Temperature &operator=(const Temperature &temperature);
 		virtual ~Temperature();

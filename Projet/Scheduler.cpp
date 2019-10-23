@@ -18,17 +18,16 @@ Scheduler::~Scheduler() {
         delete this->sensors[i];
     }
 }
-Scheduler::Scheduler() : server(), sensors(), sDuration(), nbGets() {}
-Scheduler::Scheduler(bool consolActivation, bool logActivation) : server(consolActivation,logActivation), sensors(), sDuration(), nbGets() {}
-Scheduler::Scheduler(const Scheduler &scheduler) : server(scheduler.server), sensors(scheduler.sensors), sDuration(scheduler.sDuration), nbGets(scheduler.nbGets) {}
-Scheduler::Scheduler(int sDuration, int nbGets) : server(), sensors(), sDuration(sDuration), nbGets(nbGets){}
-Scheduler::Scheduler(int sDuration, int nbGets, bool consolActivation, bool logActivation) : server(consolActivation,logActivation), sensors(), sDuration(sDuration), nbGets(nbGets) {}
+Scheduler::Scheduler() : server(), sensors(), msDuration() {}
+Scheduler::Scheduler(bool consolActivation, bool logActivation) : server(consolActivation,logActivation), sensors(), msDuration() {}
+Scheduler::Scheduler(const Scheduler &scheduler) : server(scheduler.server), sensors(scheduler.sensors), msDuration(scheduler.msDuration){}
+Scheduler::Scheduler(int msDuration) : server(), sensors(), msDuration(msDuration){}
+Scheduler::Scheduler(int msDuration, bool consolActivation, bool logActivation) : server(consolActivation,logActivation), sensors(), msDuration(msDuration) {}
 
 Scheduler& Scheduler::operator=(const Scheduler &scheduler) {
     this->server = scheduler.server;
     this->sensors = scheduler.sensors;
-    this->sDuration = scheduler.sDuration;
-    this->nbGets = scheduler.nbGets;
+    this->msDuration = scheduler.msDuration;
     return *this;
 }
 Scheduler &Scheduler::operator+(SensorInterface *sensor) {
@@ -38,16 +37,15 @@ Scheduler &Scheduler::operator+(SensorInterface *sensor) {
 
 
 void Scheduler::run() {
-    for(int i = 0; i < nbGets; ++i) {
-        std::cout << "----------------------------" << std::endl;
-        std::cout << "VALUE NUMBER : " << i + 1 << std::endl;
-        std::cout << "----------------------------" << std::endl;
-        int j;
-        for(j = 0; j < this->sensors.size(); ++j) {
-            this->server << this->sensors[j];
+    for(int i = 0; i < msDuration; ++i) {
+        for(int j = 0; j < this->sensors.size(); ++j) {
+            if(this->sensors[j]->canSend()) {
+                this->server << this->sensors[j];
+            }
         }
-        if(i < nbGets)
-            Sleep((sDuration * 1000) / nbGets);
+
+        // check every 1ms
+        Sleep(1);
     }
 }
 

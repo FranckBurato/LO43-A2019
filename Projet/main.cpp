@@ -8,12 +8,12 @@
 
 int main() {
 	// create new Scheduler
-	Temperature *tempSensor = new Temperature();
-	Humidity *humiditySensor = new Humidity();
-	Light *lightSensor = new Light();
-	Sound *soundSensor = new Sound();
+	Temperature *tempSensor = new Temperature(5*100); // in MS
+	Humidity *humiditySensor = new Humidity(2*100);
+	Light *lightSensor = new Light(1*100);
+	Sound *soundSensor = new Sound(3*100);
 
-	Scheduler scheduler(15,10,true,true);
+	Scheduler scheduler(10*100,true,true); // in MS
 	scheduler = scheduler + tempSensor + humiditySensor + lightSensor + soundSensor;
 	scheduler.run();
 

@@ -9,8 +9,8 @@ class Scheduler {
 	public:
         Scheduler();
         Scheduler(const Scheduler &scheduler);
-        Scheduler(int sDuration, int nbGets);
-        Scheduler(int sDuration, int nbGets, bool consolActivation, bool logActivation);
+        Scheduler(int msDuration);
+        Scheduler(int msDuration, bool consolActivation, bool logActivation);
         Scheduler(bool consolActivation, bool logActivation);
         Scheduler & operator=(const Scheduler &scheduler);
         virtual ~Scheduler();
@@ -21,8 +21,7 @@ class Scheduler {
 	private:
 		Server server;
 		std::vector<SensorInterface *> sensors;
-		int sDuration;
-		int nbGets;
+		int msDuration;
 };
 
 #endif // SCHEDULER_H

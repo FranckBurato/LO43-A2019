@@ -10,6 +10,13 @@ Sound::Sound() {
     this->id = 4;
     this->path = "../Logs/sound.txt";
     this->type = "Sound";
+    this->interval = 1;
+}
+Sound::Sound(int interval) {
+    this->id = 4;
+    this->path = "../Logs/sound.txt";
+    this->type = "Sound";
+    this->interval = interval;
 }
 Sound::Sound(const Sound &sound){}
 Sound& Sound::operator=(const Sound &sound) {

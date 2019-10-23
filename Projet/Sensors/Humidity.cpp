@@ -10,6 +10,13 @@ Humidity::Humidity() {
     this->id = 2;
     this->path = "../Logs/humidity.txt";
     this->type = "Humidity";
+    this->interval = 1;
+}
+Humidity::Humidity(int interval) {
+    this->id = 2;
+    this->path = "../Logs/humidity.txt";
+    this->type = "Humidity";
+    this->interval = interval;
 }
 Humidity::Humidity(const Humidity &humidity){}
 Humidity& Humidity::operator=(const Humidity &humidity) {

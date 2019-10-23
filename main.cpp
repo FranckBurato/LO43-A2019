@@ -18,15 +18,15 @@ int main()
 
     Sleep(5000);
 
-    new Scheduler<Humidity>(new Humidity());
+   new Scheduler<Humidity>(new Humidity());
 
     Sleep(5000);
 
-    new Scheduler<Sound>(new Sound());
+   new Scheduler<Sound>(new Sound());
 
     Sleep(5000);
 
-    new Scheduler<Light>(new Light());
+   new Scheduler<Light>(new Light());
 
     return 0;
 }

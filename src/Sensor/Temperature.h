@@ -12,7 +12,7 @@ protected:
 public:
     Temperature();
 
-    Temperature(Temperature &) = default;
+    Temperature(const Temperature &) = default;
 
     Temperature &operator=(const Temperature &) = default;
 

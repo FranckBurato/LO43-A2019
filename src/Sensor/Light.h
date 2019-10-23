@@ -12,7 +12,7 @@ protected:
 public:
     Light();
 
-    Light(Light &) = default;
+    Light(const Light &) = default;
 
     Light &operator=(const Light &) = default;
 

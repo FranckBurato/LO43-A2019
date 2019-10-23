@@ -12,7 +12,7 @@ protected:
 public:
     Sound();
 
-    Sound(Sound &) = default;
+    Sound(const Sound &) = default;
 
     Sound &operator=(const Sound &) = default;
 

@@ -9,7 +9,7 @@ Server::Server() {
     this->logActivation = true;
 }
 
-Server::Server(Server &other) {
+Server::Server(const Server &other) {
     this->consoleActivation = other.consoleActivation;
     this->logActivation = other.logActivation;
 }

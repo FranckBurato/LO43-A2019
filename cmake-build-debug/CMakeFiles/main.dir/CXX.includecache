@@ -26,9 +26,25 @@ C:/Coding/C C++/LO43-A2019/src/Sensor/Temperature.h
 ../Sensor/Light.h
 C:/Coding/C C++/LO43-A2019/src/Sensor/Light.h
 
+C:/Coding/C C++/LO43-A2019/src/Sensor/Humidity.cpp
+random
+-
+chrono
+-
+Humidity.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Humidity.h
+
 C:/Coding/C C++/LO43-A2019/src/Sensor/Humidity.h
 Sensor.h
 C:/Coding/C C++/LO43-A2019/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-A2019/src/Sensor/Light.cpp
+random
+-
+chrono
+-
+Light.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Light.h
 
 C:/Coding/C C++/LO43-A2019/src/Sensor/Light.h
 Sensor.h
@@ -36,9 +52,25 @@ C:/Coding/C C++/LO43-A2019/src/Sensor/Sensor.h
 
 C:/Coding/C C++/LO43-A2019/src/Sensor/Sensor.h
 
+C:/Coding/C C++/LO43-A2019/src/Sensor/Sound.cpp
+random
+-
+chrono
+-
+Sound.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Sound.h
+
 C:/Coding/C C++/LO43-A2019/src/Sensor/Sound.h
 Sensor.h
 C:/Coding/C C++/LO43-A2019/src/Sensor/Sensor.h
+
+C:/Coding/C C++/LO43-A2019/src/Sensor/Temperature.cpp
+random
+-
+chrono
+-
+Temperature.h
+C:/Coding/C C++/LO43-A2019/src/Sensor/Temperature.h
 
 C:/Coding/C C++/LO43-A2019/src/Sensor/Temperature.h
 Sensor.h
@@ -51,4 +83,8 @@ sstream
 -
 iomanip
 -
+
+C:/Coding/C C++/LO43-A2019/src/main.cpp
+Scheduler/Scheduler.h
+C:/Coding/C C++/LO43-A2019/src/Scheduler/Scheduler.h
 

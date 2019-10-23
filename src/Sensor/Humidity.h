@@ -12,7 +12,7 @@ protected:
 public:
     Humidity();
 
-    Humidity(Humidity &) = default;
+    Humidity(const Humidity &) = default;
 
     Humidity &operator=(const Humidity &) = default;
 

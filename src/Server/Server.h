@@ -7,6 +7,8 @@
 
 using namespace std;
 
+void operator<<(int, const string &);
+
 class Server {
 private:
     bool consoleActivation;
@@ -17,7 +19,7 @@ private:
 public:
     Server();
 
-    Server(Server &other);
+    Server(const Server &);
 
     Server(bool, bool);
 
@@ -27,28 +29,23 @@ public:
 
     void operator<<(const string &);
 
-    template<class T>
-    void dataReceive(T, int);
+    template<typename T>
+    void dataReceive(T data, int fileFlag) {
+        std::stringstream ss;
+        ss << setprecision(2) << fixed << boolalpha << data;
+        string dataString = ss.str();
+
+        if (this->consoleActivation) {
+            *this << dataString;
+        }
+        if (this->logActivation) {
+            fileFlag << dataString;
+        }
+    }
 
     static void consoleWrite(const string &);
 
     static void fileWrite(const string &, int);
 };
-
-void operator<<(int, const string &);
-
-template<typename T>
-void Server::dataReceive(T data, int fileFlag) {
-    std::stringstream ss;
-    ss << setprecision(2) << fixed << boolalpha << data;
-    string dataString = ss.str();
-
-    if (this->consoleActivation) {
-        *this << dataString;
-    }
-    if (this->logActivation) {
-        fileFlag << dataString;
-    }
-}
 
 #endif //LO43_A2019_SERVER_H

@@ -15,7 +15,7 @@ protected:
 public:
     Sensor();
 
-    Sensor(Sensor &);
+    Sensor(const Sensor &);
 
     Sensor(T, int, int);
 
@@ -34,7 +34,7 @@ Sensor<T>::Sensor() {
 };
 
 template<typename T>
-Sensor<T>::Sensor(Sensor<T> &other) {
+Sensor<T>::Sensor(const Sensor<T> &other) {
     this->valSense = other.valSense;
     this->delay = other.delay;
     this->lastUpdate = other.lastUpdate;

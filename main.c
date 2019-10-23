@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include "Sheduler.h"
 #define INTERVALLE_MAX 60
+#define TEMPS_UTILISATION 120
 #define RAND_MAX 1.00
 #define HUMIDITY_MAX 1.00
 #define TEMPERATURE_MAX 50.0
@@ -21,7 +22,11 @@ int main()
 		std::cin >> temps;
 	}
 //ENVOIE DES DONNES DES SENSORS AU SCHEDULER A INTERVALLE REGULIER
-	
+	for(i=0,i<=TEMPS_UTILISATION/temps,++i)
+	{
+		
+		Sleep(temps*1000);
+	}
 //FIN DE LA BOUCLE
 	return 0;
 }
